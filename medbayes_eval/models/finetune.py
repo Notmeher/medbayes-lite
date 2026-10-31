@@ -26,7 +26,7 @@ BACKBONES = {
     "biobert": "dmis-lab/biobert-base-cased-v1.1",
     "clinicalbert": "emilyalsentzer/Bio_ClinicalBERT",
     "pubmedbert": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
-    "bert_base": "bert-base-uncased",
+    "bert_base": "google-bert/bert-base-uncased",
 }
 
 CKPT_ROOT = config.CKPT_DIR

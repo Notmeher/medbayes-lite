@@ -23,6 +23,15 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RESULTS_DIR = os.environ.get("MEDBAYES_RESULTS_DIR", os.path.join(REPO_ROOT, "results"))
 CKPT_DIR = os.environ.get("MEDBAYES_CKPT_DIR", os.path.join(RESULTS_DIR, "checkpoints"))
 
+# Xet transfers 404/hang for some repos at pinned revisions; force plain HTTPS downloads
+# (env for worker subprocesses, constant for an already-imported huggingface_hub).
+os.environ.setdefault("HF_HUB_DISABLE_XET", "1")
+try:
+    import huggingface_hub.constants as _hf_const
+    _hf_const.HF_HUB_DISABLE_XET = os.environ["HF_HUB_DISABLE_XET"] == "1"
+except Exception:  # pragma: no cover
+    pass
+
 # Pinned Hugging Face revisions (commit SHAs resolved 2026-10-31) so every rerun reads
 # byte-identical data and weights. Set MEDBAYES_UNPIN=1 to use the latest revision.
 _UNPIN = os.environ.get("MEDBAYES_UNPIN", "0") == "1"
@@ -34,7 +43,7 @@ DATASET_REVISIONS = {
 MODEL_REVISIONS = {
     "RUI525/BioBERT-finetune-MedMCQA-wo-context": "4cbfcb3145c5ce6f09eeee052243908614369966",
     "RUI525/PubMedBERT-finetune-MedMCQA-wo-context": "86b01c1b191c560e5f912a00c8abf984d628a809",
-    "bert-base-uncased": "86b5e0934494bd15c9632b12f734a8a67f723594",
+    "google-bert/bert-base-uncased": "86b5e0934494bd15c9632b12f734a8a67f723594",
     "dmis-lab/biobert-base-cased-v1.1": "924f12e0c3db7f156a765ad53fb6b11e7afedbc8",
     "emilyalsentzer/Bio_ClinicalBERT": "d5892b39a4adaed74b92212a44081509db72f87b",
     "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext":
@@ -175,7 +184,7 @@ MODELS = {
         "blizrys/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext-finetuned-pubmedqa",
         datasets=("pubmedqa",), note="pretrained 3-way classifier"),
     # --- locally fine-tuned encoder family (identical training routine) ---
-    "bert_base": ModelSpec("bert_base", "encoder_finetune", "bert-base-uncased",
+    "bert_base": ModelSpec("bert_base", "encoder_finetune", "google-bert/bert-base-uncased",
                            datasets=("pubmedqa", "medmcqa", "medqa", "mediq")),
     "biobert": ModelSpec("biobert", "encoder_finetune", "dmis-lab/biobert-base-cased-v1.1",
                          datasets=("pubmedqa", "medmcqa", "medqa", "mediq")),
@@ -193,7 +202,7 @@ MODELS = {
 
 # backbone hub ids for the four locally fine-tuned encoder families
 FINETUNE_BACKBONES = {
-    "bert_base": "bert-base-uncased",
+    "bert_base": "google-bert/bert-base-uncased",
     "biobert": "dmis-lab/biobert-base-cased-v1.1",
     "clinicalbert": "emilyalsentzer/Bio_ClinicalBERT",
     "pubmedbert": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
