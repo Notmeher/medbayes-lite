@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{OOD domain transfer (MedMCQA -> MedQA).}
+\label{tab:ood}
+\begin{tabular}{llllllllllllllll}
+\toprule
+model & transfer & method & id\_acc & ood\_acc & id\_ece & ood\_ece & ece\_drift & id\_harmful@0.8 & ood\_harmful@0.8 & harmful\_drift & id\_mean\_unc & ood\_mean\_unc & unc\_increase & id\_aurc & ood\_aurc \\
+\midrule
+pubmedbert\_medmcqa & medmcqa->medqa & base & 0.465 & 0.396 & 0.255 & 0.325 & 0.070 & 0.056 & 0.213 & 0.157 & 0.281 & 0.279 & -0.002 & 0.376 & 0.540 \\
+pubmedbert\_medmcqa & medmcqa->medqa & medbayes\_lite & 0.455 & 0.380 & 0.030 & 0.055 & 0.026 & 0.002 & 0.001 & -0.001 & 1.035 & 1.033 & -0.002 & 0.395 & 0.561 \\
+biobert\_medmcqa & medmcqa->medqa & base & 0.389 & 0.276 & 0.317 & 0.410 & 0.093 & 0.067 & 0.217 & 0.150 & 0.295 & 0.315 & 0.020 & 0.517 & 0.724 \\
+biobert\_medmcqa & medmcqa->medqa & medbayes\_lite & 0.390 & 0.288 & 0.015 & 0.084 & 0.069 & 0.000 & 0.000 & 0.000 & 1.029 & 1.057 & 0.028 & 0.519 & 0.725 \\
+\bottomrule
+\end{tabular}
+\end{table}

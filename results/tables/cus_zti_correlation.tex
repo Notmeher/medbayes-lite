@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\caption{CUS/ZTI correlation with clinical metrics.}
+\label{tab:corr}
+\begin{tabular}{lllllll}
+\toprule
+secondary & target & n & pearson\_r & pearson\_p & spearman\_r & spearman\_p \\
+\midrule
+cus & harmful@0.8 & 739 & 0.881 & 0.000 & 0.797 & 0.000 \\
+cus & sevwerr@0.8 & 739 & 0.904 & 0.000 & 0.826 & 0.000 \\
+cus & aurc & 739 & 0.240 & 0.000 & 0.150 & 0.000 \\
+cus & abst\_rec@0.7 & 733 & -0.806 & 0.000 & -0.807 & 0.000 \\
+zti & selacc@0.7 & 451 & 0.338 & 0.000 & 0.324 & 0.000 \\
+zti & cov@0.7 & 739 & 0.264 & 0.000 & -0.047 & 0.205 \\
+zti & aurc & 739 & -0.698 & 0.000 & -0.741 & 0.000 \\
+zti & abst\_prec@0.7 & 687 & -0.402 & 0.000 & -0.546 & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

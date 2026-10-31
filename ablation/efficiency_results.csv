@@ -1,0 +1,8 @@
+Model Variant,Params,MC/Ensemble,Latency,Throughput,GPU Memory
+ClinicalBERT (Baseline),108314117,-,32.04 ms,31.2/s,0.43 GB
+MedBayes-Lite (MC=5),108314117,5 samples,32.61 ms,30.7/s,0.43 GB
+MedBayes-Lite (MC=10),108314117,10 samples,60.13 ms,16.6/s,0.43 GB
+MedBayes-Lite (MC=20),108314117,20 samples,119.08 ms,8.4/s,0.43 GB
+MedBayes-Lite (MC=50),108314117,50 samples,298.54 ms,3.3/s,0.43 GB
+SWAG (n=10),108314117,10,103.93 ms,9.6/s,0.98 GB
+Deep Ensemble (N=5),541570585,-,31.15 ms,32.1/s,2.85 GB

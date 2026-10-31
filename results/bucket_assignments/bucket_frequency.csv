@@ -1,0 +1,14 @@
+bucket,count
+low_severity,1985
+numeric_vital_lab_heavy,1360
+diagnosis_differential,906
+high_severity,903
+lab_biomarker_interpretation,902
+treatment_recommendation,890
+medication_drug_interaction,874
+contradictory_evidence,626
+risk_prognosis,286
+rare_disease,282
+negation_heavy,268
+ambiguous_symptoms,248
+missing_evidence,98

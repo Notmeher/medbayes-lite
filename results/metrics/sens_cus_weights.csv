@@ -1,0 +1,5 @@
+perturbation,pearson_r_CUS_vs_harmful,n_groups
+baseline (chosen weights),0.882,572
+random +/-25% (mean over 20),0.883,572
+random +/-25% (min),0.871,572
+random +/-25% (max),0.892,572

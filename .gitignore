@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.egg-info/
+*.ipynb_checkpoints/
+.env
+*.env
+*.log
+
+# VSCode settings
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model & Cache
+.cache/
+*.ckpt
+*.pt
+*.pth
+
+# Data & Output
+data/*.csv
+data/*.jsonl
+results/*.json
+
+# Virtual Environments
+venv/
+.env/
+.eliasenv/
+.eliasenv
+
+# medbayes_eval results: large/cache artifacts
+results/checkpoints/
+results/raw_predictions/*.parquet
+results/*.out
+__pycache__/

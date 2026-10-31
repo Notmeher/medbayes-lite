@@ -1,0 +1,13 @@
+# Fast orchestration-validation config (pretrained MCQ only, no fine-tuning).
+datasets: [medmcqa, medqa]
+models: [pubmedbert_medmcqa]
+pubmedqa_models: []
+methods: [base, temp_scaling, mc_dropout, conformal, medbayes_lite]
+seeds: [0, 1]
+mc_samples: 8
+mc_p: 0.2
+tau: 0.7
+max_eval: 200
+ood_pairs:
+  - {model: pubmedbert_medmcqa, id: medmcqa, ood: medqa}
+device: cuda

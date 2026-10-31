@@ -1,0 +1,22 @@
+\begin{table}[h]
+\centering
+\caption{Component ablation on MedMCQA (PubMedBERT). Temperature calibration is the dominant
+lever for calibration and harmful-error reduction; MC-dropout averaging adds a smaller
+improvement; the abstention-only variant equals the base predictor because abstention is a
+threshold policy applied to the (here uncalibrated) confidence. The full layer is MC-dropout
+plus temperature plus abstention. AURC is essentially unchanged across variants.}
+\label{tab:ablation_components}
+\renewcommand{\arraystretch}{1.15}
+\small
+\begin{tabular}{lcccccc}
+\hline
+\textbf{Variant} & \textbf{Acc} & \textbf{ECE}$\downarrow$ & \textbf{harmful@0.8}$\downarrow$ & \textbf{SelAcc@0.7}$\uparrow$ & \textbf{Cov@0.7} & \textbf{AURC}$\downarrow$ \\
+\hline
+Base & 0.465 & 0.255 & 0.056 & 0.571 & 0.541 & 0.376 \\
+MC dropout only & 0.455 & 0.092 & 0.010 & 0.734 & 0.198 & 0.395 \\
+Temperature scaling only & 0.465 & 0.081 & 0.012 & 0.721 & 0.217 & 0.375 \\
+Abstention only & 0.465 & 0.255 & 0.056 & 0.571 & 0.541 & 0.376 \\
+Full (MC + temperature + abstention) & 0.455 & 0.030 & 0.002 & 0.811 & 0.102 & 0.395 \\
+\hline
+\end{tabular}
+\end{table}

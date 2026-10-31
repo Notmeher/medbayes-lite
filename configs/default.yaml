@@ -1,0 +1,26 @@
+# MedBayes-Lite clinical uncertainty governance evaluation: the validated real slice.
+# Scale up by raising seeds to 5 and keeping max_eval null.
+
+datasets: [medmcqa, medqa, pubmedqa]
+
+# strong pretrained MCQ checkpoints (genuine, confident predictions)
+models: [pubmedbert_medmcqa, biobert_medmcqa]
+# full encoder family on PubMedQA (pretrained biomedical + locally fine-tuned family)
+pubmedqa_models: [bert_base, biobert, clinicalbert, pubmedbert]  # dropped external pubmedbert_pubmedqa (label-space mismatch, see summary)
+
+methods: [base, temp_scaling, mc_dropout, conformal, medbayes_lite, deep_ensemble]
+ablation_methods: [base, mc_only, abstain_only, uncertainty_attention, medbayes_lite]
+
+seeds: [0, 1, 2]
+mc_samples: 15
+mc_p: 0.2
+lambda_attn: 1.0
+tau: 0.7
+ensemble_size: 3
+max_eval: null
+
+ood_pairs:
+  - {model: pubmedbert_medmcqa, id: medmcqa, ood: medqa}
+  - {model: biobert_medmcqa, id: medmcqa, ood: medqa}
+
+device: cuda
