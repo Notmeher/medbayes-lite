@@ -175,11 +175,31 @@ def perturb(dataset: str, model: str = "pubmedbert_medmcqa", n: int = 300,
     return out
 
 
+def _token_batches(model, samples, n_samples: int, budget: int, max_batch: int):
+    """Length-sorted batches whose prefill size (prompt tokens x n_samples) fits
+    `budget`, so padding is minimal and each forward fills the GPUs."""
+    from ..models.generative import _build_prompt
+    lens = [len(model.tok(model.tok.apply_chat_template(
+        [{"role": "user", "content": _build_prompt(s, True)}], tokenize=False,
+        add_generation_prompt=True))["input_ids"]) for s in samples]
+    batches, cur, longest = [], [], 0
+    for i in np.argsort(lens, kind="stable"):
+        L = lens[i]
+        if cur and (len(cur) >= max_batch or max(longest, L) * (len(cur) + 1) * n_samples > budget):
+            batches.append(cur)
+            cur, longest = [], 0
+        cur.append(int(i))
+        longest = max(longest, L)
+    if cur:
+        batches.append(cur)
+    return batches
+
+
 # ---------------------------------------------------------------------------
 def generative(datasets: Sequence[str] = ("pubmedqa", "medmcqa", "medqa"), n: int = 200,
                n_samples: int = 10, temperature: float = 0.7, batch_size: int = 8,
                seed: int = 0, model_id: str = "Qwen/Qwen2.5-7B-Instruct",
-               device_map: str = "auto", chunk: int = 40):
+               device_map: str = "auto", chunk: int = 40, token_budget: int = 16000):
     """Qwen2.5-7B sampling-only UQ (both GPUs via device_map='auto'). Checkpoints
     every `chunk` items so a restart resumes mid-dataset."""
     import pandas as pd
@@ -208,11 +228,11 @@ def generative(datasets: Sequence[str] = ("pubmedqa", "medmcqa", "medqa"), n: in
                 recs, raw = [], []
                 t0 = time.time()
                 block = samples[c0:c0 + chunk]
-                for b0 in range(0, len(block), batch_size):
-                    batch = block[b0:b0 + batch_size]
+                for idx in _token_batches(model, block, n_samples, token_budget, batch_size):
+                    batch = [block[i] for i in idx]
                     res = model.predict_shared_batch(
                         batch, n_samples=n_samples, temperature=temperature,
-                        seed=seed * 1_000_003 + c0 + b0)
+                        seed=seed * 1_000_003 + c0 + idx[0])
                     for s, r in zip(batch, res):
                         b = assign_buckets(s)
                         for method in ("self_consistency", "semantic_entropy", "verbalized"):

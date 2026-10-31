@@ -69,7 +69,7 @@ class GenerativeModel:
 
     def __init__(self, hub_id: str = "Qwen/Qwen2.5-7B-Instruct",
                  device: str = "cuda", dtype=torch.float16, max_new_tokens: int = 24,
-                 device_map=None):
+                 device_map=None, max_memory=None):
         from transformers import AutoModelForCausalLM, AutoTokenizer
         from .. import config
         rev = config.model_revision(hub_id)
@@ -77,6 +77,14 @@ class GenerativeModel:
         if self.tok.pad_token is None:
             self.tok.pad_token = self.tok.eos_token
         kw = dict(revision=rev, device_map=device_map or device)
+        if max_memory:
+            kw["max_memory"] = max_memory
+        n_gpu = torch.cuda.device_count()
+        if device_map in ("auto", "balanced") and n_gpu > 1:
+            # spread weights evenly and keep ~4 GiB per GPU free for activations / KV cache
+            kw["device_map"] = "balanced"
+            kw["max_memory"] = {i: f"{int(torch.cuda.get_device_properties(i).total_memory / 2**30) - 4}GiB"
+                                 for i in range(n_gpu)}
         try:  # transformers >= 4.56 uses `dtype`; older releases only `torch_dtype`
             self.model = AutoModelForCausalLM.from_pretrained(hub_id, dtype=dtype, **kw)
         except TypeError:
@@ -102,6 +110,25 @@ class GenerativeModel:
 
     @torch.no_grad()
     def _generate_batch(self, prompts: List[str], n: int, temperature: float):
+        """Batched generation; on CUDA OOM the prompt batch (then the sample count) is
+        halved recursively, so results are identical in content, only chunked."""
+        try:
+            return self._generate_once(prompts, n, temperature)
+        except torch.cuda.OutOfMemoryError:
+            torch.cuda.empty_cache()
+            if len(prompts) > 1:
+                h = len(prompts) // 2
+                return (self._generate_batch(prompts[:h], n, temperature) +
+                        self._generate_batch(prompts[h:], n, temperature))
+            if n > 1:
+                h = n // 2
+                a = self._generate_batch(prompts, h, temperature)
+                b = self._generate_batch(prompts, n - h, temperature)
+                return [a[0] + b[0]]
+            raise
+
+    @torch.no_grad()
+    def _generate_once(self, prompts: List[str], n: int, temperature: float):
         """Left-padded batched generation -> list (per prompt) of n decoded strings."""
         texts = [self.tok.apply_chat_template([{"role": "user", "content": p}],
                                               tokenize=False, add_generation_prompt=True)

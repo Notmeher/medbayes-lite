@@ -71,16 +71,14 @@ def _bench_backbone(label, ckpt, mcq, samples, mc_grid, ens_sizes, swag_n, reps,
            lambda: torch.softmax(torch.from_numpy(enc.logits(batched)) / T, -1))
     for m in mc_grid:
         record(f"MC dropout / MedBayes-Lite (M={m})", m,
+               lambda m=m: enc.mc_logits(single, m, 0.2, 0, token_budget=1),
+               lambda m=m: enc.mc_logits(batched, m, 0.2, 0, token_budget=1),
+               extra={"M": m, "mc_execution": "sequential passes"})
+    for m in mc_grid:
+        record(f"MC dropout packed batch (M={m})", m,
                lambda m=m: enc.mc_logits(single, m, 0.2, 0),
-               lambda m=m: enc.mc_logits(batched, m, 0.2, 0), extra={"M": m})
-    # MC with the M passes packed into one batch (same cost model as a GPU-parallel MC)
-    for m in [x for x in mc_grid if x <= 32]:
-        rep = enc.prepare(samples[:1] * m)
-
-        def packed(rep=rep):
-            _enable_mc_dropout(enc.model, p=0.2)
-            return enc.logits(rep, mc_dropout=True, mc_p=0.2)
-        record(f"MC dropout packed batch (M={m})", m, packed, packed, extra={"M": m})
+               lambda m=m: enc.mc_logits(batched, m, 0.2, 0),
+               extra={"M": m, "mc_execution": "passes packed into the batch axis"})
     enc.model.eval()
 
     for n_ens in ens_sizes:

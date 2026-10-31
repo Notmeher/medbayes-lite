@@ -117,13 +117,36 @@ class FastEncoder:
         self.model.eval()
         return out
 
-    def mc_logits(self, prepared, n_samples: int, mc_p: Optional[float], seed: int):
-        """(S, N, K) MC-dropout stack; the dropout masks are seeded by `seed`."""
+    def mc_logits(self, prepared, n_samples: int, mc_p: Optional[float], seed: int,
+                  token_budget: int = 65536):
+        """(S, N, K) MC-dropout stack; the dropout masks are seeded by `seed`.
+
+        Several MC passes are packed into one forward by repeating each batch along
+        the batch axis (dropout masks are drawn per row, so copies are independent
+        samples); `token_budget` caps the packed batch size to fit GPU memory."""
         torch.manual_seed(seed)
         if torch.cuda.is_available():
             torch.cuda.manual_seed_all(seed)
-        stack = [self.logits(prepared, mc_dropout=True, mc_p=mc_p) for _ in range(n_samples)]
-        return np.stack(stack, axis=0)
+        _enable_mc_dropout(self.model, p=mc_p)
+        out = None
+        with torch.no_grad():
+            for idx, batch in prepared["batches"]:
+                b = {k: v.to(self.device, non_blocking=True) for k, v in batch.items()}
+                tokens = b["input_ids"].numel()
+                per = max(1, min(n_samples, token_budget // max(tokens, 1)))
+                done = 0
+                while done < n_samples:
+                    r = min(per, n_samples - done)
+                    rep = {k: v.repeat((r,) + (1,) * (v.dim() - 1)) for k, v in b.items()}
+                    with torch.autocast("cuda", dtype=torch.float16, enabled=self.fp16):
+                        lg = self.model(**rep).logits.float().cpu().numpy()
+                    lg = lg.reshape(r, len(idx), -1)
+                    if out is None:
+                        out = np.zeros((n_samples, prepared["n"], lg.shape[-1]), np.float32)
+                    out[done:done + r, idx] = lg
+                    done += r
+        self.model.eval()
+        return out
 
     def timed(self, fn, *a, **kw):
         if self.device == "cuda":
