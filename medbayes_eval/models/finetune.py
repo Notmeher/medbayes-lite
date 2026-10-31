@@ -15,12 +15,11 @@ from typing import List, Optional
 import numpy as np
 import torch
 from torch.utils.data import DataLoader, TensorDataset
-from transformers import (AutoModelForMultipleChoice,
-                          AutoModelForSequenceClassification, get_linear_schedule_with_warmup)
-from .encoding import load_tokenizer
-
+from transformers import get_linear_schedule_with_warmup
+from .. import config
 from ..schema import Sample
 from .encoding import build_mcq_features, build_seqcls_features, labels_tensor, is_mcq
+from .encoder_fast import load_encoder, load_tokenizer
 
 # canonical backbone hub ids for the four encoder families
 BACKBONES = {
@@ -30,8 +29,7 @@ BACKBONES = {
     "bert_base": "bert-base-uncased",
 }
 
-CKPT_ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
-    os.path.abspath(__file__)))), "results", "checkpoints")
+CKPT_ROOT = config.CKPT_DIR
 
 
 @dataclass
@@ -82,21 +80,7 @@ def finetune_backbone(backbone: str, dataset: str, train_samples: List[Sample],
     mcq = is_mcq(train_samples[0])
     hub = BACKBONES[backbone]
     tokenizer = load_tokenizer(hub)
-    # Some BERT checkpoints (e.g. BioBERT v1.1) ship a config.json without a
-    # `model_type` key, so the Auto* factory cannot resolve the class. Fall back to
-    # the explicit BERT class; the checkpoint we save carries a complete config.
-    if mcq:
-        try:
-            model = AutoModelForMultipleChoice.from_pretrained(hub)
-        except (ValueError, KeyError):
-            from transformers import BertForMultipleChoice
-            model = BertForMultipleChoice.from_pretrained(hub)
-    else:
-        try:
-            model = AutoModelForSequenceClassification.from_pretrained(hub, num_labels=n_classes)
-        except (ValueError, KeyError):
-            from transformers import BertForSequenceClassification
-            model = BertForSequenceClassification.from_pretrained(hub, num_labels=n_classes)
+    model = load_encoder(hub, mcq, num_labels=None if mcq else n_classes)
     device = cfg.device if torch.cuda.is_available() else "cpu"
     model.to(device)
 
@@ -117,7 +101,7 @@ def finetune_backbone(backbone: str, dataset: str, train_samples: List[Sample],
     total_steps = len(loader) * cfg.epochs
     sched = get_linear_schedule_with_warmup(
         optim, int(total_steps * cfg.warmup_ratio), total_steps)
-    scaler = torch.cuda.amp.GradScaler(enabled=cfg.fp16 and device == "cuda")
+    scaler = torch.amp.GradScaler("cuda", enabled=cfg.fp16 and device == "cuda")
 
     model.train()
     for epoch in range(cfg.epochs):

@@ -159,6 +159,58 @@ def _matches(pattern: BucketPattern, text: str) -> bool:
     return pattern.search(text) is not None
 
 
+# ---------------------------------------------------------------------------
+# Strict (word-boundary) variant, used only as a sensitivity analysis for the
+# substring false positives of the default rules (e.g. "icu" in "ventricular",
+# "but" in "distribution", "lab" in "label").
+# ---------------------------------------------------------------------------
+def _alt_strict(keywords: list[str]) -> Pattern[str]:
+    parts = []
+    for k in keywords:
+        e = re.escape(k)
+        # short cues must be whole words; longer stems keep their suffix freedom
+        parts.append(rf"\b{e}\b" if len(k) <= 4 else rf"\b{e}")
+    return re.compile("|".join(parts))
+
+
+STRICT_BUCKET_PATTERNS: dict[str, BucketPattern] = {
+    "medication_drug_interaction": [_DRUG_SUFFIX_RE, _DOSE_RE,
+                                    _alt_strict(_MEDICATION_KEYWORDS)],
+    "diagnosis_differential": _alt_strict(_DIAGNOSIS_KEYWORDS),
+    "treatment_recommendation": _alt_strict(_TREATMENT_KEYWORDS),
+    "risk_prognosis": _alt_strict(_RISK_KEYWORDS),
+    "lab_biomarker_interpretation": _alt_strict(_LAB_KEYWORDS),
+    "rare_disease": _alt_strict(_RARE_KEYWORDS),
+    "ambiguous_symptoms": _alt_strict(_AMBIGUOUS_KEYWORDS),
+    "contradictory_evidence": _alt_strict(_CONTRADICTORY_KEYWORDS),
+    "missing_evidence": _alt_strict(_MISSING_KEYWORDS),
+    "negation_heavy": _NEGATION_RE,
+    "numeric_vital_lab_heavy": _UNIT_RE,
+    "high_severity": [_alt_strict(_HIGH_SEVERITY_KEYWORDS), _HIGH_SEVERITY_EXTRA_RE],
+}
+
+
+def explain_buckets(sample: Sample, strict: bool = False) -> dict[str, list[str]]:
+    """bucket -> distinct matched cue strings (count buckets report their count)."""
+    text = sample.display_text().lower()
+    table = STRICT_BUCKET_PATTERNS if strict else BUCKET_PATTERNS
+    out: dict[str, list[str]] = {}
+    for bucket in assign_buckets(sample, strict=strict):
+        if bucket == "low_severity":
+            out[bucket] = []
+        elif bucket == "negation_heavy":
+            out[bucket] = [f"{_negation_count(text)} negation cues"]
+        elif bucket == "numeric_vital_lab_heavy":
+            out[bucket] = [f"{_numeric_unit_count(text)} numeric/unit tokens"]
+        else:
+            pats = table[bucket] if isinstance(table[bucket], list) else [table[bucket]]
+            hits = []
+            for p in pats:
+                hits += [m.group(0) for m in p.finditer(text)]
+            out[bucket] = sorted(set(hits))
+    return out
+
+
 def _negation_count(text: str) -> int:
     """Number of whole-word negation cues in ``text``."""
     return len(_NEGATION_RE.findall(text))
@@ -169,7 +221,7 @@ def _numeric_unit_count(text: str) -> int:
     return len(_NUMBER_RE.findall(text)) + len(_UNIT_RE.findall(text))
 
 
-def assign_buckets(sample: Sample) -> list[str]:
+def assign_buckets(sample: Sample, strict: bool = False) -> list[str]:
     """Assign ``sample`` to one or more clinical buckets.
 
     The match is performed over the lowercased ``display_text()`` (question +
@@ -178,6 +230,7 @@ def assign_buckets(sample: Sample) -> list[str]:
     bucket fires, ``low_severity`` is returned as the fallback.
     """
     text = sample.display_text().lower()
+    table = STRICT_BUCKET_PATTERNS if strict else BUCKET_PATTERNS
     assigned: list[str] = []
 
     for bucket in config.BUCKETS:
@@ -191,7 +244,7 @@ def assign_buckets(sample: Sample) -> list[str]:
             if _numeric_unit_count(text) >= _NUMERIC_THRESHOLD:
                 assigned.append(bucket)
             continue
-        if _matches(BUCKET_PATTERNS[bucket], text):
+        if _matches(table[bucket], text):
             assigned.append(bucket)
 
     if not assigned:

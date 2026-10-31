@@ -41,6 +41,45 @@ See [`EXPERIMENTAL_SUMMARY.md`](EXPERIMENTAL_SUMMARY.md) for the full results an
 
 ---
 
+## Revision experiments (reviewer response)
+
+All experiments requested in the review run from one Kaggle notebook,
+[`medbayes-revision-kaggle.ipynb`](medbayes-revision-kaggle.ipynb) (GPU T4 x2), or from
+the CLI:
+
+```bash
+pip install -r requirements.txt
+export MEDBAYES_RESULTS_DIR=$PWD/results          # optional; default is ./results
+python -m medbayes_eval.revision.reproduce all     # prefetch -> gpu -> latency -> generative -> analyze
+python -m medbayes_eval.revision.reproduce table8  # Table 8 only (MedMCQA / MedQA x PubMedBERT / BioBERT)
+python -m medbayes_eval.revision.reproduce all --smoke   # tiny end-to-end check
+```
+
+Design: the GPU stage (`medbayes_eval/revision/jobs.py`) stores deterministic and seeded
+MC-dropout logits for the calibration and test slices of every (dataset, model, seed); every
+method, both abstention gates (calibrated max probability and the paper's
+C(p) = 1 - H(p)/log K), and every statistic are then recomputed on CPU. Datasets and
+weights are pinned to commit SHAs in `medbayes_eval/config.py`. Outputs land in
+`results/revision/{tables,figures,manifest,splits,clinician_kit,cache}`.
+
+| Reviewer item | Module | Main outputs |
+|---|---|---|
+| R1:1, R3:1 matched coverage / risk | `revision/analyses.py` | `matched_coverage.csv`, `matched_risk.csv`, `threshold_counts.csv` |
+| R3:2 TS + entropy gate, factorial, matched latency | `analyses.py`, `latency.py` | `factorial_ablation.csv`, `compute_quality_matched_latency.csv`, `latency_benchmark.csv` |
+| R3:3 severity robustness, clinician kit | `severity.py`, `clinician_kit.py` | `severity_sensitivity.csv`, `trigger_audit_*.csv`, `clinician_kit/` |
+| R3:4, R1:9 statistics | `analyses.py` | `paired_tests.csv`, `seed_vs_item_variance.csv`, `ood_transfer_3seed.csv` |
+| R3:5 reproducibility | `manifest.py`, `items.py` | `manifest/`, `splits/split_ids.csv`, `table8_*` |
+| R3:7, R1:4 CUS dependence | `cus.py` | `cus_correlations_dependence_aware.csv`, `cus_incremental_dependence_aware.csv`, `S4_*` |
+| R3:8 safety perturbations | `perturb/perturbations.py`, `perturbation.py` | `perturbation_response*.csv` |
+| R1:2, R3:6 workload | `analyses.py` | `deferral_workload_per_1000.csv` |
+
+Clinician validation: send `clinician_kit/severity_rating_sheet_BLINDED.csv` (and
+`perturbation_review_sheet.csv`) with `RATER_INSTRUCTIONS.txt`; save returned sheets as
+`clinician_kit/rater_<initials>.csv` and rerun `analyze` (or
+`clinician_kit.analyze_clinician_ratings`) for agreement statistics.
+
+---
+
 ## What the pipeline evaluates
 
 **Datasets** (`medbayes_eval/data/loaders.py`)

@@ -19,7 +19,39 @@ except Exception:  # pragma: no cover
     _HAS_YAML = False
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RESULTS_DIR = os.path.join(REPO_ROOT, "results")
+# Kaggle/remote runs point these at writable scratch (see the revision notebook).
+RESULTS_DIR = os.environ.get("MEDBAYES_RESULTS_DIR", os.path.join(REPO_ROOT, "results"))
+CKPT_DIR = os.environ.get("MEDBAYES_CKPT_DIR", os.path.join(RESULTS_DIR, "checkpoints"))
+
+# Pinned Hugging Face revisions (commit SHAs resolved 2026-10-31) so every rerun reads
+# byte-identical data and weights. Set MEDBAYES_UNPIN=1 to use the latest revision.
+_UNPIN = os.environ.get("MEDBAYES_UNPIN", "0") == "1"
+DATASET_REVISIONS = {
+    "qiaojin/PubMedQA": "9001f2853fb87cab8d220904e0de81ac6973b318",
+    "openlifescienceai/medmcqa": "91c6572c454088bf71b679ad90aa8dffcd0d5868",
+    "GBaker/MedQA-USMLE-4-options": "0fb93dd23a7339b6dcd27e241cb9b5eca62d4d18",
+}
+MODEL_REVISIONS = {
+    "RUI525/BioBERT-finetune-MedMCQA-wo-context": "4cbfcb3145c5ce6f09eeee052243908614369966",
+    "RUI525/PubMedBERT-finetune-MedMCQA-wo-context": "86b01c1b191c560e5f912a00c8abf984d628a809",
+    "bert-base-uncased": "86b5e0934494bd15c9632b12f734a8a67f723594",
+    "dmis-lab/biobert-base-cased-v1.1": "924f12e0c3db7f156a765ad53fb6b11e7afedbc8",
+    "emilyalsentzer/Bio_ClinicalBERT": "d5892b39a4adaed74b92212a44081509db72f87b",
+    "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext":
+        "e1354b7a3a09615f6aba48dfad4b7a613eef7062",
+    "Qwen/Qwen2.5-7B-Instruct": "a09a35458c702b33eeacc393d103063234e8bc28",
+}
+
+
+def dataset_revision(hf_id: str):
+    return None if _UNPIN else DATASET_REVISIONS.get(hf_id)
+
+
+def model_revision(hf_id: str):
+    """Pinned revision for a hub id; None for local checkpoint directories."""
+    if _UNPIN or os.path.isdir(hf_id):
+        return None
+    return MODEL_REVISIONS.get(hf_id)
 
 # ---------------------------------------------------------------------------
 # Clinical bucket taxonomy (13 categories from the spec) and severity weights.
@@ -71,6 +103,17 @@ OVERCONF_THRESHOLDS = [0.7, 0.8, 0.9]
 ECE_BINS = 15
 N_SEEDS = 5
 BOOTSTRAP_N = 2000
+
+# Abstention gates. "maxprob" thresholds the calibrated max probability; "entropy"
+# thresholds the paper's normalized confidence C(p) = 1 - H(p)/log K.
+GATES = ("maxprob", "entropy")
+
+# Threshold protocol: tau = 0.7 (selective metrics) and 0.8 (harmful errors) were fixed
+# before evaluation as conventional operating points; they are never tuned on test or
+# calibration data. The full sweep over COVERAGE_THRESHOLDS is always reported.
+THRESHOLD_PROTOCOL = ("fixed a priori (0.7 selective, 0.8 harmful); not tuned on "
+                      "calibration or test data; full sweep reported")
+SEVERITY_CUTOFFS = (1.5, 2.0, 2.5, 3.0)
 
 
 @dataclass

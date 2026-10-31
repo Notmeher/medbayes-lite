@@ -18,6 +18,10 @@ from .. import config
 PUBMEDQA_LABELS = {"yes": 0, "no": 1, "maybe": 2}
 
 
+def _load(hf_id: str, *args):
+    return load_dataset(hf_id, *args, revision=config.dataset_revision(hf_id))
+
+
 def _cap(samples: List[Sample], max_samples: Optional[int]) -> List[Sample]:
     return samples[:max_samples] if max_samples else samples
 
@@ -36,7 +40,7 @@ def load_pubmedqa(split: str = "test", max_samples: Optional[int] = None,
     """PubMedQA pqa_labeled. Only a 1000-item 'train' exists upstream; we make a
     deterministic test/calibration split. split='test' -> held-out test,
     split='calibration' -> the complement (used to fit temperature scaling)."""
-    ds = load_dataset("qiaojin/PubMedQA", "pqa_labeled")["train"]
+    ds = _load("qiaojin/PubMedQA", "pqa_labeled")["train"]
     test_idx = _det_split(len(ds), n_test, seed)
     samples = []
     for i, ex in enumerate(ds):
@@ -56,7 +60,7 @@ def load_pubmedqa(split: str = "test", max_samples: Optional[int] = None,
 
 def load_medmcqa(split: str = "validation", max_samples: Optional[int] = None) -> List[Sample]:
     """MedMCQA 4-way single-best-answer. Validation split is labeled (test is hidden)."""
-    ds = load_dataset("openlifescienceai/medmcqa")[split]
+    ds = _load("openlifescienceai/medmcqa")[split]
     samples = []
     for ex in ds:
         options = [ex["opa"], ex["opb"], ex["opc"], ex["opd"]]
@@ -75,7 +79,7 @@ def _letter_to_idx(letter: str) -> int:
 
 def load_medqa(split: str = "test", max_samples: Optional[int] = None) -> List[Sample]:
     """MedQA-USMLE 4-options."""
-    ds = load_dataset("GBaker/MedQA-USMLE-4-options")[split]
+    ds = _load("GBaker/MedQA-USMLE-4-options")[split]
     samples = []
     for i, ex in enumerate(ds):
         opts_dict = ex["options"]

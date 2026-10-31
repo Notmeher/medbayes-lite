@@ -25,6 +25,7 @@ from .. import config
 from ..schema import probs_matrix
 
 _EPS = 1e-12
+_trapz = getattr(np, "trapezoid", None) or np.trapz
 
 
 # ---------------------------------------------------------------------------
@@ -130,7 +131,7 @@ def aurc(conf: np.ndarray, correct: np.ndarray) -> float:
     if len(conf) == 0:
         return float("nan")
     coverage, risk = risk_coverage_curve(conf, correct)
-    return float(np.trapezoid(risk, coverage) / (coverage[-1] - coverage[0] + _EPS)) \
+    return float(_trapz(risk, coverage) / (coverage[-1] - coverage[0] + _EPS)) \
         if len(coverage) > 1 else float(risk[0])
 
 

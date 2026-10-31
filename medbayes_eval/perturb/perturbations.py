@@ -272,8 +272,136 @@ def vague_evidence(sample: Sample, rng: np.random.Generator) -> Sample:
     return new
 
 
+# --------------------------------------------------------------------------- #
+# Safety-critical perturbations (revision, R3:8): dosing, units, critical and
+# implausible values, contraindications, negation flips.
+# --------------------------------------------------------------------------- #
+_DOSE_RE = re.compile(rf"({_NUM})\s?(mg|mcg|µg|g|units?|IU)\b(?!\s*/)", re.IGNORECASE)
+_UNIT_SWAPS = [
+    (re.compile(r"\bmcg\b", re.IGNORECASE), "mg"),
+    (re.compile(r"\bmg\b(?!\s*/)", re.IGNORECASE), "g"),
+    (re.compile(r"mg/dl", re.IGNORECASE), "mmol/L"),
+    (re.compile(r"mmol/l", re.IGNORECASE), "mg/dL"),
+    (re.compile(r"°F"), "°C"),
+    (re.compile(r"°C"), "°F"),
+]
+_BP_RE = re.compile(r"\b\d{2,3}\s?/\s?\d{2,3}\s?mm\s?hg", re.IGNORECASE)
+_HR_RE = re.compile(r"(pulse|heart rate)(\D{0,25}?)(\d{2,3})(\s?(?:/min|bpm|beats))?",
+                    re.IGNORECASE)
+_TEMP_RE = re.compile(rf"{_NUM}\s?°\s?([CF])")
+_SPO2_RE = re.compile(r"(oxygen saturation|spo2|o2 sat\w*)(\D{0,25}?)(\d{2,3})\s?%",
+                      re.IGNORECASE)
+_LAB_TARGETS = {  # analyte regex -> (critical-but-plausible, impossible) value
+    r"potassium|k\+": ("7.9", "25"),
+    r"sodium|na\+": ("112", "300"),
+    r"glucose": ("32", "9000"),
+    r"hemoglobin|hgb": ("4.1", "45"),
+    r"creatinine": ("8.6", "90"),
+}
+
+
+def _sub_first(pattern: re.Pattern, text: str, repl) -> tuple[str, bool]:
+    new, n = pattern.subn(repl, text, count=1)
+    return new, n > 0
+
+
+def _set_lab(text: str, which: int) -> tuple[str, bool]:
+    for analyte, vals in _LAB_TARGETS.items():
+        pat = re.compile(rf"({analyte})(\D{{0,20}}?)({_NUM})", re.IGNORECASE)
+        new, ok = _sub_first(pat, text, lambda m, v=vals[which]: f"{m.group(1)}{m.group(2)}{v}")
+        if ok:
+            return new, True
+    return text, False
+
+
+def _set_vital(text: str, critical: bool) -> tuple[str, bool]:
+    bp, hr, t, sp = (("70/40 mm Hg", "165", ("41.2", "106.2"), "78") if critical else
+                     ("400/300 mm Hg", "400", ("48.5", "119.3"), "130"))
+    new, ok = _sub_first(_BP_RE, text, bp)
+    if ok:
+        return new, True
+    new, ok = _sub_first(_HR_RE, text, lambda m: f"{m.group(1)}{m.group(2)}{hr}{m.group(4) or ''}")
+    if ok:
+        return new, True
+    new, ok = _sub_first(_TEMP_RE, text,
+                         lambda m: f"{t[0] if m.group(1).upper() == 'C' else t[1]}°{m.group(1)}")
+    if ok:
+        return new, True
+    return _sub_first(_SPO2_RE, text, lambda m: f"{m.group(1)}{m.group(2)}{sp}%")
+
+
+def _field_transform(name: str, fn):
+    """Wrap a text->(text, applied) transform as a Sample perturbation."""
+    def _perturb(sample: Sample, rng: np.random.Generator) -> Sample:
+        field = _primary_field(sample)
+        new_text, applied = fn(_get_field(sample, field), rng)
+        new = _clone(sample, name, applied=applied)
+        if applied:
+            setattr(new, field, new_text)
+        return new
+    _perturb.__name__ = name
+    return _perturb
+
+
+def _dose_tenfold(text, rng):
+    return _sub_first(_DOSE_RE, text, lambda m: f"{float(m.group(1)) * 10:g} {m.group(2)}")
+
+
+def _unit_swap(text, rng):
+    for pat, repl in _UNIT_SWAPS:
+        new, ok = _sub_first(pat, text, repl)
+        if ok:
+            return new, True
+    return text, False
+
+
+def _critical_value(text, rng):
+    new, ok = _set_vital(text, critical=True)
+    return (new, ok) if ok else _set_lab(text, 0)
+
+
+def _implausible_value(text, rng):
+    new, ok = _set_vital(text, critical=False)
+    return (new, ok) if ok else _set_lab(text, 1)
+
+
+def _add_contraindication(text, rng):
+    if not text.strip():
+        return text, False
+    return (f"{text.rstrip()} The patient has a documented history of anaphylaxis to "
+            "multiple drug classes, severe hepatic impairment, and end-stage renal "
+            "disease on dialysis."), True
+
+
+_SYMPTOMS = r"(fever|pain|cough|rash|nausea|vomiting|dyspnea|shortness of breath|" \
+            r"headache|bleeding|weakness|swelling|edema|tenderness|confusion)"
+
+
+def _negate_symptom(text, rng):
+    return _sub_first(re.compile(rf"\b(has|with|reports|presents with|complains of)\s+"
+                                 rf"(?:a |an )?(\w+\s)?{_SYMPTOMS}", re.IGNORECASE),
+                      text, lambda m: f"{m.group(1)} no {m.group(2) or ''}{m.group(3)}")
+
+
+def _remove_negation(text, rng):
+    pat = re.compile(r"\b(denies|denied|no|not|without)\s+", re.IGNORECASE)
+    new, n = pat.subn(lambda m: "reports " if m.group(1).lower().startswith("den") else "",
+                      text)
+    return new, n > 0
+
+
+SAFETY_PERTURBATIONS = {
+    "dose_tenfold": _field_transform("dose_tenfold", _dose_tenfold),
+    "unit_swap": _field_transform("unit_swap", _unit_swap),
+    "critical_value": _field_transform("critical_value", _critical_value),
+    "implausible_value": _field_transform("implausible_value", _implausible_value),
+    "add_contraindication": _field_transform("add_contraindication", _add_contraindication),
+    "negate_symptom": _field_transform("negate_symptom", _negate_symptom),
+    "remove_negation": _field_transform("remove_negation", _remove_negation),
+}
+
 # Public registry: perturbation name -> callable(sample, rng) -> Sample.
-PERTURBATIONS: dict[str, Callable[[Sample, np.random.Generator], Sample]] = {
+ORIGINAL_PERTURBATIONS: dict[str, Callable[[Sample, np.random.Generator], Sample]] = {
     "remove_key_evidence": remove_key_evidence,
     "add_negation": add_negation,
     "add_contradictory_symptom": add_contradictory_symptom,
@@ -282,6 +410,7 @@ PERTURBATIONS: dict[str, Callable[[Sample, np.random.Generator], Sample]] = {
     "add_distractor": add_distractor,
     "vague_evidence": vague_evidence,
 }
+PERTURBATIONS = {**ORIGINAL_PERTURBATIONS, **SAFETY_PERTURBATIONS}
 
 
 def apply_perturbation(

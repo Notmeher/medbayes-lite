@@ -68,13 +68,21 @@ class GenerativeModel:
     """Wraps a local instruct LLM and exposes sampling-based UQ over option labels."""
 
     def __init__(self, hub_id: str = "Qwen/Qwen2.5-7B-Instruct",
-                 device: str = "cuda", dtype=torch.float16, max_new_tokens: int = 24):
+                 device: str = "cuda", dtype=torch.float16, max_new_tokens: int = 24,
+                 device_map=None):
         from transformers import AutoModelForCausalLM, AutoTokenizer
-        self.tok = AutoTokenizer.from_pretrained(hub_id)
-        self.model = AutoModelForCausalLM.from_pretrained(
-            hub_id, torch_dtype=dtype, device_map=device)
+        from .. import config
+        rev = config.model_revision(hub_id)
+        self.tok = AutoTokenizer.from_pretrained(hub_id, revision=rev, padding_side="left")
+        if self.tok.pad_token is None:
+            self.tok.pad_token = self.tok.eos_token
+        kw = dict(revision=rev, device_map=device_map or device)
+        try:  # transformers >= 4.56 uses `dtype`; older releases only `torch_dtype`
+            self.model = AutoModelForCausalLM.from_pretrained(hub_id, dtype=dtype, **kw)
+        except TypeError:
+            self.model = AutoModelForCausalLM.from_pretrained(hub_id, torch_dtype=dtype, **kw)
         self.model.eval()
-        self.device = device
+        self.device = next(self.model.parameters()).device
         self.max_new_tokens = max_new_tokens
 
     @torch.no_grad()
@@ -91,6 +99,56 @@ class GenerativeModel:
         out = self.model.generate(**inputs, **gen_kw)
         gen = out[:, inputs["input_ids"].shape[1]:]
         return self.tok.batch_decode(gen, skip_special_tokens=True)
+
+    @torch.no_grad()
+    def _generate_batch(self, prompts: List[str], n: int, temperature: float):
+        """Left-padded batched generation -> list (per prompt) of n decoded strings."""
+        texts = [self.tok.apply_chat_template([{"role": "user", "content": p}],
+                                              tokenize=False, add_generation_prompt=True)
+                 for p in prompts]
+        inputs = self.tok(texts, return_tensors="pt", padding=True).to(self.device)
+        do_sample = temperature > 0
+        gen_kw = dict(max_new_tokens=self.max_new_tokens, num_return_sequences=n,
+                      pad_token_id=self.tok.pad_token_id, do_sample=do_sample)
+        if do_sample:
+            gen_kw.update(temperature=temperature, top_p=0.95)
+        else:
+            gen_kw.update(temperature=None, top_p=None, top_k=None)
+        out = self.model.generate(**inputs, **gen_kw)
+        dec = self.tok.batch_decode(out[:, inputs["input_ids"].shape[1]:],
+                                    skip_special_tokens=True)
+        return [dec[i * n:(i + 1) * n] for i in range(len(prompts))]
+
+    def predict_shared_batch(self, samples: List[Sample], n_samples: int = 10,
+                             temperature: float = 0.7, seed: int = 0):
+        """Batched equivalent of predict_shared (same prompts, parsing, and outputs)."""
+        torch.manual_seed(seed)
+        if torch.cuda.is_available():
+            torch.cuda.manual_seed_all(seed)
+        sampled = self._generate_batch([_build_prompt(s, False) for s in samples],
+                                       n_samples, temperature)
+        greedy = self._generate_batch([_build_prompt(s, True) for s in samples], 1, 0.0)
+        outs = []
+        for s, gens, vg in zip(samples, sampled, greedy):
+            k = s.n_classes
+            probs = np.full(k, 1e-3)
+            for lbl in (_parse_label(g, s) for g in gens):
+                if lbl is not None:
+                    probs[lbl] += 1
+            probs = probs / probs.sum()
+            ent = float(uq.entropy(probs[None, :])[0])
+            vlabel, vconf = _parse_label(vg[0], s), _parse_confidence(vg[0])
+            pred = vlabel if vlabel is not None else int(np.argmax(probs))
+            conf = vconf if vconf is not None else float(probs.max())
+            vprobs = np.full(k, (1.0 - conf) / (k - 1))
+            vprobs[pred] = conf
+            outs.append({
+                "self_consistency": (probs, float(probs.max()), float(1.0 - probs.max())),
+                "semantic_entropy": (probs, float(1.0 - ent / np.log(k)), ent),
+                "verbalized": (vprobs, float(conf), float(1.0 - conf)),
+                "_raw": {"samples": gens, "verbalized": vg[0]},
+            })
+        return outs
 
     def predict_sample(self, sample: Sample, method: str, n_samples: int = 10,
                        temperature: float = 0.7):

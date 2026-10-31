@@ -115,11 +115,61 @@ def paired_bootstrap(df_a: pd.DataFrame, df_b: pd.DataFrame,
         boot[i] = metric_fn(a.iloc[idx]) - metric_fn(b.iloc[idx])
 
     lo, hi = np.quantile(boot, [alpha / 2, 1 - alpha / 2])
-    p_le = float(np.mean(boot <= 0))
-    p_ge = float(np.mean(boot >= 0))
-    p_value = min(1.0, 2.0 * min(p_le, p_ge))
     return {"diff": diff, "ci_lo": float(lo), "ci_hi": float(hi),
-            "p_value": p_value}
+            "p_value": bootstrap_p(boot, n)}
+
+
+def bootstrap_p(boot: np.ndarray, n: int) -> float:
+    """Two-sided bootstrap p with the +1 correction, so it is never exactly 0
+    (smallest attainable value is 2/(n+1))."""
+    boot = np.asarray(boot, float)
+    boot = boot[~np.isnan(boot)]
+    if boot.size == 0:
+        return float("nan")
+    le = (np.sum(boot <= 0) + 1) / (boot.size + 1)
+    ge = (np.sum(boot >= 0) + 1) / (boot.size + 1)
+    return float(min(1.0, 2.0 * min(le, ge)))
+
+
+def format_p(p: float, floor: float = 1e-3) -> str:
+    """Render a p-value as an exact value or a bound, e.g. 'p < 0.001'."""
+    if p is None or np.isnan(p):
+        return "n/a"
+    return f"< {floor:g}" if p < floor else f"{p:.3f}"
+
+
+def holm(pvals) -> np.ndarray:
+    """Holm-Bonferroni adjusted p-values (NaNs passed through)."""
+    p = np.asarray(pvals, float)
+    out = np.full_like(p, np.nan)
+    ok = ~np.isnan(p)
+    q = p[ok]
+    m = q.size
+    if m == 0:
+        return out
+    order = np.argsort(q)
+    adj = np.maximum.accumulate((m - np.arange(m)) * q[order])
+    res = np.empty(m)
+    res[order] = np.minimum(adj, 1.0)
+    out[ok] = res
+    return out
+
+
+def benjamini_hochberg(pvals) -> np.ndarray:
+    p = np.asarray(pvals, float)
+    out = np.full_like(p, np.nan)
+    ok = ~np.isnan(p)
+    q = p[ok]
+    m = q.size
+    if m == 0:
+        return out
+    order = np.argsort(q)
+    adj = q[order] * m / np.arange(1, m + 1)
+    adj = np.minimum.accumulate(adj[::-1])[::-1]
+    res = np.empty(m)
+    res[order] = np.minimum(adj, 1.0)
+    out[ok] = res
+    return out
 
 
 def wilcoxon_seeds(values_a, values_b) -> dict:

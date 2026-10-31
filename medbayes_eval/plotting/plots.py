@@ -43,10 +43,11 @@ def _ensure_parent(path: str) -> None:
 
 
 def _save(fig, path: str) -> str:
-    """Save ``fig`` to ``path`` at the package DPI and close it."""
+    """Save ``fig`` to ``path`` at the package DPI (plus a vector PDF twin) and close it."""
     _ensure_parent(path)
     fig.tight_layout()
     fig.savefig(path, dpi=_DPI, bbox_inches="tight")
+    fig.savefig(os.path.splitext(path)[0] + ".pdf", bbox_inches="tight")
     plt.close(fig)
     return path
 

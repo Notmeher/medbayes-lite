@@ -35,16 +35,18 @@ CALIB_SIZE = {"pubmedqa": 150, "medmcqa": 500, "medqa": 300, "mediq": 300, "mimi
 
 
 def get_train_eval(dataset: str, max_eval: Optional[int] = None,
-                   max_train: Optional[int] = None):
+                   max_train: Optional[int] = None, load_train: bool = True):
     """Return (train_samples, calib_samples, test_samples) for a dataset."""
     if dataset == "pubmedqa":
-        train = load_dataset_samples("pubmedqa", split="calibration")
+        train = load_dataset_samples("pubmedqa", split="calibration") if load_train else []
         evals = load_dataset_samples("pubmedqa", split="test")
     elif dataset == "medmcqa":
-        train = load_dataset_samples("medmcqa", split="train", max_samples=max_train)
+        train = (load_dataset_samples("medmcqa", split="train", max_samples=max_train)
+                 if load_train else [])
         evals = load_dataset_samples("medmcqa", split="validation")
     elif dataset == "medqa":
-        train = load_dataset_samples("medqa", split="train", max_samples=max_train)
+        train = (load_dataset_samples("medqa", split="train", max_samples=max_train)
+                 if load_train else [])
         evals = load_dataset_samples("medqa", split="test")
     elif dataset == "mediq":
         train = load_dataset_samples("medqa", split="train", max_samples=max_train)
