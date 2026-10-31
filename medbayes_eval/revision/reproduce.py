@@ -124,6 +124,19 @@ def analyze(smoke=False, include_generative=True):
     return res
 
 
+def analyze_cus(smoke=False, include_generative=True):
+    """Re-run only the CUS analyses (R3:7) from the existing caches."""
+    from . import cus
+    from .predictions import load_store
+    B, Bi = (100, 20) if smoke else (2000, 500)
+    store, _ = load_store(include_generative=include_generative)
+    runs = cus.build_runs(store)
+    base, corr, item_draws = cus.cus_correlations(runs, B_items=Bi)
+    inc = cus.cus_incremental(base, item_draws, B=B)
+    w = cus.cus_weight_schemes(runs)
+    return {"cus_correlations": corr, "cus_incremental": inc, "cus_weight_schemes": w}
+
+
 def table8(smoke=False):
     """Reproduce Table 8 (main harmful-error table) from scratch or from caches."""
     import os

@@ -37,6 +37,7 @@ class _Run:
         self.correct = np.stack([q.correct for q in preds])
         self.sev = preds[0].sev
         self.member = np.array([[b in bl for b in BUCKETS] for bl in buckets])  # (N, 13)
+        self.uids = None
 
 
 def build_runs(store):
@@ -46,7 +47,9 @@ def build_runs(store):
             continue
         preds = store.preds(ds, model, method, "maxprob")
         uids = store.get(ds, model, method)[0].uids
-        runs.append(_Run(ds, model, method, preds, _bucket_lists(ds).loc[uids].tolist()))
+        r = _Run(ds, model, method, preds, _bucket_lists(ds).loc[uids].tolist())
+        r.uids = np.asarray(uids)
+        runs.append(r)
     return runs
 
 
@@ -128,17 +131,26 @@ SUBSETS = {
 def cus_correlations(runs, B_items: int = 500, B_groups: int = 2000):
     base = group_table(runs)
     save(base, "cus_group_metrics")
-    # item-cluster bootstrap: one item resample per dataset per draw, all groups recomputed
+    # item-cluster bootstrap: items are resampled once per dataset per draw (over the union
+    # of item ids, so runs on different subsets share weights) and all groups recomputed
     by_ds = {}
     for r in runs:
         by_ds.setdefault(r.key[0], []).append(r)
+    pos = {}
+    for ds, rs in by_ds.items():
+        universe = {u: i for i, u in enumerate(np.unique(np.concatenate([r.uids for r in rs])))}
+        pos[ds] = (len(universe), [np.array([universe[u] for u in r.uids]) for r in rs])
     rng = np.random.default_rng(0)
     item_draws = []
     for _ in range(B_items):
         frames = []
         for ds, rs in by_ds.items():
-            idx = rng.integers(0, rs[0].p.shape[1], rs[0].p.shape[1])
-            for r in rs:
+            n_u, run_pos = pos[ds]
+            counts = np.bincount(rng.integers(0, n_u, n_u), minlength=n_u)
+            for r, rp in zip(rs, run_pos):
+                idx = np.repeat(np.arange(len(rp)), counts[rp])
+                if idx.size == 0:
+                    continue
                 g = _group_metrics(r, idx)
                 for j, name in enumerate(["overall"] + list(BUCKETS)):
                     frames.append(dict(zip(["dataset", "model", "method"], r.key),
