@@ -63,6 +63,7 @@ def figures(df: pd.DataFrame, overall: pd.DataFrame, bucket: pd.DataFrame, cov=N
         fn(ent, os.path.join(out_e, f"{name}.png"))
     if cov is not None:
         matched_coverage_figure(cov)
+    return os.path.join(paths.ROOT, "figures")
 
 
 def matched_coverage_figure(cov: pd.DataFrame):
