@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+\centering
+\caption{Sensitivity to the inference dropout rate (MedMCQA, PubMedBERT; M=15).}
+\label{tab:rev_S2_dropout_rate}
+\begin{tabular}{lllllllllllllll}
+\toprule
+sweep & M & dropout\_p & gate & variant & accuracy & ece & harmful@0.8 & aurc & cov@0.7 & n\_acc@0.7 & selacc@0.7 & risk@cov0.2 & risk@cov0.5 & T \\
+\midrule
+dropout\_rate & 15 & 0.100 & maxprob & MC dropout only & 0.460 & 0.161 & 0.024 & 0.379 & 0.336 & 1238 & 0.658 & 0.275 & 0.419 &  \\
+dropout\_rate & 15 & 0.100 & maxprob & MedBayes-Lite (MC + T) & 0.460 & 0.055 & 0.004 & 0.378 & 0.140 & 514 & 0.792 & 0.273 & 0.415 & 1.739 \\
+dropout\_rate & 15 & 0.100 & entropy & MC dropout only & 0.460 & 0.161 & 0.005 & 0.380 & 0.133 & 490 & 0.800 & 0.274 & 0.421 &  \\
+dropout\_rate & 15 & 0.100 & entropy & MedBayes-Lite (MC + T) & 0.460 & 0.055 & 0.000 & 0.383 & 0.035 & 130 & 0.915 & 0.273 & 0.420 & 1.739 \\
+dropout\_rate & 15 & 0.200 & maxprob & MC dropout only & 0.454 & 0.090 & 0.009 & 0.389 & 0.195 & 717 & 0.732 & 0.271 & 0.427 &  \\
+dropout\_rate & 15 & 0.200 & maxprob & MedBayes-Lite (MC + T) & 0.454 & 0.029 & 0.002 & 0.389 & 0.089 & 328 & 0.820 & 0.267 & 0.423 & 1.437 \\
+dropout\_rate & 15 & 0.200 & entropy & MC dropout only & 0.454 & 0.090 & 0.001 & 0.392 & 0.054 & 200 & 0.855 & 0.278 & 0.436 &  \\
+dropout\_rate & 15 & 0.200 & entropy & MedBayes-Lite (MC + T) & 0.454 & 0.029 & 0.000 & 0.396 & 0.016 & 59 & 0.881 & 0.289 & 0.435 & 1.437 \\
+dropout\_rate & 15 & 0.300 & maxprob & MC dropout only & 0.431 & 0.041 & 0.002 & 0.428 & 0.084 & 310 & 0.761 & 0.334 & 0.460 &  \\
+dropout\_rate & 15 & 0.300 & maxprob & MedBayes-Lite (MC + T) & 0.431 & 0.024 & 0.001 & 0.427 & 0.047 & 173 & 0.827 & 0.331 & 0.461 & 1.232 \\
+dropout\_rate & 15 & 0.300 & entropy & MC dropout only & 0.431 & 0.041 & 0.000 & 0.435 & 0.013 & 47 & 0.872 & 0.334 & 0.470 &  \\
+dropout\_rate & 15 & 0.300 & entropy & MedBayes-Lite (MC + T) & 0.431 & 0.024 & 0.000 & 0.437 & 0.006 & 21 & 0.952 & 0.339 & 0.472 & 1.232 \\
+dropout\_rate & 15 & 0.500 & maxprob & MC dropout only & 0.348 & 0.020 & 0.000 & 0.589 & 0.000 & 0 &  & 0.554 & 0.607 &  \\
+dropout\_rate & 15 & 0.500 & maxprob & MedBayes-Lite (MC + T) & 0.348 & 0.020 & 0.000 & 0.589 & 0.000 & 0 &  & 0.554 & 0.607 & 1.000 \\
+dropout\_rate & 15 & 0.500 & entropy & MC dropout only & 0.348 & 0.020 & 0.000 & 0.591 & 0.000 & 0 &  & 0.541 & 0.612 &  \\
+dropout\_rate & 15 & 0.500 & entropy & MedBayes-Lite (MC + T) & 0.348 & 0.020 & 0.000 & 0.591 & 0.000 & 0 &  & 0.541 & 0.612 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,40 @@
+{"uid": "pubmedqa-22211919", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 80%"}
+{"uid": "pubmedqa-26907557", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-28143468", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-14872327", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-20382292", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-26485091", "samples": ["No", "No", "No", "No", "No", "No", "No", "No", "No", "No"], "verbalized": "No\n\nConfidence: 85%"}
+{"uid": "pubmedqa-27858166", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-24245816", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-17008699", "samples": ["No.", "No", "No.", "No.", "No.", "No.", "No", "No.", "No.", "No."], "verbalized": "No\n\nConfidence: 85%"}
+{"uid": "pubmedqa-15588538", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 50%"}
+{"uid": "pubmedqa-24666444", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes, there is evidence suggesting a \"July effect\" in patients undergoing major cancer surgery, particularly for hematologic complications.\n\n"}
+{"uid": "pubmedqa-22023714", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "No", "Maybe", "Maybe", "Maybe", "No", "Maybe"], "verbalized": "No,\nConfidence: 70%."}
+{"uid": "pubmedqa-15065192", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes, Confidence: 95%."}
+{"uid": "pubmedqa-12805495", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 70%"}
+{"uid": "pubmedqa-23794696", "samples": ["No", "No", "No", "No", "No", "No", "No", "No", "No", "No"], "verbalized": "No\n\nConfidence: 70%"}
+{"uid": "pubmedqa-25752912", "samples": ["No", "No", "No", "No", "No", "No", "No", "No", "No", "No"], "verbalized": "No\n\nConfidence: 80%"}
+{"uid": "pubmedqa-26452334", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 70%\n\nWhile the manual area tracing method provided better reproducibility for certain types of"}
+{"uid": "pubmedqa-15631914", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "No, Confidence: 85%.\n\nThe context provided suggests that the clinical positive axilla may not be an absolute contr"}
+{"uid": "pubmedqa-26222664", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-17279467", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 70%"}
+{"uid": "pubmedqa-21946341", "samples": ["No", "No", "No", "No", "No", "No", "Maybe", "No", "No", "No"], "verbalized": "No,\nConfidence: 80%"}
+{"uid": "pubmedqa-17051586", "samples": ["No", "No", "No", "No", "No", "No", "No", "Maybe", "No", "No"], "verbalized": "No\n\nConfidence: 80%"}
+{"uid": "pubmedqa-19302863", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes, based on the findings that hydroxyproline levels and operation time were significantly better in the subgroups treated with"}
+{"uid": "pubmedqa-19482903", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes, peak oxygen uptake (VO2peak) reflects maximum oxygen uptake (VO2max) in children who have sp"}
+{"uid": "pubmedqa-17502203", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\nConfidence: 70%"}
+{"uid": "pubmedqa-16428354", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-9767546", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 70%"}
+{"uid": "pubmedqa-23899611", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 95%"}
+{"uid": "pubmedqa-8910148", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 70%"}
+{"uid": "pubmedqa-26370095", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes, but with low confidence.\n\nConfidence: 50%"}
+{"uid": "pubmedqa-21123461", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 90%"}
+{"uid": "pubmedqa-26505821", "samples": ["Yes.", "Maybe", "Yes", "Yes", "Yes", "Yes", "Yes.", "Yes", "Yes.", "Yes."], "verbalized": "Yes, biochemical markers of bone turnover are representative of bone histomorphometry in 370 postmenopausal"}
+{"uid": "pubmedqa-24809662", "samples": ["Maybe", "Maybe", "No", "Maybe", "Maybe", "Maybe", "No", "Maybe", "Maybe", "Maybe"], "verbalized": "No\n\nConfidence: 70%"}
+{"uid": "pubmedqa-19913785", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\nConfidence: 70%"}
+{"uid": "pubmedqa-10548670", "samples": ["No", "No", "No", "No", "No", "No", "No", "No", "No", "No"], "verbalized": "No\n\nConfidence: 90%"}
+{"uid": "pubmedqa-20549895", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "No\nConfidence: 85%"}
+{"uid": "pubmedqa-15223725", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-27281318", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-19925761", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\nConfidence: 70%"}
+{"uid": "pubmedqa-23321509", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes, surgical effort still matters.\n\nConfidence: 85%"}

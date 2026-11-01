@@ -1,0 +1,40 @@
+{"uid": "pubmedqa-24964725", "samples": ["Yes", "maybe", "Maybe", "Yes", "Maybe", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 80%"}
+{"uid": "pubmedqa-12068831", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\nConfidence: 60%"}
+{"uid": "pubmedqa-25371231", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\nConfidence: 50%"}
+{"uid": "pubmedqa-12238307", "samples": ["No", "No", "No", "No", "No.", "No", "No", "No", "No", "No."], "verbalized": "No\n\nConfidence: 85%"}
+{"uid": "pubmedqa-16510651", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes\n\nConfidence: 80%"}
+{"uid": "pubmedqa-21256734", "samples": ["No", "No", "No", "No", "No", "No", "No", "No", "No", "No"], "verbalized": "No\n\nConfidence: 85%"}
+{"uid": "pubmedqa-18507507", "samples": ["maybe", "Maybe", "maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "maybe"], "verbalized": "Yes\n\nConfidence: 80%"}
+{"uid": "pubmedqa-21398266", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes, symptoms matter when considering patients for phase I clinical trials.\n\nConfidence: 80%"}
+{"uid": "pubmedqa-19542542", "samples": ["No", "No", "No", "No", "No", "No", "No", "No", "No", "No"], "verbalized": "No\n\nConfidence: 80%"}
+{"uid": "pubmedqa-20530150", "samples": ["No", "No", "Maybe", "No", "No", "No", "No", "No", "No", "Maybe"], "verbalized": "No, Confidence: 80%.\n\nThe context provided indicates that concomitant splenectomy was only undertaken if indicated"}
+{"uid": "pubmedqa-17595200", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 50%"}
+{"uid": "pubmedqa-21618245", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 90%"}
+{"uid": "pubmedqa-25887165", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-18948835", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 80%"}
+{"uid": "pubmedqa-21346501", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-22365295", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 50%"}
+{"uid": "pubmedqa-27216167", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-12963175", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 70%"}
+{"uid": "pubmedqa-25779009", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes\n\nConfidence: 80%"}
+{"uid": "pubmedqa-24652474", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 70%"}
+{"uid": "pubmedqa-21569408", "samples": ["No", "No", "No", "No", "No", "No", "No", "No", "No", "No"], "verbalized": "No\n\nConfidence: 80%"}
+{"uid": "pubmedqa-21481154", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 80%"}
+{"uid": "pubmedqa-25394614", "samples": ["maybe", "maybe", "maybe", "Maybe", "maybe", "maybe", "maybe", "maybe", "maybe", "maybe"], "verbalized": "No\n\nConfidence: 80%"}
+{"uid": "pubmedqa-8262881", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes\n\nConfidence: 80%"}
+{"uid": "pubmedqa-10381996", "samples": ["No", "No", "No", "No", "No", "No", "No", "No", "No", "No"], "verbalized": "No\n\nConfidence: 85%"}
+{"uid": "pubmedqa-15879722", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes, Confidence: 77.8%. \n\nThe study indicates that the Barrett's cytokeratin 7/"}
+{"uid": "pubmedqa-23252468", "samples": ["No", "No", "No", "No", "No", "No", "No", "No", "No", "No"], "verbalized": "No\n\nConfidence: 95%"}
+{"uid": "pubmedqa-7497757", "samples": ["Yes", "yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 80%"}
+{"uid": "pubmedqa-22668852", "samples": ["No", "No", "No", "No", "No", "No", "No", "No", "No", "No"], "verbalized": "No\n\nConfidence: 80%"}
+{"uid": "pubmedqa-24939676", "samples": ["No", "No", "No", "No", "No", "No", "No", "No", "No", "No"], "verbalized": "No\n\nConfidence: 85%"}
+{"uid": "pubmedqa-15539888", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\nConfidence: 70%"}
+{"uid": "pubmedqa-25274085", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes, Confidence: 85%. \n\nThe study indicates that incorporating a genetic SNP score alongside clinical and demographic variables improves"}
+{"uid": "pubmedqa-11759976", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 70%\n\nThe decision to continue offering second-look laparotomy (SLL)"}
+{"uid": "pubmedqa-15125825", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Yes"], "verbalized": "Yes\n\nConfidence: 80%"}
+{"uid": "pubmedqa-25336163", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "No\n\nConfidence: 70%"}
+{"uid": "pubmedqa-20306735", "samples": ["Yes", "Maybe", "Maybe", "Yes", "Yes", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes\n\nConfidence: 80%"}
+{"uid": "pubmedqa-27690714", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 95%"}
+{"uid": "pubmedqa-22440363", "samples": ["No", "No", "No.", "No.", "No", "No", "No", "No.", "No", "No"], "verbalized": "No\n\nConfidence: 85%"}
+{"uid": "pubmedqa-26548832", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\nConfidence: 85%"}
+{"uid": "pubmedqa-27338535", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "No\n\nConfidence: 70%"}

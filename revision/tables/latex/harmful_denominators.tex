@@ -1,0 +1,59 @@
+\begin{table}[htbp]
+\centering
+\caption{harmful@0.8 under three denominators (3-seed pooled).}
+\label{tab:rev_harmful_denominators}
+\begin{tabular}{lllllllllll}
+\toprule
+dataset & model & method & gate & n\_items & n\_high\_severity\_items & n\_accepted\_mean & harmful\_count\_mean & harmful\_per\_total & harmful\_per\_high\_severity\_item & harmful\_per\_accepted \\
+\midrule
+medmcqa & biobert\_medmcqa & base & maxprob & 3683 & 1181 & 1386.000 & 248.000 & 0.067 & 0.210 & 0.179 \\
+medmcqa & biobert\_medmcqa & base & entropy & 3683 & 1181 & 679.000 & 104.000 & 0.028 & 0.088 & 0.153 \\
+medmcqa & biobert\_medmcqa & medbayes\_lite & maxprob & 3683 & 1181 & 18.333 & 0.333 & 0.000 & 0.000 & 0.018 \\
+medmcqa & biobert\_medmcqa & medbayes\_lite & entropy & 3683 & 1181 & 0.333 & 0.000 & 0.000 & 0.000 & 0.000 \\
+medmcqa & biobert\_medmcqa & temp\_scaling & maxprob & 3683 & 1181 & 114.000 & 11.000 & 0.003 & 0.009 & 0.096 \\
+medmcqa & biobert\_medmcqa & temp\_scaling & entropy & 3683 & 1181 & 5.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
+medmcqa & pubmedbert\_medmcqa & base & maxprob & 3683 & 1181 & 1549.000 & 206.000 & 0.056 & 0.174 & 0.133 \\
+medmcqa & pubmedbert\_medmcqa & base & entropy & 3683 & 1181 & 864.000 & 101.000 & 0.027 & 0.086 & 0.117 \\
+medmcqa & pubmedbert\_medmcqa & medbayes\_lite & maxprob & 3683 & 1181 & 167.000 & 9.333 & 0.003 & 0.008 & 0.056 \\
+medmcqa & pubmedbert\_medmcqa & medbayes\_lite & entropy & 3683 & 1181 & 33.667 & 1.000 & 0.000 & 0.001 & 0.030 \\
+medmcqa & pubmedbert\_medmcqa & temp\_scaling & maxprob & 3683 & 1181 & 488.000 & 46.000 & 0.012 & 0.039 & 0.094 \\
+medmcqa & pubmedbert\_medmcqa & temp\_scaling & entropy & 3683 & 1181 & 151.000 & 6.000 & 0.002 & 0.005 & 0.040 \\
+medqa & biobert\_medmcqa & base & maxprob & 973 & 914 & 316.000 & 211.000 & 0.217 & 0.231 & 0.668 \\
+medqa & biobert\_medmcqa & base & entropy & 973 & 914 & 130.000 & 89.000 & 0.091 & 0.097 & 0.685 \\
+medqa & biobert\_medmcqa & medbayes\_lite & maxprob & 973 & 914 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+medqa & biobert\_medmcqa & medbayes\_lite & entropy & 973 & 914 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+medqa & biobert\_medmcqa & temp\_scaling & maxprob & 973 & 914 & 5.000 & 4.000 & 0.004 & 0.004 & 0.800 \\
+medqa & biobert\_medmcqa & temp\_scaling & entropy & 973 & 914 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+medqa & pubmedbert\_medmcqa & base & maxprob & 973 & 914 & 404.000 & 207.000 & 0.213 & 0.226 & 0.512 \\
+medqa & pubmedbert\_medmcqa & base & entropy & 973 & 914 & 200.000 & 97.000 & 0.100 & 0.106 & 0.485 \\
+medqa & pubmedbert\_medmcqa & medbayes\_lite & maxprob & 973 & 914 & 6.333 & 1.667 & 0.002 & 0.002 & 0.263 \\
+medqa & pubmedbert\_medmcqa & medbayes\_lite & entropy & 973 & 914 & 0.667 & 0.000 & 0.000 & 0.000 & 0.000 \\
+medqa & pubmedbert\_medmcqa & temp\_scaling & maxprob & 973 & 914 & 44.000 & 15.000 & 0.015 & 0.016 & 0.341 \\
+medqa & pubmedbert\_medmcqa & temp\_scaling & entropy & 973 & 914 & 4.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
+pubmedqa & bert\_base & base & maxprob & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & bert\_base & base & entropy & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & bert\_base & medbayes\_lite & maxprob & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & bert\_base & medbayes\_lite & entropy & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & bert\_base & temp\_scaling & maxprob & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & bert\_base & temp\_scaling & entropy & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & biobert & base & maxprob & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & biobert & base & entropy & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & biobert & medbayes\_lite & maxprob & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & biobert & medbayes\_lite & entropy & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & biobert & temp\_scaling & maxprob & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & biobert & temp\_scaling & entropy & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & clinicalbert & base & maxprob & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & clinicalbert & base & entropy & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & clinicalbert & medbayes\_lite & maxprob & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & clinicalbert & medbayes\_lite & entropy & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & clinicalbert & temp\_scaling & maxprob & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & clinicalbert & temp\_scaling & entropy & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & pubmedbert & base & maxprob & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & pubmedbert & base & entropy & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & pubmedbert & medbayes\_lite & maxprob & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & pubmedbert & medbayes\_lite & entropy & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & pubmedbert & temp\_scaling & maxprob & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+pubmedqa & pubmedbert & temp\_scaling & entropy & 350 & 312 & 0.000 & 0.000 & 0.000 & 0.000 &  \\
+\bottomrule
+\end{tabular}
+\end{table}

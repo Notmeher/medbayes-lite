@@ -1,0 +1,2 @@
+rater_a,rater_b,weighted_kappa_quadratic,kappa_high_severity
+llm-claude,llm-gpt,0.8007653671370485,0.5728330884845745

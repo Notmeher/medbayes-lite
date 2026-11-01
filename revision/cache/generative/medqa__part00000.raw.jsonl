@@ -1,0 +1,40 @@
+{"uid": "medqa-a94e38d293d2", "samples": ["D", "D", "D", "D", "D", "D", "D", "D", "D", "D"], "verbalized": "D\nConfidence: 95%"}
+{"uid": "medqa-447899346e22", "samples": ["A", "A", "A", "A", "A", "A", "A", "A", "A", "A"], "verbalized": "A\nConfidence: 85%"}
+{"uid": "medqa-3f06fbb38ed2", "samples": ["C", "C", "C", "C", "C", "C", "C", "C", "C", "C"], "verbalized": "C\nConfidence: 85%"}
+{"uid": "medqa-0c3e74d5cf23", "samples": ["A", "A", "A", "A", "A", "A", "A", "A", "A", "A"], "verbalized": "B\nConfidence: 85%"}
+{"uid": "medqa-a1086fb8b3e9", "samples": ["C", "C", "C", "C", "C", "C", "C", "C", "C", "C"], "verbalized": "C\nConfidence: 85%"}
+{"uid": "medqa-6f2b9fc2324f", "samples": ["C", "C", "C", "C", "C", "C", "C", "C", "C", "C"], "verbalized": "C\nConfidence: 80%"}
+{"uid": "medqa-2fc0cc33b833", "samples": ["A", "A", "A", "A", "A", "A", "A", "A", "A", "A"], "verbalized": "A\nConfidence: 70%"}
+{"uid": "medqa-c80f25390f0d", "samples": ["C", "C", "C", "C", "C", "C", "C", "C", "C", "C"], "verbalized": "C\nConfidence: 85%"}
+{"uid": "medqa-b029b66ad5c9", "samples": ["D", "D", "D", "D", "D", "D", "D", "D", "D", "D"], "verbalized": "D\nConfidence: 85%"}
+{"uid": "medqa-22311bf3834d", "samples": ["D", "D", "D", "D", "D", "D", "D", "D", "D", "D"], "verbalized": "D\nConfidence: 85%"}
+{"uid": "medqa-08bcfff5ee2c", "samples": ["A", "A", "A", "A", "A", "A", "A", "A", "A", "A"], "verbalized": "A\nConfidence: 85%"}
+{"uid": "medqa-6d11d97a4c99", "samples": ["D", "D", "D", "D", "D", "D", "D", "D", "D", "D"], "verbalized": "D\nConfidence: 85%"}
+{"uid": "medqa-1165f962f4f1", "samples": ["B", "B", "B", "B", "B", "B", "B", "B", "B", "B"], "verbalized": "B\nConfidence: 80%"}
+{"uid": "medqa-baaa76d66163", "samples": ["D", "D", "D", "D", "D", "D", "D", "D", "D", "D"], "verbalized": "D  \nConfidence: 85%"}
+{"uid": "medqa-ddd95ffe873b", "samples": ["A", "A", "A", "A", "A", "A", "A", "A", "A", "A"], "verbalized": "A\nConfidence: 95%"}
+{"uid": "medqa-a7c254ae368f", "samples": ["B", "B", "B", "B", "B", "B", "B", "B", "B", "B"], "verbalized": "B\nConfidence: 95%"}
+{"uid": "medqa-29885b11b73a", "samples": ["A", "A", "A", "A", "A", "A", "A", "A", "A", "A"], "verbalized": "A\nConfidence: 85%"}
+{"uid": "medqa-0742532fa65d", "samples": ["B", "B", "B", "B", "B", "B", "B", "B", "B", "B"], "verbalized": "B\nConfidence: 85%"}
+{"uid": "medqa-cb6f164786fc", "samples": ["B", "B", "B", "B", "B", "B", "B", "B", "B", "B"], "verbalized": "B\nConfidence: 85%"}
+{"uid": "medqa-439cb1087904", "samples": ["C", "C", "C", "C", "C", "C", "C", "C", "C", "C"], "verbalized": "C\nConfidence: 85%"}
+{"uid": "medqa-f72fa40dcec6", "samples": ["B", "B", "B", "B", "B", "B", "B", "B", "B", "B"], "verbalized": "B\nConfidence: 70%"}
+{"uid": "medqa-883978c5ce9a", "samples": ["C", "C", "C", "C", "C", "C", "C", "C", "C", "C"], "verbalized": "C\nConfidence: 85%"}
+{"uid": "medqa-a999336ea7ea", "samples": ["A", "A", "A", "A", "A", "A", "A", "A", "A", "A"], "verbalized": "A\nConfidence: 70%"}
+{"uid": "medqa-0976a9187b51", "samples": ["D", "D", "D", "D", "D", "D", "D", "D", "D", "D"], "verbalized": "D\nConfidence: 80%"}
+{"uid": "medqa-dcc6ab4134dc", "samples": ["C", "C", "C", "C", "C", "C", "C", "C", "C", "C"], "verbalized": "C\nConfidence: 85%"}
+{"uid": "medqa-44c23785d85a", "samples": ["D", "D", "D", "D", "D", "D", "D", "D", "D", "D"], "verbalized": "D\nConfidence: 85%"}
+{"uid": "medqa-d1b937b6c03b", "samples": ["C", "C", "C", "C", "C", "C", "C", "C", "C", "C"], "verbalized": "C\nConfidence: 85%"}
+{"uid": "medqa-414fe9ce249a", "samples": ["A", "A", "A", "A", "A", "A", "A", "A", "A", "A"], "verbalized": "A\nConfidence: 95%"}
+{"uid": "medqa-69397abf6f04", "samples": ["C", "C", "C", "C", "C", "C", "C", "C", "C", "C"], "verbalized": "C\nConfidence: 95%"}
+{"uid": "medqa-53df84d95192", "samples": ["B", "D", "D", "D", "D", "D", "D", "B", "D", "D"], "verbalized": "D\nConfidence: 80%"}
+{"uid": "medqa-41b5dd605690", "samples": ["D", "D", "D", "D", "D", "D", "D", "D", "D", "D"], "verbalized": "D\nConfidence: 85%"}
+{"uid": "medqa-b7b08b787cc6", "samples": ["D", "D", "D", "D", "D", "D", "D", "D", "D", "D"], "verbalized": "D\nConfidence: 70%"}
+{"uid": "medqa-4feb7b2dad23", "samples": ["D", "D", "D", "D", "D", "D", "D", "D", "D", "D"], "verbalized": "D  \nConfidence: 100%"}
+{"uid": "medqa-f4e15ca8799b", "samples": ["D", "D", "D", "D", "D", "D", "D", "D", "D", "D"], "verbalized": "D\nConfidence: 85%"}
+{"uid": "medqa-ee287cdd2d2b", "samples": ["D", "D", "D", "C", "D", "D", "D", "D", "D", "D"], "verbalized": "D  \nConfidence: 85%"}
+{"uid": "medqa-5f8f4775eb39", "samples": ["D", "D", "D", "D", "D", "D", "D", "D", "D", "D"], "verbalized": "D  \nConfidence: 85%"}
+{"uid": "medqa-38721306023e", "samples": ["D", "D", "D", "D", "D", "D", "D", "D", "D", "D"], "verbalized": "D\nConfidence: 85%"}
+{"uid": "medqa-d2eed9bcbe6c", "samples": ["B", "B", "B", "B", "B", "B", "B", "B", "B", "B"], "verbalized": "B\nConfidence: 85%"}
+{"uid": "medqa-c4b4a8d812f6", "samples": ["A", "A", "A", "A", "A", "A", "A", "A", "A", "A"], "verbalized": "A\nConfidence: 85%"}
+{"uid": "medqa-2872dacd6db2", "samples": ["D", "D", "D", "D", "D", "D", "D", "D", "D", "D"], "verbalized": "D\nConfidence: 85%"}

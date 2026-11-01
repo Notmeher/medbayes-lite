@@ -1,0 +1,40 @@
+{"uid": "pubmedqa-19106867", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\nConfidence: 60%"}
+{"uid": "pubmedqa-11570976", "samples": ["No", "No", "No", "No", "No", "No", "No", "No", "No", "No"], "verbalized": "No\nConfidence: 95%"}
+{"uid": "pubmedqa-22497340", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 50%"}
+{"uid": "pubmedqa-17621202", "samples": ["No", "No", "No", "No", "No", "No", "No", "No", "No", "No"], "verbalized": "No, shaving the incision site does not appear to increase the infection rate after spinal surgery based on the results of this"}
+{"uid": "pubmedqa-25691513", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes, communication disorders can extend to musical messages.\n\nConfidence: 80%"}
+{"uid": "pubmedqa-28127977", "samples": ["No", "No", "No", "No", "No", "No", "No", "No", "No", "No"], "verbalized": "No\n\nConfidence: 80%"}
+{"uid": "pubmedqa-25588461", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes, Confidence: 80%. \n\nTranscranial direct current stimulation (tDCS) appears to be a"}
+{"uid": "pubmedqa-19459018", "samples": ["Maybe", "Maybe", "Maybe", "No", "No", "No", "Maybe", "Maybe", "Maybe", "No"], "verbalized": "No, very high serum CA 19-9 levels are not necessarily a contraindication to pancreaticoduoden"}
+{"uid": "pubmedqa-9427037", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-22427593", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes, normally sighted and visually impaired pedestrians are accurate and reliable in their street crossing decision-making ability when using either vision"}
+{"uid": "pubmedqa-10223070", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\nConfidence: 70%"}
+{"uid": "pubmedqa-24785562", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 80%"}
+{"uid": "pubmedqa-22534881", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "No\n\nConfidence: 60%"}
+{"uid": "pubmedqa-24160268", "samples": ["Maybe", "No", "No", "Maybe", "Maybe", "Maybe", "No", "Maybe", "Maybe", "Maybe"], "verbalized": "No\n\nConfidence: 80%"}
+{"uid": "pubmedqa-18540901", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes\n\nConfidence: 70%"}
+{"uid": "pubmedqa-22564465", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 70%"}
+{"uid": "pubmedqa-25186850", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 60%"}
+{"uid": "pubmedqa-18843057", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\nConfidence: 60%"}
+{"uid": "pubmedqa-25987398", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Yes", "Yes", "Yes", "Maybe"], "verbalized": "Yes\n\nConfidence: 60%"}
+{"uid": "pubmedqa-14978612", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-15530261", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes, screening or surveillance for primary hepatocellular carcinoma with ultrasonography appears to improve the prognosis of patients.\n\nConf"}
+{"uid": "pubmedqa-25311479", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\nConfidence: 70%"}
+{"uid": "pubmedqa-11411430", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes, antral follicle assessment appears to be a better predictor than age and FSH alone for clinical pregnancy rates"}
+{"uid": "pubmedqa-19409117", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes.", "Yes", "Yes"], "verbalized": "Yes, infundibular height can predict the clearance of lower pole calyceal stone after extracorporeal"}
+{"uid": "pubmedqa-9199905", "samples": ["Yes", "Yes", "Yes", "Maybe", "Yes", "Maybe", "Maybe", "Yes", "Yes", "Yes"], "verbalized": "Yes, Confidence: 85%. \n\nThe presence of vertical lines in the distal esophageal mucosa ("}
+{"uid": "pubmedqa-11035130", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 70%"}
+{"uid": "pubmedqa-16968876", "samples": ["Yes", "Yes", "No", "No", "No", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-27184293", "samples": ["Maybe", "Yes", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes, microbial contamination appears to influence the success of hematopoietic cell transplantation outcomes.\n\nConfidence: 80"}
+{"uid": "pubmedqa-16769333", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-26708803", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 80%"}
+{"uid": "pubmedqa-17562682", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\nConfidence: 70%"}
+{"uid": "pubmedqa-15800018", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-27456836", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 90%"}
+{"uid": "pubmedqa-22706226", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-27044366", "samples": ["No", "No", "No", "No", "No", "No", "No", "No", "No", "No"], "verbalized": "No\n\nConfidence: 80%"}
+{"uid": "pubmedqa-18565233", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 50%"}
+{"uid": "pubmedqa-18322741", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-14697414", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes.", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-9792366", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-21900017", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 95%"}

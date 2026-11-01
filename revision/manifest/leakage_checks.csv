@@ -1,0 +1,12 @@
+dataset,check,n
+medmcqa,calibration ∩ test (uid),0
+medmcqa,train ∩ test (uid),0
+medmcqa,duplicate question text within test,0
+medmcqa,test questions found verbatim in HF train split,0
+medqa,calibration ∩ test (uid),0
+medqa,train ∩ test (uid),0
+medqa,duplicate question text within test,0
+medqa,test questions found verbatim in HF train split,0
+pubmedqa,calibration ∩ test (uid),0
+pubmedqa,train ∩ test (uid),0
+pubmedqa,duplicate question text within test,0

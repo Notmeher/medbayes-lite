@@ -1,0 +1,40 @@
+{"uid": "pubmedqa-25277731", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 80%"}
+{"uid": "pubmedqa-18235194", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 50%"}
+{"uid": "pubmedqa-18049437", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\nConfidence: 50%"}
+{"uid": "pubmedqa-24315783", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes, Aripiprazole: a new risk factor for pathological gambling?\n\nConfidence: 75%"}
+{"uid": "pubmedqa-20537205", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 90%"}
+{"uid": "pubmedqa-23177368", "samples": ["No", "No", "No", "No", "No", "No", "No", "No", "No", "No"], "verbalized": "No\n\nConfidence: 80%"}
+{"uid": "pubmedqa-10966943", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "maybe", "maybe", "Maybe", "maybe", "maybe", "Maybe"], "verbalized": "Maybe  \nConfidence: 70%  \n\nThe information provided suggests that in some cases, visual acuity in an"}
+{"uid": "pubmedqa-17113061", "samples": ["No", "No", "No", "No", "No", "No", "No", "No", "No", "No"], "verbalized": "No\n\nConfidence: 70%"}
+{"uid": "pubmedqa-25481573", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 80%"}
+{"uid": "pubmedqa-17489316", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 95%"}
+{"uid": "pubmedqa-19504993", "samples": ["yes", "yes", "yes", "yes", "yes", "yes", "yes", "yes", "yes", "yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-9488747", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "maybe", "Maybe"], "verbalized": "Yes\n\nConfidence: 80%"}
+{"uid": "pubmedqa-24183388", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes, the Hawkins sign may be able to predict necrosis in fractures of the neck of the astragalus.\n\nConf"}
+{"uid": "pubmedqa-14612308", "samples": ["maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "No, PRISM does not strongly predict the length of PICU stay based on the provided data.\n\nConfidence: "}
+{"uid": "pubmedqa-20337202", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 70%"}
+{"uid": "pubmedqa-23361217", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-22694248", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 95%"}
+{"uid": "pubmedqa-18534072", "samples": ["Maybe", "No", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "No\n\nConfidence: 85%"}
+{"uid": "pubmedqa-17919952", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes, Confidence: 80%.\n\nThe study suggests that mechanical factors such as teeth grinding and facial trauma are associated with"}
+{"uid": "pubmedqa-8847047", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 50%"}
+{"uid": "pubmedqa-16432652", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes, it is possible.\n\nConfidence: 90%"}
+{"uid": "pubmedqa-25957366", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "No\n\nConfidence: 85%"}
+{"uid": "pubmedqa-23831910", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-19394934", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\nConfidence: 70%"}
+{"uid": "pubmedqa-18607272", "samples": ["Yes", "Yes", "Yes", "Yes.", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 90%"}
+{"uid": "pubmedqa-25475395", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes, but the correlation varies by age group and specific androgen measured.\n\nConfidence: 70%"}
+{"uid": "pubmedqa-17940352", "samples": ["Yes", "Yes", "Yes", "Yes", "Maybe", "Yes", "Yes", "Maybe", "Yes", "Yes"], "verbalized": "Yes, HER2 immunoreactivity provides prognostic information in locally advanced urothelial carcinoma patients receiving adju"}
+{"uid": "pubmedqa-23806388", "samples": ["Maybe", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes, nomograms designed to predict biochemical recurrence (BCR) do a better job of predicting more clinically relevant prostate cancer"}
+{"uid": "pubmedqa-22990761", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes, Resting heart rate is relevant.\n\nConfidence: 85%"}
+{"uid": "pubmedqa-23690198", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 70%"}
+{"uid": "pubmedqa-26215326", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 90%"}
+{"uid": "pubmedqa-18239988", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-25489696", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-22453060", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-27989969", "samples": ["Maybe", "maybe", "Maybe", "Maybe", "Maybe", "Maybe", "maybe", "Maybe", "Maybe", "maybe"], "verbalized": "No\n\nConfidence: 75%"}
+{"uid": "pubmedqa-21402341", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 70%"}
+{"uid": "pubmedqa-10575390", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 70%"}
+{"uid": "pubmedqa-29112560", "samples": ["Maybe", "Maybe", "maybe", "Maybe", "Maybe", "maybe", "Maybe", "maybe", "Maybe", "Maybe"], "verbalized": "Maybe\nConfidence: 70%"}
+{"uid": "pubmedqa-22227642", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "No\n\nConfidence: 80%"}
+{"uid": "pubmedqa-26578404", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes\nConfidence: 70%"}

@@ -1,0 +1,67 @@
+\begin{table}[htbp]
+\centering
+\caption{MedBayes-Lite response to clinical perturbations (perturbed items only).}
+\label{tab:rev_perturbation_response_mbl_applied}
+\begin{tabular}{llllllllllll}
+\toprule
+dataset & perturbation & family & gate & n\_items & confidence\_drop & confidence\_drop\_ci\_lo & confidence\_drop\_ci\_hi & abstention\_increase@0.7 & flip\_rate & p\_report & responds \\
+\midrule
+medmcqa & remove\_key\_evidence & original & maxprob & 55 & 0.057 & 0.017 & 0.097 & 0.091 & 0.442 & 0.478 & True \\
+medmcqa & remove\_key\_evidence & original & entropy & 55 & 0.076 & 0.034 & 0.123 & 0.036 & 0.442 & 0.069 & True \\
+medmcqa & add\_negation & original & maxprob & 70 & 0.014 & -0.002 & 0.030 & 0.057 & 0.229 & 1.000 & False \\
+medmcqa & add\_negation & original & entropy & 70 & 0.025 & 0.007 & 0.047 & 0.000 & 0.229 & 0.391 & True \\
+medmcqa & add\_contradictory\_symptom & original & maxprob & 300 & 0.034 & 0.022 & 0.046 & 0.033 & 0.343 & < 0.001 & True \\
+medmcqa & add\_contradictory\_symptom & original & entropy & 300 & 0.042 & 0.030 & 0.054 & 0.010 & 0.343 & < 0.001 & True \\
+medmcqa & remove\_lab\_value & original & maxprob & 7 & 0.012 & -0.022 & 0.050 & 0.000 & 0.190 & 1.000 & False \\
+medmcqa & remove\_lab\_value & original & entropy & 7 & 0.006 & -0.010 & 0.021 & 0.000 & 0.190 & 1.000 & False \\
+medmcqa & alter\_numeric\_value & original & maxprob & 51 & -0.003 & -0.011 & 0.006 & 0.020 & 0.157 & 1.000 & False \\
+medmcqa & alter\_numeric\_value & original & entropy & 51 & 0.000 & -0.007 & 0.007 & 0.000 & 0.157 & 1.000 & False \\
+medmcqa & add\_distractor & original & maxprob & 300 & 0.051 & 0.038 & 0.064 & 0.050 & 0.410 & < 0.001 & True \\
+medmcqa & add\_distractor & original & entropy & 300 & 0.062 & 0.048 & 0.078 & 0.020 & 0.410 & < 0.001 & True \\
+medmcqa & vague\_evidence & original & maxprob & 8 & 0.010 & -0.021 & 0.041 & 0.000 & 0.208 & 1.000 & False \\
+medmcqa & vague\_evidence & original & entropy & 8 & -0.005 & -0.035 & 0.017 & 0.000 & 0.208 & 1.000 & False \\
+medmcqa & dose\_tenfold & safety-critical (new) & maxprob & 1 & -0.013 & -0.013 & -0.013 & 0.000 & 0.333 & 1.000 & False \\
+medmcqa & dose\_tenfold & safety-critical (new) & entropy & 1 & -0.007 & -0.007 & -0.007 & 0.000 & 0.333 & 1.000 & False \\
+medmcqa & unit\_swap & safety-critical (new) & maxprob & 2 & 0.012 & 0.009 & 0.014 & 0.000 & 0.000 & 1.000 & True \\
+medmcqa & unit\_swap & safety-critical (new) & entropy & 2 & 0.007 & 0.003 & 0.012 & 0.000 & 0.000 & 1.000 & True \\
+medmcqa & critical\_value & safety-critical (new) & maxprob & 3 & 0.022 & 0.002 & 0.059 & 0.000 & 0.000 & 1.000 & True \\
+medmcqa & critical\_value & safety-critical (new) & entropy & 3 & 0.020 & 0.002 & 0.052 & 0.000 & 0.000 & 1.000 & True \\
+medmcqa & implausible\_value & safety-critical (new) & maxprob & 3 & 0.026 & -0.005 & 0.056 & 0.000 & 0.000 & 1.000 & False \\
+medmcqa & implausible\_value & safety-critical (new) & entropy & 3 & 0.014 & 0.002 & 0.026 & 0.000 & 0.000 & 1.000 & True \\
+medmcqa & add\_contraindication & safety-critical (new) & maxprob & 300 & 0.046 & 0.031 & 0.061 & 0.060 & 0.454 & < 0.001 & True \\
+medmcqa & add\_contraindication & safety-critical (new) & entropy & 300 & 0.057 & 0.040 & 0.072 & 0.013 & 0.454 & < 0.001 & True \\
+medmcqa & negate\_symptom & safety-critical (new) & maxprob & 7 & -0.005 & -0.038 & 0.024 & 0.000 & 0.095 & 1.000 & False \\
+medmcqa & negate\_symptom & safety-critical (new) & entropy & 7 & 0.001 & -0.019 & 0.023 & 0.000 & 0.095 & 1.000 & False \\
+medmcqa & remove\_negation & safety-critical (new) & maxprob & 29 & 0.029 & -0.012 & 0.069 & 0.034 & 0.644 & 1.000 & False \\
+medmcqa & remove\_negation & safety-critical (new) & entropy & 29 & 0.015 & -0.022 & 0.054 & 0.000 & 0.644 & 1.000 & False \\
+medqa & remove\_key\_evidence & original & maxprob & 300 & -0.004 & -0.013 & 0.004 & -0.013 & 0.283 & 1.000 & False \\
+medqa & remove\_key\_evidence & original & entropy & 300 & -0.005 & -0.012 & 0.001 & 0.003 & 0.283 & 1.000 & False \\
+medqa & add\_negation & original & maxprob & 292 & 0.002 & -0.002 & 0.006 & 0.000 & 0.170 & 1.000 & False \\
+medqa & add\_negation & original & entropy & 292 & 0.001 & -0.002 & 0.005 & 0.003 & 0.170 & 1.000 & False \\
+medqa & add\_contradictory\_symptom & original & maxprob & 300 & 0.017 & 0.012 & 0.022 & 0.000 & 0.220 & < 0.001 & True \\
+medqa & add\_contradictory\_symptom & original & entropy & 300 & 0.016 & 0.011 & 0.021 & 0.000 & 0.220 & < 0.001 & True \\
+medqa & remove\_lab\_value & original & maxprob & 171 & 0.005 & 0.000 & 0.010 & 0.000 & 0.172 & 0.702 & True \\
+medqa & remove\_lab\_value & original & entropy & 171 & 0.004 & 0.001 & 0.008 & 0.000 & 0.172 & 0.081 & True \\
+medqa & alter\_numeric\_value & original & maxprob & 295 & -0.000 & -0.000 & 0.000 & 0.000 & 0.014 & 1.000 & False \\
+medqa & alter\_numeric\_value & original & entropy & 295 & -0.000 & -0.000 & 0.000 & 0.000 & 0.014 & 1.000 & False \\
+medqa & add\_distractor & original & maxprob & 300 & 0.027 & 0.021 & 0.034 & 0.013 & 0.280 & < 0.001 & True \\
+medqa & add\_distractor & original & entropy & 300 & 0.028 & 0.022 & 0.034 & 0.000 & 0.280 & < 0.001 & True \\
+medqa & vague\_evidence & original & maxprob & 173 & 0.000 & -0.005 & 0.006 & -0.006 & 0.185 & 1.000 & False \\
+medqa & vague\_evidence & original & entropy & 173 & 0.002 & -0.002 & 0.006 & 0.000 & 0.185 & 1.000 & False \\
+medqa & dose\_tenfold & safety-critical (new) & maxprob & 6 & 0.000 & -0.002 & 0.003 & 0.000 & 0.056 & 1.000 & False \\
+medqa & dose\_tenfold & safety-critical (new) & entropy & 6 & -0.003 & -0.010 & 0.000 & 0.000 & 0.056 & 1.000 & False \\
+medqa & unit\_swap & safety-critical (new) & maxprob & 123 & -0.002 & -0.007 & 0.002 & 0.000 & 0.173 & 1.000 & False \\
+medqa & unit\_swap & safety-critical (new) & entropy & 123 & -0.000 & -0.004 & 0.003 & 0.000 & 0.173 & 1.000 & False \\
+medqa & critical\_value & safety-critical (new) & maxprob & 158 & -0.001 & -0.005 & 0.003 & 0.000 & 0.112 & 1.000 & False \\
+medqa & critical\_value & safety-critical (new) & entropy & 158 & -0.000 & -0.003 & 0.003 & 0.000 & 0.112 & 1.000 & False \\
+medqa & implausible\_value & safety-critical (new) & maxprob & 158 & -0.003 & -0.006 & -0.000 & 0.000 & 0.051 & 1.000 & False \\
+medqa & implausible\_value & safety-critical (new) & entropy & 158 & -0.001 & -0.004 & 0.001 & 0.000 & 0.051 & 1.000 & False \\
+medqa & add\_contraindication & safety-critical (new) & maxprob & 300 & 0.031 & 0.022 & 0.040 & 0.013 & 0.340 & < 0.001 & True \\
+medqa & add\_contraindication & safety-critical (new) & entropy & 300 & 0.030 & 0.023 & 0.038 & 0.000 & 0.340 & < 0.001 & True \\
+medqa & negate\_symptom & safety-critical (new) & maxprob & 48 & 0.000 & -0.007 & 0.007 & 0.000 & 0.139 & 1.000 & False \\
+medqa & negate\_symptom & safety-critical (new) & entropy & 48 & -0.000 & -0.006 & 0.006 & 0.000 & 0.139 & 1.000 & False \\
+medqa & remove\_negation & safety-critical (new) & maxprob & 171 & -0.006 & -0.010 & -0.002 & 0.000 & 0.179 & 0.072 & False \\
+medqa & remove\_negation & safety-critical (new) & entropy & 171 & -0.004 & -0.007 & -0.001 & 0.006 & 0.179 & 0.190 & False \\
+\bottomrule
+\end{tabular}
+\end{table}

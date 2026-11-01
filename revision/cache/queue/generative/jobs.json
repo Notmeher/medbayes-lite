@@ -1,0 +1,12 @@
+[
+ {
+  "id": "generative__qwen2_5_7b",
+  "kind": "generative",
+  "cost": 1,
+  "args": {
+   "n": 200,
+   "n_samples": 10,
+   "batch_size": 8
+  }
+ }
+]

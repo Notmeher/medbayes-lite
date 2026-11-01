@@ -140,3 +140,109 @@ def export_perturbation_review(n_per: int = 20, seed: int = 0) -> str:
     p = paths.out("clinician_kit", "perturbation_review_sheet.csv")
     pd.DataFrame(rows).to_csv(p, index=False)
     return p
+
+
+_REVIEW_COLS = {"R1": "R1_change_is_clinically_meaningful (Y/N)",
+                "R2": "R2_should_a_safe_system_be_less_confident (Y/N)",
+                "R3": "R3_change_creates_dangerous_scenario (Y/N)"}
+
+
+def _item_responses(tau: float = 0.7) -> pd.DataFrame:
+    """Per perturbed item: seed-averaged confidence drop and abstention change."""
+    rows = []
+    for f in sorted(glob.glob(os.path.join(paths.PERTURB, "*.npz"))):
+        meta, a = load_npz(f)
+        ds, seeds = meta["dataset"], meta["seeds"]
+        T_ts = uq.fit_temperature(a["calib_det"], a["calib_labels"])
+        T_mbl = {s: uq.fit_temperature_on_probs(uq.softmax(a[f"calib_mc{s}"], -1).mean(0),
+                                                a["calib_labels"]) for s in seeds}
+        clean = _method_probs(a, "clean", seeds, T_ts, T_mbl)
+        for cond in meta["conditions"]:
+            if cond == "clean":
+                continue
+            pert = _method_probs(a, cond, seeds, T_ts, T_mbl)
+            for method in ("base", "temp_scaling", "medbayes_lite"):
+                for gate in GATES:
+                    sc = np.mean([_score(p, gate) for p in clean[method]], 0)
+                    sp = np.mean([_score(p, gate) for p in pert[method]], 0)
+                    flip = np.mean([c.argmax(-1) != q.argmax(-1)
+                                    for c, q in zip(clean[method], pert[method])], 0)
+                    rows.append(pd.DataFrame({
+                        "review_id": [f"{ds}-{cond}-{i}" for i in range(len(sc))],
+                        "method": method, "gate": gate, "confidence_drop": sc - sp,
+                        "newly_abstains": (sp < tau) & (sc >= tau), "flip": flip}))
+    return pd.concat(rows, ignore_index=True)
+
+
+def analyze_perturbation_reviews(pattern: str = "perturbation_review_*.csv") -> dict:
+    """Join rater judgments (clinician or LLM) of each perturbation with the measured
+    model response: does confidence drop where raters say it should?"""
+    from sklearn.metrics import cohen_kappa_score
+    kit = os.path.dirname(paths.out("clinician_kit", "x"))
+    files = sorted(glob.glob(os.path.join(kit, pattern)))
+    files = [f for f in files if not f.endswith("perturbation_review_sheet.csv")]
+    if not files:
+        print("[perturb-review] no rated perturbation_review_<rater>.csv files")
+        return {}
+    long = []
+    for f in files:
+        rater = os.path.basename(f)[len("perturbation_review_"):-4]
+        d = pd.read_csv(f)
+        for k, col in _REVIEW_COLS.items():
+            long.append(pd.DataFrame({"review_id": d.review_id, "dataset": d.dataset,
+                                      "perturbation": d.perturbation, "rater": rater,
+                                      "question": k, "yes": d[col].astype(str).str.upper()
+                                      .str[:1].map({"Y": 1, "N": 0})}))
+    long = pd.concat(long, ignore_index=True).dropna(subset=["yes"])
+    out = {}
+    out["rates_by_perturbation"] = (long.groupby(["rater", "perturbation", "question"])
+                                    .yes.agg(["mean", "size"]).reset_index()
+                                    .rename(columns={"mean": "frac_yes", "size": "n"}))
+    raters = sorted(long.rater.unique())
+    agree = []
+    wide = long.pivot_table(index=["review_id", "question"], columns="rater", values="yes")
+    for q in _REVIEW_COLS:
+        w = wide.xs(q, level="question")
+        for i, r1 in enumerate(raters):
+            for r2 in raters[i + 1:]:
+                ok = w[[r1, r2]].dropna()
+                agree.append({"question": q, "rater_a": r1, "rater_b": r2, "n": len(ok),
+                              "pct_agree": float((ok[r1] == ok[r2]).mean()),
+                              "kappa": float(cohen_kappa_score(ok[r1], ok[r2]))
+                              if ok[r1].nunique() > 1 or ok[r2].nunique() > 1 else np.nan})
+    out["inter_rater"] = pd.DataFrame(agree)
+    # consensus label: majority of raters (ties -> Y, the conservative choice)
+    cons = (long.groupby(["review_id", "perturbation", "question"]).yes.mean() >= 0.5) \
+        .astype(int).unstack("question").reset_index()
+    resp = _item_responses().merge(cons, on="review_id")
+    rows = []
+    for (method, gate), sub in resp.groupby(["method", "gate"]):
+        for lab, name in ((1, "raters: should be LESS confident (R2=Y)"),
+                          (0, "raters: confidence need not drop (R2=N)")):
+            s = sub[sub.R2 == lab]
+            if len(s):
+                rows.append({"method": method, "gate": gate, "rater_consensus": name,
+                             "n_items": len(s), "mean_confidence_drop": s.confidence_drop.mean(),
+                             "frac_confidence_dropped": float((s.confidence_drop > 0).mean()),
+                             "frac_newly_abstains@0.7": float(s.newly_abstains.mean()),
+                             "flip_rate": s.flip.mean()})
+        s = sub[sub.R3 == 1]
+        if len(s):
+            rows.append({"method": method, "gate": gate,
+                         "rater_consensus": "raters: dangerous/implausible scenario (R3=Y)",
+                         "n_items": len(s), "mean_confidence_drop": s.confidence_drop.mean(),
+                         "frac_confidence_dropped": float((s.confidence_drop > 0).mean()),
+                         "frac_newly_abstains@0.7": float(s.newly_abstains.mean()),
+                         "flip_rate": s.flip.mean()})
+    out["model_response_vs_rater_consensus"] = pd.DataFrame(rows)
+    per = []
+    for (method, gate, pert), sub in resp[resp.R2 == 1].groupby(["method", "gate", "perturbation"]):
+        per.append({"method": method, "gate": gate, "perturbation": pert, "n_items_R2=Y": len(sub),
+                    "frac_confidence_dropped": float((sub.confidence_drop > 0).mean()),
+                    "mean_confidence_drop": sub.confidence_drop.mean(),
+                    "frac_newly_abstains@0.7": float(sub.newly_abstains.mean())})
+    out["appropriate_response_by_perturbation"] = pd.DataFrame(per)
+    for name, df in out.items():
+        df.to_csv(paths.out("clinician_kit", "results", f"perturbation_review_{name}.csv"),
+                  index=False)
+    return out

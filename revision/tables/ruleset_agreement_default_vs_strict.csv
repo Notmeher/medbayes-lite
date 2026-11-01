@@ -1,0 +1,43 @@
+dataset,bucket,n_default,n_strict,n_both,jaccard
+medmcqa,medication_drug_interaction,355,322,322,0.9070422535211268
+medmcqa,diagnosis_differential,253,251,251,0.9920948616600791
+medmcqa,treatment_recommendation,338,330,330,0.9763313609467456
+medmcqa,risk_prognosis,73,73,73,1.0
+medmcqa,lab_biomarker_interpretation,336,268,268,0.7976190476190477
+medmcqa,rare_disease,175,172,172,0.9828571428571429
+medmcqa,ambiguous_symptoms,54,54,54,1.0
+medmcqa,contradictory_evidence,137,79,79,0.5766423357664233
+medmcqa,missing_evidence,27,27,27,1.0
+medmcqa,negation_heavy,18,18,18,1.0
+medmcqa,numeric_vital_lab_heavy,406,406,406,1.0
+medmcqa,high_severity,331,194,194,0.5861027190332326
+medmcqa,low_severity,1960,2146,1960,0.9133271202236719
+medmcqa,ALL (severity changes),1181,1047,1047,
+medqa,medication_drug_interaction,433,421,421,0.9722863741339491
+medqa,diagnosis_differential,570,570,570,1.0
+medqa,treatment_recommendation,374,349,349,0.9331550802139037
+medqa,risk_prognosis,54,54,54,1.0
+medqa,lab_biomarker_interpretation,424,377,377,0.8891509433962265
+medqa,rare_disease,68,67,67,0.9852941176470589
+medqa,ambiguous_symptoms,134,133,133,0.9925373134328358
+medqa,contradictory_evidence,327,279,279,0.8532110091743119
+medqa,missing_evidence,51,51,51,1.0
+medqa,negation_heavy,180,180,180,1.0
+medqa,numeric_vital_lab_heavy,637,637,637,1.0
+medqa,high_severity,469,356,356,0.7590618336886994
+medqa,low_severity,23,28,23,0.8214285714285714
+medqa,ALL (severity changes),914,903,903,
+pubmedqa,medication_drug_interaction,86,80,80,0.9302325581395349
+pubmedqa,diagnosis_differential,83,80,80,0.963855421686747
+pubmedqa,treatment_recommendation,178,172,172,0.9662921348314607
+pubmedqa,risk_prognosis,159,159,159,1.0
+pubmedqa,lab_biomarker_interpretation,142,113,113,0.795774647887324
+pubmedqa,rare_disease,39,36,36,0.9230769230769231
+pubmedqa,ambiguous_symptoms,60,60,60,1.0
+pubmedqa,contradictory_evidence,162,147,147,0.9074074074074074
+pubmedqa,missing_evidence,20,20,20,1.0
+pubmedqa,negation_heavy,70,70,70,1.0
+pubmedqa,numeric_vital_lab_heavy,317,317,317,1.0
+pubmedqa,high_severity,103,64,64,0.6213592233009708
+pubmedqa,low_severity,2,3,2,0.6666666666666666
+pubmedqa,ALL (severity changes),312,299,299,

@@ -1,0 +1,13 @@
+scheme,subset,pearson_r,spearman_r,n_groups,min,max
+original weights,original (overall + bucket rows),0.8804449967918928,0.8026032792575908,739,,
+original weights,bucket rows only,0.8789947243725957,0.8058164798945155,686,,
+uniform (CUS = ECE),original (overall + bucket rows),0.7765862000084035,0.7329339565604657,739,,
+uniform (CUS = ECE),bucket rows only,0.7752757224818249,0.729257466346194,686,,
+binary (3 if >= 2.5 else 1),original (overall + bucket rows),0.8956652888976953,0.8070893932160363,739,,
+binary (3 if >= 2.5 else 1),bucket rows only,0.8948884732328146,0.8106937554967643,686,,
+rank-based,original (overall + bucket rows),0.8924500304047919,0.8188723958201318,739,,
+rank-based,bucket rows only,0.8912977524820254,0.8259259091171874,686,,
+random +/-25% (mean over 20),bucket rows only,0.8759625637421464,,686,0.8618229474157426,0.8861472393512443
+random +/-25% (mean over 20),original (overall + bucket rows),0.8775582443177757,,739,0.8636647756543753,0.8876102992398109
+permuted weights (mean over 20),bucket rows only,0.8048090696771597,,686,0.7386670231045528,0.8697382944860269
+permuted weights (mean over 20),original (overall + bucket rows),0.8074057422751441,,739,0.7421801208964248,0.8719404965059061

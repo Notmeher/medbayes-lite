@@ -1,0 +1,31 @@
+dataset,model,seed,calibrated_on,T_temp_scaling,T_medbayes_lite,n_calib,objective
+medmcqa,biobert_medmcqa,0,medmcqa,2.859435558319092,2.1409645080566406,500,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+medmcqa,biobert_medmcqa,1,medmcqa,2.859435558319092,2.1508171558380127,500,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+medmcqa,biobert_medmcqa,2,medmcqa,2.859435558319092,2.220839738845825,500,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+medmcqa,pubmedbert_medmcqa,0,medmcqa,2.245720386505127,1.400170087814331,500,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+medmcqa,pubmedbert_medmcqa,1,medmcqa,2.245720386505127,1.4320263862609863,500,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+medmcqa,pubmedbert_medmcqa,2,medmcqa,2.245720386505127,1.430064082145691,500,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+medqa,biobert_medmcqa,0,medqa,3.0423874855041504,2.6703529357910156,300,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+medqa,biobert_medmcqa,0,medmcqa,2.859435558319092,2.1409645080566406,500,
+medqa,biobert_medmcqa,1,medqa,3.0423874855041504,2.6075551509857178,300,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+medqa,biobert_medmcqa,1,medmcqa,2.859435558319092,2.1508171558380127,500,
+medqa,biobert_medmcqa,2,medqa,3.0423874855041504,2.6748456954956055,300,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+medqa,biobert_medmcqa,2,medmcqa,2.859435558319092,2.220839738845825,500,
+medqa,pubmedbert_medmcqa,0,medqa,2.80444073677063,2.010658025741577,300,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+medqa,pubmedbert_medmcqa,0,medmcqa,2.245720386505127,1.400170087814331,500,
+medqa,pubmedbert_medmcqa,1,medqa,2.80444073677063,1.998142123222351,300,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+medqa,pubmedbert_medmcqa,1,medmcqa,2.245720386505127,1.4320263862609863,500,
+medqa,pubmedbert_medmcqa,2,medqa,2.80444073677063,1.969109296798706,300,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+medqa,pubmedbert_medmcqa,2,medmcqa,2.245720386505127,1.430064082145691,500,
+pubmedqa,bert_base,0,pubmedqa,1.1285240650177002,1.04961097240448,150,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+pubmedqa,bert_base,1,pubmedqa,1.0650339126586914,1.0527772903442383,150,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+pubmedqa,bert_base,2,pubmedqa,1.077757477760315,1.0692477226257324,150,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+pubmedqa,biobert,0,pubmedqa,1.0744680166244507,1.0392180681228638,150,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+pubmedqa,biobert,1,pubmedqa,1.0738849639892578,1.1022926568984985,150,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+pubmedqa,biobert,2,pubmedqa,1.1272382736206055,1.1181284189224243,150,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+pubmedqa,clinicalbert,0,pubmedqa,1.1391278505325317,1.0506953001022339,150,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+pubmedqa,clinicalbert,1,pubmedqa,1.004145860671997,1.0545305013656616,150,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+pubmedqa,clinicalbert,2,pubmedqa,1.1518584489822388,1.152936339378357,150,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+pubmedqa,pubmedbert,0,pubmedqa,1.1066420078277588,1.0151082277297974,150,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+pubmedqa,pubmedbert,1,pubmedqa,1.113600254058838,1.0442399978637695,150,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"
+pubmedqa,pubmedbert,2,pubmedqa,1.11747145652771,1.0076512098312378,150,"NLL, LBFGS lr=0.01 max_iter=200; TS on logits, MBL on log of MC-averaged probabilities"

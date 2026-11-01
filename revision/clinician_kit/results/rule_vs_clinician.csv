@@ -1,0 +1,6 @@
+comparison,spearman_rho,high_sev_kappa,high_sev_precision (rule PPV),high_sev_recall (rule sensitivity),rule_false_positive_rate,n_items
+rule severity vs clinician consensus,0.5127469681438254,0.10340226817878584,0.23493975903614459,0.975,0.7470588235294118,210.0
+rule cutoff 1.5 vs clinician >= 4,,0.07547169811320764,0.2222222222222222,1.0,,
+rule cutoff 2.0 vs clinician >= 4,,0.07547169811320764,0.2222222222222222,1.0,,
+rule cutoff 2.5 vs clinician >= 4,,0.10340226817878584,0.23493975903614459,0.975,,
+rule cutoff 3.0 vs clinician >= 4,,0.1409788166544923,0.2534246575342466,0.925,,

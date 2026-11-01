@@ -1,0 +1,40 @@
+{"uid": "medmcqa-58d38c9d-0440-4077-a581-e86b63ec4ecd", "samples": ["B", "B", "B", "B", "B", "B", "B", "B", "B", "B"], "verbalized": "B\nConfidence: 80%"}
+{"uid": "medmcqa-2639d0ba-ef15-4ba4-92fe-ee27b5758fbf", "samples": ["B", "B", "B", "B", "B", "B", "B", "B", "B", "B"], "verbalized": "B\nConfidence: 80%"}
+{"uid": "medmcqa-2674faba-e6d7-4790-b13e-97c597408919", "samples": ["B", "B", "B", "B", "B", "B", "B", "B", "B", "B"], "verbalized": "B\nConfidence: 85%"}
+{"uid": "medmcqa-45f40e28-6c0a-4685-a936-8b993f3d8220", "samples": ["C", "C", "C", "C", "C", "C", "C", "C", "C", "C"], "verbalized": "C\nConfidence: 50%"}
+{"uid": "medmcqa-8105a0cd-88aa-4c17-9535-7a864b445264", "samples": ["C", "C", "C", "C", "C", "C", "C", "C", "C", "C"], "verbalized": "C\nConfidence: 85%"}
+{"uid": "medmcqa-8c968c9b-35b1-4394-959a-fe3c80e283e5", "samples": ["C", "A", "A", "A", "C", "A", "A", "A", "A", "C"], "verbalized": "A\nConfidence: 80%"}
+{"uid": "medmcqa-673a0bbe-b4d8-46bb-83b0-e01658f9f22f", "samples": ["A", "A", "A", "A", "A", "A", "A", "A", "A", "A"], "verbalized": "B\nConfidence: 80%"}
+{"uid": "medmcqa-8b3e9e1d-8571-49ef-a5ef-806c18ad079e", "samples": ["C", "C", "C", "C", "C", "C", "C", "C", "C", "C"], "verbalized": "C\nConfidence: 100%"}
+{"uid": "medmcqa-9c1caee2-628f-4a80-b55e-8480760cb634", "samples": ["D", "D", "D", "D", "D", "D", "D", "D", "D", "D"], "verbalized": "D\nConfidence: 80%"}
+{"uid": "medmcqa-b0851fb1-a52d-49f5-bfd3-ae48a58c060a", "samples": ["C", "C", "C", "C", "C", "C", "C", "C", "C", "C"], "verbalized": "B\nConfidence: 80%"}
+{"uid": "medmcqa-6bce210a-7174-4c76-b1f0-9bc3f5c835fc", "samples": ["A", "A", "A", "A", "A", "A", "A", "A", "A", "A"], "verbalized": "A\nConfidence: 80%"}
+{"uid": "medmcqa-5a49f825-bf30-48d5-a10d-5bf1a3f5dd1c", "samples": ["A", "A", "A", "A", "A", "A", "A", "A", "A", "A"], "verbalized": "A\nConfidence: 85%"}
+{"uid": "medmcqa-b771df48-ce3a-4e58-9dc8-54a42ee0e025", "samples": ["C", "C", "C", "C", "C", "C", "C", "C", "C", "C"], "verbalized": "C\nConfidence: 80%"}
+{"uid": "medmcqa-c4bcd30a-daa7-4da1-9316-83c2cbb64532", "samples": ["C", "C", "C", "C", "C", "C", "C", "C", "C", "C"], "verbalized": "C\nConfidence: 80%"}
+{"uid": "medmcqa-006fea5f-8d1c-489b-9ea6-1028a64484ab", "samples": ["B", "B", "B", "B", "B", "B", "B", "B", "B", "B"], "verbalized": "B\nConfidence: 100%"}
+{"uid": "medmcqa-d3349274-203b-4673-989c-ec86e66bcbab", "samples": ["A", "A", "A", "A", "A", "A", "A", "A", "A", "A"], "verbalized": "A\nConfidence: 100%"}
+{"uid": "medmcqa-4df0486d-1aba-4df0-9a1f-fd86bb8acc9a", "samples": ["B", "B", "B", "B", "B", "B", "B", "B", "B", "B"], "verbalized": "B\nConfidence: 80%"}
+{"uid": "medmcqa-e1eb342e-fe1e-49b1-a9d7-f8400b419aa6", "samples": ["C", "C", "C", "C", "C", "C", "C", "C", "C", "C"], "verbalized": "C\nConfidence: 80%"}
+{"uid": "medmcqa-be168ef1-fee0-4f80-9c60-6259e78b56b9", "samples": ["C", "B", "C", "B", "B", "B", "B", "B", "B", "C"], "verbalized": "B\nConfidence: 80%"}
+{"uid": "medmcqa-58194611-8ffd-4405-83b2-f8e5798b095d", "samples": ["D", "D", "D", "D", "D", "D", "A", "D", "D", "D"], "verbalized": "D\nConfidence: 80%"}
+{"uid": "medmcqa-e8f48ed7-e417-422a-acde-9f7cb2c25416", "samples": ["C", "C", "C", "C", "C", "C", "C", "C", "C", "C"], "verbalized": "C\nConfidence: 80%"}
+{"uid": "medmcqa-da2078b0-6ce5-4ba3-82f2-7b145665be2b", "samples": ["D", "D", "D", "D", "D", "D", "D", "D", "D", "D"], "verbalized": "D  \nConfidence: 80%"}
+{"uid": "medmcqa-e4610f09-b587-47c8-99ff-c8967f481322", "samples": ["A", "A", "A", "A", "A", "A", "A", "A", "A", "A"], "verbalized": "B\nConfidence: 85%"}
+{"uid": "medmcqa-82f0f5d7-996b-49cc-8c8c-b9ff7cb35ecc", "samples": ["D", "D", "D", "A", "A", "A", "A", "D", "D", "D"], "verbalized": "D\nConfidence: 85%"}
+{"uid": "medmcqa-11efa366-1d2d-48a8-a247-a362a0447140", "samples": ["C", "C", "C", "C", "C", "C", "C", "C", "C", "C"], "verbalized": "C\nConfidence: 80%"}
+{"uid": "medmcqa-8ba2ca7c-9ae4-4771-9e9c-0e44250ca6b5", "samples": ["D", "D", "D", "D", "D", "D", "D", "D", "D", "D"], "verbalized": "D  \nConfidence: 100%"}
+{"uid": "medmcqa-3592f545-8b31-4f41-9ccc-89eb67bc818a", "samples": ["A", "A", "A", "A", "A", "A", "A", "A", "A", "A"], "verbalized": "A\nConfidence: 80%"}
+{"uid": "medmcqa-25357342-dfb9-4828-a49e-20f3701eb211", "samples": ["B", "B", "B", "B", "B", "B", "B", "B", "B", "B"], "verbalized": "B\nConfidence: 80%"}
+{"uid": "medmcqa-38810794-2735-4239-b36f-d9a509a2997f", "samples": ["C", "C", "C", "C", "C", "C", "C", "C", "C", "C"], "verbalized": "C\nConfidence: 100%"}
+{"uid": "medmcqa-3419bb2a-2a24-4ddc-b217-ee00b981afeb", "samples": ["A", "A", "A", "A", "A", "A", "A", "A", "A", "A"], "verbalized": "A\nConfidence: 80%"}
+{"uid": "medmcqa-1bb2cc45-79b6-45f8-add8-e6832e5090f0", "samples": ["D", "D", "D", "D", "D", "D", "D", "D", "D", "D"], "verbalized": "D\nConfidence: 80%"}
+{"uid": "medmcqa-db9a6989-4a10-421f-9808-ca852c6f64e6", "samples": ["D", "D", "D", "D", "D", "D", "D", "D", "D", "D"], "verbalized": "D\nConfidence: 100%"}
+{"uid": "medmcqa-c5b472d1-468e-437e-97fc-9b1c2411af53", "samples": ["A", "A", "A", "A", "A", "A", "A", "A", "A", "A"], "verbalized": "A\nConfidence: 100%"}
+{"uid": "medmcqa-153cdf4a-8f6c-4478-8af5-2ef9d7a111b2", "samples": ["A", "A", "A", "A", "A", "A", "A", "A", "A", "A"], "verbalized": "A\nConfidence: 85%"}
+{"uid": "medmcqa-97028381-fe2a-4c81-9f67-b3125061d7ae", "samples": ["B", "B", "B", "B", "B", "B", "B", "B", "B", "B"], "verbalized": "B\nConfidence: 80%"}
+{"uid": "medmcqa-3bd3eaf4-a529-4b2a-8d98-79249b580503", "samples": ["B", "B", "B", "B", "B", "B", "B", "B", "B", "B"], "verbalized": "B\nConfidence: 80%"}
+{"uid": "medmcqa-e6ba5355-f5fe-4095-9b21-1bf140122c8f", "samples": ["B", "B", "B", "B", "B", "B", "B", "B", "B", "B"], "verbalized": "B\nConfidence: 80%"}
+{"uid": "medmcqa-19567e6c-e0f7-4201-816d-23b58786f586", "samples": ["A", "A", "A", "A", "A", "A", "A", "A", "A", "A"], "verbalized": "A\nConfidence: 85%"}
+{"uid": "medmcqa-6920ce2b-f9c9-49aa-9e6e-c94aeb13e709", "samples": ["B", "B", "B", "B", "B", "B", "B", "B", "B", "B"], "verbalized": "B  \nConfidence: 80%"}
+{"uid": "medmcqa-b0c6997a-bf16-4f7c-8c44-7a3504e0131b", "samples": ["A", "A", "A", "A", "A", "A", "A", "A", "A", "A"], "verbalized": "A\nConfidence: 80%"}

@@ -1,0 +1,1076 @@
+rating_id,question,options,severity_if_wrong,cat_medication_drug_interaction,cat_diagnosis_differential,cat_treatment_recommendation,cat_risk_prognosis,cat_lab_biomarker_interpretation,cat_rare_disease,cat_ambiguous_symptoms,cat_contradictory_evidence,cat_missing_evidence,cat_negation_heavy,cat_numeric_vital_lab_heavy,cat_high_severity,comments
+R0000,Biopsy of a clinically suspicious lesion is negative. The most appropriate treatment is,"A. Tell patient no malignancy
+B. Repeat the biopsy
+C. Observe the patient for twelve months
+D. Observe the patient for three months",4,0,1,1,0,0,0,0,1,0,0,0,0,"Accepting a negative biopsy of a clinically suspicious lesion instead of repeating it (option B) risks a false-negative result and a delayed cancer diagnosis, which can cause serious harm."
+R0001,"A 35-year-old man returns to the clinic to follow up for his chronic stomach pain. At the last visit a few months ago, he explained that he had been experiencing discomfort in his upper abdomen for awhile. He had never vomited up any blood and had not had any substantial weight loss. He did not take any medications, did not smoke, and had no family history of gastric cancer. At that time, the doctor empirically started him on a proton pump inhibitor (PPI). Today, despite the PPI, the patient says he is still experiencing discomfort. Hearing this, the doctor decides to order a urease breath test. What is the most likely cause of this patient's chronic stomach pain?","A. Gastroesophgeal sphincter dysfunction
+B. Nonsteroidal anti-inflammatory drugs
+C. Heliobacter pylori infection
+D. Excessive gastrin",2,0,1,0,0,0,0,0,0,0,1,0,0,"This is a low-acuity outpatient dyspepsia case pointing to H. pylori (no NSAID use, no alarm features), and misattributing the cause would only delay appropriate eradication therapy with minor risk of harm."
+R0002,"A 30-year-old African American woman comes to the physician for the evaluation of a dry cough and chest discomfort for the past 3 days. During this period, the patient has had headaches, muscle aches, joint pain, fever, and chills. Ten days ago, she was hiking with her family in Mississippi. The patient has asthma that is treated with an albuterol inhaler. Her mother has a lung disease treated with methotrexate. The patient has smoked one pack of cigarettes daily for the past 10 years. Her temperature is 38°C (100.4°F). Physical examination shows slight wheezes throughout both lung fields. Laboratory studies and urinalysis are positive for polysaccharide antigen. Bronchoalveolar lavage using silver/PAS-staining shows macrophages filled with a dimorphic fungus with septate hyphae. Which of the following is the most likely cause of this patient's symptoms?","A. Legionella pneumophila infection
+B. Pneumocystis pneumonia
+C. Histoplasma capsulatum infection
+D. Blastomyces dermatitidis infection",3,0,1,0,0,1,0,1,0,0,0,0,0,"This is a diagnostic question about acute pulmonary histoplasmosis, signaled by Mississippi exposure, urine polysaccharide antigen, and yeast-filled macrophages, with distractors such as the mother's sarcoidosis and the patient's asthma and smoking; misdiagnosis could delay appropriate antifungal therapy, though acute histoplasmosis is often self-limited, so harm is moderate."
+R0003,"A 7-year-old girl is brought to the physician by her mother for a well-child examination. The mother reports that she had her first menstrual period 1 week ago. She has no history of serious illness. Immunizations are up-to-date. Physical examination shows Tanner stage 3 breast development and pubic hair. Without treatment, this patient is at greatest risk for which of the following as an adult?","A. Delayed skeletal maturity
+B. Short stature
+C. Genu varum
+D. Coarse facial features",2,0,1,0,1,0,0,0,0,0,0,0,0,"This asks about the long-term complication of untreated central precocious puberty (short adult stature from early epiphyseal closure); a wrong answer could mislead counseling or delay treatment, but the harm would be non-acute and modest."
+R0004,"A 70-year-old man with a history of hypertension and atrial fibrillation comes to the physician for shortness of breath with mild exertion, progressive weakness, and a dry cough that has persisted for 6 months. He has smoked a pack of cigarettes daily for 45 years. His medications include warfarin, enalapril, and amiodarone. His pulse is 85/min and irregularly irregular. Physical examination shows enlarged fingertips and markedly curved nails. A CT scan of the chest shows clustered air spaces and reticular opacities in the basal parts of the lung. Which of the following is the most likely underlying mechanism of this patient's dyspnea?","A. Chronic airway inflammation
+B. Bronchial hyperresponsiveness and obstruction
+C. Pleural scarring
+D. Excess collagen deposition in the extracellular matrix of the lung",3,1,1,0,0,0,0,0,0,0,0,0,0,"The question asks for the mechanism of amiodarone-induced pulmonary fibrosis (honeycombing, clubbing; answer D), and misattributing it to COPD could mean continuing a fibrosis-inducing drug, causing moderate but not acute harm."
+R0005,"In multirooted teeth, formation of multiple roots is due to presence of:","A. Epithelial diaphragm
+B. Cell rests of Malassez
+C. Toot bud division or bell stage
+D. None of the above",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic dental embryology fact (the epithelial diaphragm of Hertwig's root sheath determines root number) with no direct clinical decision-making, so a wrong answer poses negligible patient harm."
+R0006,"A 24-year-old woman delivers a baby at term. The Apgar counts are 9 and 10 at 1 and 5 minutes, respectively. Thirty minutes after delivery, the mother’s blood pressure drops to 80/60 mm Hg and her pulse is 124/min. On physical examination, her distal extremities are clammy and cold, and the uterus is boggy. Aggressive fluid resuscitation is initiated. After administering 4 units of IV fluids and 4 units of whole blood, her vitals stabilize. The next morning, she says she is unable to lactate when she tries to breastfeed her child. Which of the following is the most likely cause of the failure of lactation in this patient?","A. Pituitary tumor
+B. Remains of placenta in uterus
+C. Pituitary infarction
+D. Pituitary hemorrhage",3,0,1,0,0,0,1,0,0,0,0,1,1,"Recognizing Sheehan syndrome (postpartum pituitary infarction) after hemorrhagic shock matters because missing it can delay hormone replacement, especially glucocorticoids, risking adrenal crisis, though the immediate question concerns lactation failure."
+R0007,Inorganic component of bone is:,"A. 35%
+B. 45%
+C. 85%
+D. 65%",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic histology fact recall question (bone is about 65% inorganic mineral), so a wrong answer has no direct bearing on patient care."
+R0008,"A 47-year-old man presents to his family physician with a sudden onset of severe pain and redness in his eyes that started this morning. He is having difficulty seeing properly and is extremely worried about losing his vision. Further history reveals that he has had progressive lower back pain for over 2 months now. The pain is usually at its worst in the morning, but it remains throughout the day. It gets better with movement, however, so he tends to do some light exercises every day. He also has heel pain and feels significant pressure while walking. Laboratory analysis reveals increased ESR and CRP serum levels. Which of the following would most likely be seen in this patient?","A. Dry mouth
+B. Malabsorption
+C. Aortic regurgitation
+D. Hemochromatosis",2,0,1,0,1,0,0,0,0,0,0,0,0,"The vignette describes ankylosing spondylitis with acute anterior uveitis, and the question asks for an associated extra-articular manifestation (aortic regurgitation), so an error mainly risks missing a slowly progressive complication rather than causing immediate harm."
+R0009,"A 21-year-old man is brought to the emergency department 30 minutes after being found unconscious in his apartment by his mother. On arrival, he is unable to provide history. The mother reports that there is no history of serious illness in the family. The patient appears drowsy and dehydrated. His temperature is 38.5°C (101.3°F), pulse is 110/min, and blood pressure is 170/100 mm Hg. Examination shows several track marks on his forearms and large contusions over his forehead, legs, and back. There is blood coming from the mouth. The patient is catheterized and tea-colored urine is drained. Urinalysis shows:
+Urine
+pH 5.8
+Specific gravity 1.045
+Blood 3+
+Glucose 3+
+Proteins 1+
+Ketones 1+
+RBC none
+WBC 0-1/hpf
+Urine toxicology is positive for opiates and cocaine. Intravenous fluids and sodium nitroprusside drip are started. The patient is most likely to have which of the following?""","A. Low serum potassium
+B. Low blood urea nitrogen
+C. Elevated serum calcium
+D. Elevated serum creatine kinase",4,0,1,0,1,1,0,0,0,0,0,1,1,"Failing to recognize cocaine-associated rhabdomyolysis (heme-positive urine without RBCs, elevated CK) in an unconscious, hyperthermic, hypertensive patient could delay aggressive fluid therapy and monitoring for hyperkalemia and acute kidney injury, causing serious harm."
+R0010,What is the rise of blood flow if the radius of blood vessels is increased by 50%?,"A. 5 times
+B. 10 times
+C. 20 times
+D. 100 times",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic physiology calculation (Poiseuille's law: flow ∝ r⁴, so 1.5⁴ ≈ 5-fold) with no direct patient-management consequence, so an incorrect answer would cause negligible clinical harm."
+R0011,"14 year old child with blindness, sensorineural hearing loss, progressive hematuria, hypeension with similar family history in father","A. Alpo syndrome
+B. Goldenhar syndrome
+C. Goodpasture syndrome
+D. Nager syndrome",3,0,1,0,0,0,1,0,0,0,0,0,0,"Familial hematuria with progressive renal disease, sensorineural hearing loss and ocular involvement points to Alport syndrome; misdiagnosis could delay renoprotective therapy, genetic counseling and family screening, or lead to inappropriate immunosuppression if confused with Goodpasture syndrome."
+R0012,"A triad of seizure, mental retardation and sebaceous adenoma is seen in –","A. Congenital syphilis
+B. Tuberous sclerosis
+C. Toxoplasmosis
+D. Hypothyroidism",2,0,1,0,0,0,1,0,0,0,0,0,0,"This is a recall question about the classic Vogt triad of tuberous sclerosis, a rare genetic condition; misidentifying it would mainly delay diagnosis and screening rather than cause acute harm."
+R0013,"A 41-year-old man presents to his primary care provider with abdominal pain. He says that the pain “comes and goes” throughout the day and usually lasts 20-30 minutes per episode. He can point to the spot 1-2 inches above the umbilicus where he feels the pain. He denies any feeling of regurgitation or nighttime cough but endorses nausea. He reports that he used to eat three large meals per day but has found that eating more frequently improves his pain. He tried a couple pills of ibuprofen with food over the past couple days and thinks it helped. He has gained four pounds since his past appointment three months ago. The patient denies any diarrhea or change in his stools. He has no past medical history. He drinks 5-6 beers on the weekend and has a 20 pack-year smoking history. He denies any family history of cancer. On physical exam, he is tender to palpation above the umbilicus. Bowel sounds are present. A stool guaiac test is positive. The patient undergoes endoscopy with biopsy to diagnose his condition.
+
+Which of the following is most likely to be found on histology?","A. Mucosal defect in the stomach
+B. Urease-producing organism in the small intestine
+C. PAS-positive material in the small intestine
+D. Crypt abscesses in the large intestine",2,0,1,0,0,0,0,0,0,0,1,0,0,"This classic duodenal ulcer vignette points to urease-producing H. pylori on biopsy; a wrong answer could delay eradication therapy, but the harm is usually minor, recoverable and caught on follow-up."
+R0014,"Please refer to the summary above to answer this question
+The authors of the study have decided to conduct a follow-up analysis on their data. They decide to stratify their results by CD4+T-lymphocyte count at the time of diagnosis. Among patients with CD4+ cell counts below 200/mm3, cART adherence was a significant predictor of DLBCL risk (RR = 0.52, p = 0.01). However, among patients with CD4+ cell counts above 200/mm3, no relationship was found between DLBCL risk and cART adherence (RR = 0.96, p = 0.36). Which of the following explains for the difference observed between the two strata?""","A. Poor generalizability
+B. Stratified sampling
+C. Random error
+D. Effect modification",1,0,0,0,0,0,0,0,0,1,0,1,0,"This is a biostatistics/epidemiology concept question (effect modification) with no direct patient-care decision, so a wrong answer carries negligible clinical harm; it refers to a summary that is not provided and relies on reading relative risks and p-values."
+R0015,"A 4-year-old girl is brought to the emergency department with a persistent cough, fever, and vomiting. The past year the child has been admitted to the hospital 3 times with pneumonia. For the past 1 week, the child has been experiencing thick purulent cough and says that her chest feels ‘heavy’. Her stools have been loose and foul-smelling over the past week. Her parents are also concerned that she has not gained much weight due to her frequent hospital visits. She was born at 39 weeks gestation via spontaneous vaginal delivery and is up to date on all vaccines and is meeting all developmental milestones. On physical exam, the temperature is 39.1°C (102.4°F). She appears lethargic and uncomfortable. Crackles are heard in the lower lung bases, with dullness to percussion. A small nasal polyp is also present on inspection. Which of the following is the most likely cause for the girl’s symptoms?","A. Dysfunction in a transmembrane regulator
+B. Inefficient breakdown of leucine, isoleucine, and valine
+C. Dysfunction in the motility of respiratory cilia
+D. Deficiency in lymphocytic activity",3,0,1,0,0,0,1,0,0,0,0,0,0,"The classic cystic fibrosis presentation (recurrent pneumonia, steatorrhea, failure to thrive, nasal polyps) must be distinguished from primary ciliary dyskinesia and immunodeficiency, and misdiagnosis would delay CFTR-directed care and pancreatic enzyme therapy, causing moderate harm."
+R0016,"A 39-year-old man is brought to the physician by his wife because of personality changes over the past year. He has become increasingly irritable, loud, aggressive, and impulsive. His wife also reports jerky movements of his limbs and trunk for the past few months. His father had dementia in his mid-40s, but the details of his condition are unclear. The patient appears restless. Examination shows irregular movements of the extremities and twitching of the face and tongue. Mental status examination shows impaired memory. This patient's condition is most likely associated with which of the following changes on MRI?","A. Reduced hippocampal volume
+B. Multiple cortical and subcortical infarctions
+C. Degeneration of the frontal and temporal lobes
+D. Atrophy of the striatum",3,0,1,0,0,0,1,0,0,0,0,0,0,"This is a classic Huntington disease presentation (caudate/striatal atrophy), and confusing it with frontotemporal, vascular or Alzheimer dementia would mislead diagnostic workup and genetic counseling, though the harm is not acutely life-threatening."
+R0017,"A 36-year-old woman comes to the clinic because of tearing and a foreign body sensation in her eyes bilaterally, which has gradually worsened over the last several weeks. She also notes having occasional palpitations, nervousness, sweating, and heat intolerance. Her past medical history is unremarkable. She reports a 20-pack-year smoking history and is currently a daily smoker. Physical examination shows an anxious, trembling woman. She has eyelid retraction bilaterally, with an inability to fully close her eyes. Her extraocular motility is limited on upgaze. There is no thyromegaly, and no thyroid nodules are noted. Laboratory studies reveal a thyroid-stimulating hormone level of 0.1 μU/mL and total T4 of 42 μg/dL. Thyroid-stimulating immunoglobulin is positive. CT scan of the orbits shows proptosis and marked enlargement of the extraocular muscle with sparing of the tendons. Which of the following would most likely transiently worsen this patient’s eye symptoms?","A. External orbital radiation
+B. Selenium supplementation
+C. Systemic corticosteroids
+D. Treatment with radioactive iodine",3,1,0,1,1,0,0,0,0,0,0,0,0,"Missing that radioactive iodine can transiently worsen active Graves orbitopathy, especially in a smoker, could lead to RAI being given without steroid prophylaxis and cause significant, potentially sight-threatening eye progression."
+R0018,Radiation effect blood supply because of,"A. Anemia
+B. Endarteritis of small blood vessels
+C. Infection
+D. All of the above",2,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic radiobiology fact recall (radiation causes obliterative endarteritis of small vessels, reducing blood supply), and a wrong answer would have minimal direct impact on patient management."
+R0019,A 27-year-old female presented to OPD of infeility clinic. She was prescribed bromocriptine. What could be the possible reason?,"A. Hyperprolactinemia
+B. Polycystic ovarian disease
+C. Hypogonadotropic hypogonadism
+D. Pelvic inflammatory disease",2,1,1,1,0,0,0,0,0,1,0,0,0,"This is a simple recall question linking bromocriptine to hyperprolactinemia-related infertility; a wrong answer could lead to an inappropriate drug or missed diagnosis, but the harm would be minor and non-emergent."
+R0020,"A 16-year-old female presents to her physician’s office after noticing a round lump in her left breast 2 months ago. She reports that the lump seemed to enlarge and became tender just preceding her last 2 menses. It is otherwise painless, and the patient denies any discharge or skin changes. She has no past medical history but her grandmother, age 72, was just diagnosed with invasive ductal carcinoma of the breast. The patient is an avid softball player at her high school and denies alcohol, smoking, or illicit drug use. On exam, the breasts appear symmetric and normal. A 3-cm round, mobile mass is palpated in the upper outer quadrant of the left breast. There is slight tenderness to deep palpation of the mass. There is no axillary lymphadenopathy on either side. Which of the following is the most likely outcome of this patient’s condition?","A. This mass will decrease in size if the patient starts oral contraceptives
+B. This mass slightly increases this patient’s risk of breast cancer in the future
+C. This mass will most likely decrease in size or disappear over time
+D. If this mass grows rapidly to greater than 5 cm, radiation and chemotherapy are indicated",2,0,1,0,1,0,0,0,0,0,0,0,0,"This is a classic fibroadenoma in an adolescent that usually regresses or disappears over time, so a wrong answer could cause unnecessary anxiety, procedures, or inappropriate hormonal or oncologic treatment, but direct harm is limited."
+R0021,Dynamic creep is the,"A. Continuing alloying between silver-tin alloy and mercury during the life of restoration
+B. Deformation of set amalgam during function
+C. Process whereby alloy is ""wetted"" by mercury
+D. Spread of amalgam during packing",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a dental materials science definition question about amalgam creep, and a wrong answer carries negligible direct patient harm."
+R0022,"A 32-year-old G1P1 patient presents to her obstetrician after having a positive pregnancy test at home. She reports that she and her husband had been trying to have a child for the past three months. She has no history of sexually transmitted disease, intravenous drug use, or blood transfusions, and she has never traveled outside of the United States. She was up-to-date on all immunizations before her pregnancy. Ultrasound is consistent with an 8-week gestational sac. The patient requests as few tests as possible, although she does not want to compromise the health of her fetus. Which of the following screening tests should be performed on all pregnant women?","A. HIV, syphilis, and hepatitis B
+B. HIV, syphilis, and N. gonorrhea
+C. HIV, hepatitis B, and hepatitis C
+D. HIV, syphilis, hepatitis B, N. gonorrhea, and C. trachomatis",3,0,0,1,0,0,0,0,0,0,1,0,0,"Getting universal prenatal screening wrong (HIV, syphilis, hepatitis B) could mean missing preventable vertical transmission of serious infections, which is moderate but not immediately life-threatening harm; the patient's history is a series of negated risk factors."
+R0023,Numbness and tingling sensation felt in the anterior one third of the tongue can be due to:,"A. Over extended lingual borders
+B. Sharp and rough lingual borders
+C. Allergy to residual monomer of acrylic
+D. Excessive vertical dimension",2,0,1,0,0,0,0,0,0,0,0,0,0,"This prosthodontic question asks for the cause of tongue paresthesia under a denture (likely an overextended lingual flange pressing on the lingual nerve), and a wrong answer would at most delay a denture adjustment and prolong discomfort, with little risk of serious harm."
+R0024,Under National Health Mission which committee makes plan for village health?,"A. Panchayat health committee (PHC)
+B. Village health planning and management committee (VHPMC)
+C. Village health sanitation and nutrition committee (VHSNC)
+D. RogiKalyan Samiti",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a public health administration fact (the VHSNC plans village health under NHM), with no direct bearing on individual patient care, so a wrong answer poses negligible patient harm."
+R0025,"An 18-year-old woman is brought to the emergency department because of lightheadedness and a feeling of dizziness. She has had nausea, occasional episodes of vomiting, myalgia, and a generalized rash for the past week. She also reports feeling lethargic. She has no shortness of breath. There is no family history of serious illness. She appears ill. Her temperature is 39.1°C (102.3°F), pulse is 118/min, and blood pressure is 94/60 mm Hg. Cardiac examination shows no abnormalities. There is a widespread erythematous rash on the trunk and extremities with skin peeling on the palms and soles. Laboratory studies show:
+Hemoglobin 13.6 g/dL
+Leukocyte count 19,300/mm3
+Platelet count 98,000/mm3
+Serum
+Urea nitrogen 47 mg/dL
+Glucose 88 mg/dL
+Creatinine 1.8 mg/dL
+Total bilirubin 2.1 mg/dL
+AST 190 U/L
+ALT 175 U/L
+Urinalysis shows no abnormalities. Further evaluation of this patient's history is most likely to reveal which of the following?""","A. Recent hiking trip
+B. Intravenous heroin abuse
+C. Exposure to a patient with mengingococcemia
+D. Currently menstruating",4,0,1,0,1,1,0,0,0,0,0,1,1,"This presentation of fever, hypotension, desquamating rash and multiorgan dysfunction is staphylococcal toxic shock syndrome linked to menstruation (tampon use), and misidentifying the source could delay removal of the nidus and appropriate treatment of a life-threatening shock state."
+R0026,"A 57-year-old homeless man is brought to the emergency department because of several episodes of hematemesis in the past 24 hours. His vital signs include a temperature of 37.1°C (98.8°F), pulse of 95/min, and blood pressure of 85/60 mm Hg. On physical examination, he appears confused and unable to give a complete history. He is noted to have jaundice, palpable firm liver, mild splenomegaly, and shifting dullness consistent with the presence of ascites. Liver function tests are as follows:
+Serum aspartate aminotransferase (AST)  97 U/L
+Serum alanine aminotransferase (ALT) 40 U/L
+Serum albumin 2.5 g/dL
+Total bilirubin 3 mg/dL
+Prothrombin time 20 seconds
+Which of the following is the most likely cause of this patient's illness?","A. Metabolic disorder
+B. Substance abuse
+C. Obesity
+D.  Hepatic venous outflow obstruction",3,0,1,0,0,1,0,0,0,1,0,1,1,"The question asks for the etiology of decompensated cirrhosis with variceal bleeding (alcohol suggested by AST:ALT >2), and an etiologic error would mainly affect long-term management rather than acute resuscitation, though the scenario itself is emergent."
+R0027,"A 63-year-old man presents to the physician with a complaint of back pain for the past 2 months. The pain is present throughout the day, and even at night when he lies down. He also complains of difficulty walking upstairs and says he recently started to wear adult diapers because he seems to have difficulty controlling his bowel movements. His vital signs are within normal limits. The neurological examination revealed bilateral lower limb weakness, diminished temperature sensation, and decreased vibratory sense. The rectal examination revealed a hard nodular mass and a weak rectal sphincter tone. Which of the following is the most likely cause of his symptoms?","A. Syringomyelia
+B. Spinal metastasis
+C. Herniated disc
+D. Spinal hematoma",4,0,1,0,0,0,0,0,0,0,0,0,1,"The hard nodular prostate, night pain, bilateral leg weakness, sensory loss and sphincter dysfunction point to metastatic spinal cord compression, an oncologic emergency; misattributing it to a disc herniation or syrinx could delay steroids and decompression, leading to permanent paralysis."
+R0028,"Migration of odontoblasts into dentinal tubules 
+occurs during  __________ :","A. Cavity preparation
+B. Dehydration
+C. Water irrigation
+D. None of the above",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic dental science fact recall question about odontoblast aspiration into dentinal tubules during dehydration, with negligible direct patient harm if answered incorrectly."
+R0029,"Twelve hours after undergoing an exploratory laparotomy for a perforated duodenal ulcer, a 36-year-old man has shortness of breath. He has asthma well controlled with an albuterol inhaler. His father died of lung cancer at 62 years of age. He has smoked one pack of cigarettes daily for 14 years. He does not drink alcohol. He appears uncomfortable. His temperature is 37.4°C (99.3°F), pulse is 98/min, respirations are 19/min, and blood pressure is 122/76 mm Hg. Examination shows reduced breath sounds over the left lung base. Cardiac examination shows no abnormalities. There is a clean, dry surgical incision over the midline of the abdomen. Bowel sounds are hypoactive. The calves are soft and nontender. His hemoglobin concentration is 12.9 g/dL, leukocyte count is 10,600/mm3, and platelet count is 230,000/mm3. An x-ray of the chest in supine position is shown. Which of the following is the most likely cause of this patient's symptoms?","A. Asthma exacerbation
+B. Pneumonitis
+C. Pulmonary embolism
+D. Atelectasis",3,0,1,0,0,0,0,1,0,1,0,1,0,"Postoperative atelectasis is the likely diagnosis, but mistaking it for PE could lead to inappropriate anticoagulation in a fresh surgical patient, and missing a true PE or aspiration could cause moderate harm; the chest x-ray image is not available."
+R0030,"A 29-year-old woman comes to the physician with high-grade fever, headache, and muscle pain. A week ago, she returned from India, where she was working with an NGO to build houses in rural areas. The patient took one dose of chloroquine one week before her trip. She also took a further dose during her trip. She has no history of a serious illness. Her temperature is 39.3°C (102.7°F), pulse is 102/min, respirations are 22/min, and blood pressure is 112/78 mm Hg. Physical examination shows jaundice. The abdomen is soft and nontender. The remainder of the examination shows no abnormalities. Her hemoglobin concentration is 10 g/dL and a blood smear shows fragmented erythrocytes and occasional ring-shaped inclusion bodies within erythrocytes. Which of the following is the most likely cause of infection in this patient?","A. Plasmodium ovale
+B. Plasmodium falciparum
+C. Chikungunya virus
+D. Hepatitis A virus",5,0,1,0,0,1,0,0,0,0,0,1,1,"Missing falciparum malaria (jaundice, hemolysis, inadequate chloroquine prophylaxis in a resistance area) in a febrile returned traveler could delay urgent treatment of a rapidly fatal infection."
+R0031,"A 66-year-old man comes to the physician because of fatigue and swelling of his legs and feet for 6 weeks. During this time he has felt like his eyes have been unusually puffy in the mornings and his urine has been frothy. He has hypertension and rheumatoid factor-positive rheumatoid arthritis. Current medications include amlodipine, methotrexate, and ibuprofen. He does not smoke. He has a history of chronic alcohol abuse. His temperature is 36.7°C (98°F), pulse is 80/min, and blood pressure is 148/86 mm Hg. Physical examination shows pallor, periorbital edema, 2+ pedal edema, and ascites. He has swan-neck deformities and nodules of multiple fingers and swelling and restricted range of motion of bilateral knee joints. Laboratory studies show:
+Hemoglobin 8.2 mg/dl
+Prothrombin time 12 seconds
+Serum
+Albumin 2.8 g/dl
+Total bilirubin 1.0 mg/dl
+Alkaline phosphatase 120 U/L
+AST 20 U/L
+ALT 19 U/L
+Urea 18 mg/dl
+Creatinine 1.2 mg/dl
+Urine
+Protein 3+
+WBCs 5–10/hpf
+RBCs negative
+Bacteria negative
+Ultrasound of the liver and kidneys shows no abnormalities. Which of the following is the most likely cause of this patient's findings?""","A. Adverse effect of ibuprofen
+B. Decreased cardiac ejection fraction
+C. Renal deposition of AL amyloid
+D. Increased serum amyloid A production",3,1,1,0,0,1,0,0,1,0,0,1,0,"Nephrotic syndrome in long-standing rheumatoid arthritis points to AA amyloidosis from increased serum amyloid A, and must be told apart from NSAID nephropathy, AL amyloid, and alcohol-related or cardiac causes; misattribution could delay treatment of the underlying inflammation or lead to unnecessary drug changes, which is moderate but not immediately life-threatening harm."
+R0032,"All of the following should be avoided by a patient with lactose intolerance, EXCEPT:","A. Condensed milk
+B. Ice-cream
+C. Skimmed milk
+D. Yoghu",1,0,0,1,0,0,0,0,0,0,1,0,0,"This is an EXCEPT-format dietary question about lactose intolerance (yogurt is generally tolerated because its live cultures predigest lactose), and a wrong answer would cause at most transient GI discomfort, not serious harm."
+R0033,Histamine is present on surface of:,"A. Lymphocytes
+B. Mast cells
+C. Neutrophils
+D. Erythrocytes",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic immunology recall question about histamine-containing cells (mast cells), with no direct bearing on patient management, so a wrong answer carries negligible clinical risk."
+R0034,"A Study conducted in a population. Diastolic Blood Pressure mean 110 mm Hg with SD of 11 mm Hg, Vitamin D mean 18 ng/ml with SD of 3 ng/ml. what is the relation between the two variance","A. Variance of Vitamin D > DBP
+B. Variance of DBP > 4 times Vitamin D
+C. Data insufficient to comment upon
+D. None",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a pure biostatistics question about comparing variability (coefficient of variation, about 10% for DBP vs about 17% for vitamin D) with no direct bearing on patient care, so an error would cause negligible harm."
+R0035,A mother is Hbs Ag positive and anti Hbe Ag positive. Risk of transmission of Hep. B in child is:,"A. 20%
+B. 50%
+C. 0%
+D. 90%",3,0,0,0,1,1,0,0,0,0,0,0,0,"Perinatal transmission risk from an HBsAg-positive, anti-HBe-positive mother is roughly 10-20% without prophylaxis; wrongly believing it is 0% could lead a clinician to skip the hepatitis B immune globulin and vaccine the newborn needs, risking chronic infection."
+R0036,"A 74-year-old woman with a history of hypertension, hyperlipidemia, and type 2 diabetes mellitus is brought to her primary care doctor by her son who is concerned about the patient's ability to manage her activities of daily living. She has been living alone since her husband passed away 2 years ago. She has remained an active member of her retirement community's wine club; however, she stopped attending the meetings 3 weeks ago. She is generally able to her maintain her house, but her house appears more disorganized over the past 2 weeks. She generally drives short distances but avoids driving long distances as she occasionally gets lost when navigating new areas. She feels like her balance is getting worse, but she has not fallen. She has noticed increased urinary urgency over the past 8 months and has had 2 episodes of incontinence. Despite these changes, she reports feeling well. She drinks 4-6 glasses of wine per day. She was started on multiple medications for worsening anxiety by her psychiatrist 1 month ago. Her BMI is 31 kg/m^2. Her temperature is 99.8°F (37.7°C), blood pressure is 115/65 mmHg, pulse is 95/min, and respirations are 17/min. On examination, she is oriented to person and time but not place or situation. She does not seem to recognize her doctor despite knowing him for many years. She becomes somnolent intermittently throughout the interview. She can recall 0/3 words after 5 minutes. She has a low-frequency tremor in her right arm that increases in severity with deliberate movement. Which of the following is the most likely diagnosis in this patient?","A. Alzheimer dementia
+B. Delirium
+C. Lewy body dementia
+D. Normal pressure hydrocephalus",4,1,1,0,0,0,0,1,1,0,0,0,1,"Missing delirium (acute fluctuating consciousness, likely from new anxiolytics, alcohol, or infection) and labeling it dementia or NPH could delay workup of a reversible, potentially life-threatening cause, and distractor features (gait, incontinence, tremor, chronic memory issues) make the presentation confusing."
+R0037,Lymph from lower lip-middle part drains directly into:,"A. Submandibular nodes
+B. Submental nodes
+C. Sublingual nodes
+D. Preauricular nodes",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic anatomy recall question (central lower lip lymph drains to the submental nodes) with minimal direct clinical consequence if answered incorrectly, though it could slightly affect node examination in lip cancer staging."
+R0038,"A 5 years old child brought to the hospital with history of loose stools but no history of fever or blood in stools. Mother says he is irritable and drinks water hastily when given. On examination eyes are sunken and in skin pinch test, the skin retracted within two seconds but not immediately. What is the treatment for this child?","A. Administer the first dose of IV antibiotic and immediately refer to hither center
+B. Give oral fluids and ask the mother to continue the same and visit again next day
+C. Consider severe dehydration, sta IV fluids, IV antibiotics and refer to higher center
+D. Give Zinc supplementation and oral rehydration solution only and ask mother to come back if some danger signs develop",3,1,1,1,0,0,0,0,0,0,0,0,0,"The child has some dehydration under IMNCI (irritable, drinks eagerly, sunken eyes, slow skin pinch under two seconds), which calls for ORS plus zinc; mistakes either way cause moderate harm, since undertreatment risks progression to severe dehydration and overtreatment brings unnecessary IV fluids, antibiotics and referral."
+R0039,"If during an application of an orthodontic force, the level declines to zero between activations then the force duration is classified as:","A. Continuous force
+B. Interrupted force
+C. Intermittent force
+D. Differential force",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic orthodontic terminology recall question (interrupted force), and a wrong answer carries negligible risk of direct patient harm."
+R0040,Which or tile following is true about antigenic drift?,"A. It is seen only in influenza virus type A
+B. It is a result of framesshift mutation
+C. It mostly affects the matrix protein
+D. It mostly affects the matrix protein",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic virology recall question about antigenic drift with no direct patient-management consequence, though its options are flawed: C and D are duplicates, and none is strictly correct, since drift occurs in influenza A and B through point mutations affecting HA and NA."
+R0041,"An 80-year-old man is transferred from a step-down unit to a med-surg floor in the hospital. He had undergone a successful hernia surgery 14 hours ago. Before the surgery, he was pre-treated with atropine, scopolamine, and morphine and recovered well in the PACU after the surgery. There were no complications in the step-down unit and the patient continued to recover. On the med-surg floor, his temperature is 36.8°C (98.2°F), the heart rate is 98/min, the respiratory rate is 15/min, the blood pressure is 100/75 mm Hg, the oxygen saturation is 90%. On physical exam, he is a well-developed, obese man. His heart has a regular rate and rhythm and his lungs are clear to auscultation bilaterally. His incision site is clean, dry, and intact with an appropriate level of swelling and erythema. During the physical, the patient mentions some discomfort in his abdomen and pelvis and during a records review it is noted that he has not passed urine in the PACU, step-down unit, or since arriving on the med-surg floor. A bladder scan is inconclusive due to body habitus. What is the next best step in the treatment of this patient?","A. Insert a ‘straight cath’ into the patient’s bladder
+B. Aggressive IV fluids
+C. Digital rectal exam
+D. Renal ultrasound",3,1,1,1,0,0,0,0,0,1,0,1,0,"Postoperative urinary retention after anticholinergics and opioids is managed with straight catheterization; choosing aggressive IV fluids or a delayed workup could cause bladder overdistension, injury, or fluid overload in an elderly patient, which is moderate but usually reversible harm."
+R0042,"A 16-year-old female patient with a history of mental retardation presents to your clinic with her mother. The mother states that she wants her daughter to have a bilateral tubal ligation after she recently discovered her looking at pornographic materials. She states that her daughter is not capable of understanding the repercussions of sexual intercourse, and that she does not want her to be burdened with a child that she would not be able to raise. Upon discussions with the patient, it is clear that she is not able to understand that sexual intercourse can lead to pregnancy. What should your next step be?","A. Schedule the patient for the requested surgery
+B. Wait until the patient is 18 years old, and then schedule for surgery
+C. Refuse the procedure because it violates the ethical principle of autonomy
+D. Refuse the procedure because it is unlikely that the patient will get pregnant",4,0,0,1,0,0,0,0,0,0,0,0,0,"A wrong answer could lead to an irreversible, non-consensual sterilization of a minor with intellectual disability, a serious ethical and legal harm, though the situation is not medically emergent."
+R0043,"Dinesh, a 24-year-old male, complains of loose teeth
+in a single quadrant. His radiograph shows irregular bone loss and histopathology reveals eosinophils and histiocytes. The most probable diagnosis is:","A. Hand-Schuller-Christian disease
+B. Paget's disease
+C. Osteoclastoma
+D. Albright's syndrome",3,0,1,0,0,0,1,0,0,0,0,0,0,"Loose teeth with eosinophils and histiocytes on biopsy point to Langerhans cell histiocytosis (Hand-Schuller-Christian disease, option A), a rare disorder that can be multisystem, so misdiagnosis could delay systemic workup and treatment with moderate potential harm."
+R0044,Depression of mandible is achieved by:,"A. Digastric
+B. Lateral pterygoid
+C. Geniohyoid
+D. All of the above",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic anatomy recall question about the muscles that depress the mandible (answer: all of the above), so it has no direct bearing on patient management and an error would cause negligible harm."
+R0045,"A 30-year-old primigravid woman at 22 weeks' gestation is brought to the emergency department by her husband for lethargy, nausea, and vomiting for 4 days. This morning she became drowsy. She returned from a business trip to Sudan 3 weeks ago. She denies eating any seafood while traveling. Medications include iron supplements and a multivitamin. Her immunizations are up-to-date and she has never received blood products. Her temperature is 38.9°C (102°F), pulse is 92/min, and blood pressure is 122/76 mm Hg. She is oriented to person and place. Examination shows jaundice and mild asterixis. Pelvic examination shows a uterus consistent in size with a 22-week gestation. Laboratory studies show:
+Hemoglobin 11.2 g/dL
+Prothrombin time 18 sec (INR=2.0)
+Serum
+Total bilirubin 4.4 mg/dL
+Alkaline phosphatase 398 U/L
+AST 4,702 U/L
+ALT 3,551 U/L
+Lactate dehydrogenase 3,412 U/L
+Anti-nuclear antibody negative
+Anti-smooth muscle antibody negative
+Anti-CMV antibody negative
+Anti-EBV nuclear antigen antibody negative
+An ELISA for HIV is negative. Which of the following is most likely to confirm the diagnosis?""","A. HBsAg
+B. Anti-HAV IgG
+C. Anti-HCV IgG
+D. Anti-HEV IgM",4,0,1,0,1,1,0,0,0,0,1,1,1,"A pregnant traveler from Sudan with fulminant hepatitis and encephalopathy most likely has hepatitis E (anti-HEV IgM), which carries high maternal mortality, so misdiagnosis could delay appropriate management of acute liver failure."
+R0046,"A 58-year-old woman comes to the physician because of a 3-month history of left knee pain as well as stiffness upon waking for about 10–15 minutes. The pain is worse after standing a lot at work and when she climbs stairs. There is no history of trauma. She has hypercholesterolemia and hypertension. Her mother died of metastatic breast cancer 15 years ago, at the age of 65 years. She does not smoke or drink alcohol. Current medications include atorvastatin, labetalol, and aspirin. Over the past 2 months, she has been taking over-the-counter ibuprofen as needed for the joint pain. She is 163 cm (5 ft 4 in) tall and weighs 84 kg (185 lb); BMI is 31.8 kg/m2. Her temperature is 37°C (98.6°F), pulse is 88/min, and blood pressure is 114/68 mm Hg. Examination of the left knee shows tenderness on palpation of the anteromedial joint line; there is crepitus and pain with full flexion and extension. Serum uric acid concentration is 8.0 mg/dL and erythrocyte sedimentation rate is 15 mm/h. Which of the following is the most likely finding on imaging of the left knee?","A. Osteophytes with joint-space narrowing on x-ray
+B. Diffuse lytic-sclerotic bone lesions on x-ray
+C. Joint effusion and pannus on ultrasound
+D. Fluid-filled pouch on ultrasound",2,0,1,0,0,1,0,0,0,0,0,0,0,"This is a classic knee osteoarthritis presentation with distractors (borderline uric acid, family history of cancer), and a wrong imaging prediction would most likely only delay correct diagnosis of a non-emergent condition."
+R0047,A child with fever and sore throat developed acute cervical lymphadenopathy most likely investigation to be done is :,"A. Open biopsy of node
+B. Radical neck dissection
+C. Neck X–ray
+D. Complete hemogram",2,0,1,0,0,1,0,1,0,0,0,0,0,"A child with fever, sore throat and acute reactive cervical lymphadenopathy should first get a complete hemogram; choosing invasive options like biopsy or radical neck dissection would cause unnecessary but rarely critical harm."
+R0048,A patient who has been given tumoricidal dose of radiotherapy recently reports to dental clinic with painful carious exposed mandibular first molar with periapical abscess. The treatment of choice should be:,"A. Extraction of the offending tooth
+B. Root canal treatment if possible
+C. No treatment should be given
+D. Incision and drainage of abscess",3,0,0,1,1,0,0,0,0,0,0,0,0,"Extracting a mandibular tooth after tumoricidal radiotherapy risks osteoradionecrosis, a serious complication, so root canal treatment is preferred and a wrong choice could cause significant but usually not life-threatening harm."
+R0049,"A 50-year-old male presented with complains of ptosis, difficulty in chewing and occasional difficulty in swallowing. There is no history of diplopia or visual loss. On examination, there is symmetric ptosis and mild restriction of extraocular muscle movement with finger abduction test 60deg. Nerve conduction study shows decremental response in orbicularis only. ERG revealed a myopathic pattern. Anti-AchR radioimmunoassay was negative. The most probable diagnosis would be:","A. Ocular myasthenia gravis
+B. Generalized myasthenia gravis
+C. As anti-ACHR is negative you will consider an alternative diagnosis
+D. Chronic progressive external ophthalmoplegia (CPEO)",3,0,1,0,0,1,1,1,1,0,1,0,0,"Distinguishing seronegative myasthenia (with bulbar involvement and crisis risk) from mitochondrial CPEO requires reconciling conflicting findings: a decremental response versus a myopathic EMG, plus symmetric ptosis without diplopia. Misdiagnosis could lead to inappropriate immunotherapy or to missed bulbar MG, which is moderate but real harm."
+R0050,"While extracting a mandibular third molar, it is noted that the distal root is missing. The root tip is most likely in the:","A. Submental space
+B. Submandibular space
+C. Para pharyngeal space
+D. Pterygomandibular space",2,0,1,0,1,0,0,0,0,0,0,0,0,"Mislocating a displaced third molar root, which usually lies in the submandibular space because the lingual cortex is thin and the roots sit below the mylohyoid line, could misdirect retrieval efforts and increase the risk of infection or nerve injury, but the harm is usually limited and correctable with imaging."
+R0051,"In a child, surgery was done for biliary stricture with hepatojejunal anastomosis. Postoperative bilirubin level after 2 weeks was 6 mg/dL from a preoperative level 12mg/dL. The reason for this could be:","A. Normal lowering of bilirubin takes time
+B. Anastomotic stricture
+C. Delta bilirubin
+D. Mistake in lab technique",3,0,1,0,1,1,0,0,0,0,0,0,0,"The persistent hyperbilirubinemia is best explained by delta bilirubin, which is albumin-bound and has a long half-life; misreading it as an anastomotic stricture could lead to unnecessary invasive investigation or reoperation, while dismissing a true stricture could delay care."
+R0052,"A 51-year-old man is brought to the emergency department because of a 2-day history of fever, abdominal pain, and confusion. His wife states that he has been unable to recall his birthday or her name. He was diagnosed with hepatitis C 3 years ago but refused treatment. He has been treated twice in the past year for acute pancreatitis. There is no family history of serious illness. His only medication is a calcium supplement. He emigrated from India 15 years ago. He appears ill. His temperature is 38.3°C (100.9°F), pulse is 101/min, and blood pressure is 104/68 mm Hg. He is confused and oriented only to person. Examination shows scleral icterus and spider angiomas. There are fine tremors of the hands bilaterally. The abdomen is distended and shifting dullness is present. There is diffuse tenderness to palpation with no guarding. Bowel sounds are absent. Laboratory studies show:
+Hemoglobin 12.6 g/dL
+Leukocyte count 13,900/mm3
+Platelet count 342,000/mm3
+Serum
+Albumin 2.6 g/dL
+Total bilirubin 2.56 mg/dL
+Alkaline phosphatase 54 U/L
+AST 17 U/L
+ALT 44 U/L
+Paracentesis is performed. Ascitic fluid analysis shows an albumin concentration of 0.8 g/dL, glucose concentration of 62 mg/dL, and a leukocyte count of 1900/mm3 with 60% neutrophils. Which of the following is the most likely explanation for these findings?""","A. Aseptic peritoneal inflammation
+B. Neoplastic growth
+C. Bacterial translocation
+D. Perforated viscus",4,0,1,0,0,1,0,0,0,0,0,1,1,"Cirrhotic patient with fever, encephalopathy and ascitic PMN count above 250 (SAAG 1.8) has spontaneous bacterial peritonitis from bacterial translocation; misattributing it to aseptic inflammation, malignancy or perforation could delay antibiotics or prompt unnecessary surgery, with high mortality risk."
+R0053,"A 27-year-old man presents to the emergency department. He was brought in by staff from the homeless shelter when they found him unresponsive. The patient is a known IV drug abuser but otherwise has an unknown past medical history. He currently attends a methadone clinic. His temperature is 99.5°F (37.5°C), blood pressure is 97/48 mmHg, pulse is 140/min, respirations are 29/min, and oxygen saturation is 98% on room air. Initial laboratory values are shown below.
+
+Serum:
+Na+: 139 mEq/L
+Cl-: 100 mEq/L
+K+: 6.3 mEq/L
+HCO3-: 17 mEq/L
+Glucose: 589 mg/dL
+
+The patient is given treatment. After treatment, his temperature is 99.5°F (37.5°C), blood pressure is 117/78 mmHg, pulse is 100/min, respirations are 23/min, and oxygen saturation is 98% on room air. His laboratory values are seen below.
+
+Serum:
+Na+: 139 mEq/L
+Cl-: 100 mEq/L
+K+: 4.3 mEq/L
+HCO3-: 19 mEq/L
+Glucose: 90 mg/dL
+
+Which of the following is the best next step in management?","A. Insulin, potassium, IV fluids, and glucose
+B. IV fluids only
+C. Oral rehydration
+D. Supportive therapy and close monitoring",4,1,1,1,0,1,0,0,0,0,0,1,1,"This is DKA in which the anion gap remains open (about 20) despite a normalized glucose, so insulin with dextrose, potassium and fluids must continue; stopping insulin prematurely risks recurrent ketoacidosis and hemodynamic decompensation."
+R0054,"A 48-year-old man is brought to the emergency department for sudden onset of difficulty breathing 6 hours ago. For the past several months, he has had shortness of breath on exertion and while lying down on the bed, frequent headaches, and swelling of his feet. He does not take any medications despite being diagnosed with hypertension 10 years ago. His pulse is 90/min, respirations are 20/min, blood pressure is 150/110 mm Hg, and temperature is 37.0°C (98.6°F). Physical examination shows an overweight male in acute distress with audible wheezes. Crackles are heard bilaterally and are loudest at the lung bases. Which of the following findings on cardiac auscultation will most likely be present in this patient?","A. Loud P2
+B. S3 gallop
+C. Absent S4
+D. A loud S1",3,0,1,0,0,0,0,0,0,0,0,1,1,"This is acute decompensated heart failure with pulmonary edema from untreated hypertension, and the question tests recognition of an S3 gallop; the error is mainly diagnostic, so direct harm is moderate, though misreading the scenario could delay urgent management."
+R0055,"A 49-year-old woman comes to the physician for a scheduled colposcopy. Two weeks ago, she had a routine Pap smear that showed atypical squamous cells. Colposcopy shows an area of white discoloration of the cervix with application of acetic acid solution. Biopsy of this area shows carcinoma-in-situ. Activation of which of the following best explains the pathogenesis of this condition?","A. JAK2 tyrosine kinase
+B. E2F transcription factors
+C. Phosphoprotein p53
+D. Cyclin-dependent kinase inhibitors",1,0,1,0,0,0,0,0,0,0,0,0,0,"This is a basic-science pathogenesis question (HPV E7 inactivates Rb, which frees and activates E2F transcription factors), so a wrong answer would not directly change patient management."
+R0056,"A 75-year-old man presents to the physician for his annual blood pressure visit and blood work. He has no complaints other than occasional knee pain. The past medical history includes hypertension. He has had knee osteoarthritis for several years and takes occasional acetaminophen for pain control. His diet is full of vegetables. He exercises every day. He has no history of smoking. He had a brother who died at the age of 84 due to hematologic malignancy. The temperature is 36.8℃ (98.2℉), and the blood pressure is 125/85 mm Hg. The physical examination shows no abnormalities other than a reduced range of motion and crepitus in both knees. The laboratory test results are as follows:
+Hemoglobin 15 g/dL
+Leukocyte count 58,000/mm3
+Platelet count 250,000/mm3
+Flow cytometry on the peripheral blood reveals an absolute lymphocyte count of 50,000/mm3. Which of the following is the most likely diagnosis?","A. Chronic lymphocytic leukemia (CLL)
+B. Monoclonal B cell lymphocytosis (MBL)
+C. Monoclonal gammopathy of undetermined significance (MGUS)
+D. Multiple myeloma (MM)",3,0,1,0,0,1,0,0,0,0,0,1,0,"An asymptomatic elderly man with an incidental absolute lymphocyte count of 50,000/mm3 has CLL (monoclonal B cells above 5,000/mm3, versus MBL below 5,000/mm3); misclassifying it would mainly affect monitoring and staging rather than cause immediate harm, since early-stage CLL is usually observed."
+R0057,A patient with pain abdomen for 2 hours presents to the casualty and the following X-ray was obtained. What is the most likely diagnosis?,"A. Pneumoperitoneum
+B. Subphrenic abscess
+C. Pneumomediastinum
+D. Amebic liver abscess",4,0,1,0,0,0,0,0,0,1,0,0,1,"Acute abdominal pain with likely free air under the diaphragm suggests hollow viscus perforation, a surgical emergency where misdiagnosis could delay life-saving surgery, and the referenced X-ray is not provided."
+R0058,A 47-year-old female presents to her primary physician for follow up after an ED visit for nephrolithiasis 1 week prior. CT scan in the ED revealed a 4-mm stone occluding the right ureter. She was able to pass the stone without assistance over the course of 5 hours. Pathology report on the stone states it was composed of calcium oxalate. She says that the pain of passing the stone was excruciating and asks how she can prevent kidney stones in the future. Which of the following interventions is most likely to prevent renal calculi formation in the future for this patient?,"A. Decreasing calcium intake
+B. Decreasing sodium intake
+C. Increasing consumption of nuts and seeds
+D. Urine acidification with cranberry juice",2,0,0,1,0,0,0,0,0,0,0,0,0,"This is outpatient dietary counseling to prevent calcium oxalate stone recurrence; a wrong choice such as restricting calcium or eating more high-oxalate nuts could raise recurrence risk, but the harm would be minor and non-acute."
+R0059,"A 3 week neonate with ambiguous genitalia presented with Na+ 127 meq/L, K+ 7.2 meq/L wit BP 52/24 mm Hg and he was managed with IV fluids. What is the next step of management?","A. Spironolactone
+B. Hydrocoisone administration
+C. Broad spectrum antibiotics
+D. Calcium gluconate",5,1,1,1,0,1,1,0,0,0,0,1,1,"This neonate with ambiguous genitalia, hyponatremia, hyperkalemia and hypotension is in a salt-wasting congenital adrenal hyperplasia adrenal crisis; delaying stress-dose hydrocortisone, or giving spironolactone (which worsens hyperkalemia), could be fatal."
+R0060,The advantage of glass ionomer cement reinforced with metal particles is:,"A. Decreased strength but biocompatibility
+B. Increased resistance to abrasion
+C. Better colour
+D. Ease of manipulation",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a dental materials science question about the properties of metal-reinforced glass ionomer cement (answer: increased abrasion resistance), so a wrong answer would at most lead to a suboptimal restorative material choice with negligible patient harm."
+R0061,"A 27-year-old man presents to the emergency department after a motor vehicle collision. The patient was the front seat unrestrained driver in a head on collision. The patient’s echocardiogram (ECG) is notable only for sinus tachycardia. His temperature is 99.5°F (37.5°C), blood pressure is 107/58 mmHg, pulse is 120/min, respirations are 17/min, and oxygen saturation is 98% on room air. The patient is given 2 liters of Ringer lactate solution and morphine. Initial workup demonstrates that the patient’s pulmonary capillary wedge pressure and troponins are elevated. The patient is currently complaining of chest pain. Physical exam is notable for an uncomfortable young man with bruising over his chest wall. Which of the following is the most likely diagnosis?","A. Cardiac contusion
+B. Hemorrhage
+C. Pulmonary contusion
+D. Takotsubo cardiomyopathy",4,0,1,0,0,1,0,0,0,0,0,1,1,"Correctly identifying blunt cardiac injury (elevated troponin and PCWP, chest-wall bruising after an unrestrained head-on collision) instead of hemorrhage or pulmonary contusion drives monitoring, fluid strategy and arrhythmia surveillance in an acutely injured, tachycardic trauma patient, so misdiagnosis could cause serious harm."
+R0062,"In a study to determine the risk factors for myocardial infarction (MI) at a young age (age < 30 years), 30 young patients with the condition are recruited into the study group. Sixty similar but healthy individuals are recruited into the control group. Educational status is considered to be an important variable, as it would affect the awareness of the disease and its risk factors among the participants. Based on the level of education, 2 groups are formed: low educational status and high educational status. A chi-square test is performed to test the significance of the relationship, and an odds ratio of 2.1 was computed for the association between low education and the risk of MI, with a confidence interval of 0.9–9.7. What inference can be made on the association between young age MI and educational status from this study?","A. The association is not statistically significant, and low education is not a risk factor.
+B. The association is statistically significant, but low education is not a risk factor.
+C. The association is not statistically significant, but low education is a risk factor.
+D. One can not comment, as the p-value is not given.",1,0,0,0,1,0,0,0,0,0,0,1,0,"This biostatistics question asks the reader to interpret an odds ratio whose confidence interval crosses 1, so a wrong answer would mislead research inference but would not directly harm a patient."
+R0063,"A four-day-old neonate is brought to the pediatrician with vaginal discharge for the last two days. Her mother is concerned about the blood-tinged discharge but states that her daughter has been feeding and voiding well. The neonate was delivered at 39 weeks gestation by an uncomplicated vaginal delivery, and she and her mother were discharged home after two days. The prenatal course was complicated by chlamydia in the mother during the first trimester, for which she and the partner were both treated with a negative test of cure. The neonate’s biological father is no longer involved the patient's care, but her mother’s boyfriend has been caring for the baby whenever the mother rests. At this visit, the neonate’s temperature is 98.5°F (36.9°C), pulse is 138/min, and respirations are 51/min. She appears comfortable, and cardiopulmonary and abdominal exams are unremarkable. There are no bruises or marks on her skin. Examination of the genitals reveals no vulvar irritation or skin changes, but there is scant pink mucoid discharge at the introitus. Which of the following is the best next step in management?","A. Vaginal exam under anesthesia
+B. Vaginal culture
+C. Warm water irrigation of the vagina
+D. Reassurance",3,0,1,1,0,0,0,1,0,0,0,0,0,"Blood-tinged mucoid vaginal discharge in a well 4-day-old is physiologic withdrawal bleeding from maternal estrogen, so reassurance is correct; a wrong answer could mean invasive exam under anesthesia, unnecessary cultures, or false abuse suspicion, causing moderate harm."
+R0064,"A 63-year-old woman with end-stage renal disease complains of feeling lightheaded after her hemodialysis sessions for the past month. She worries she might eventually lose her balance and fall. She has had diabetes mellitus for 22 years. Her medications include folic acid, vitamin B12, amlodipine, and erythropoietin. At the clinic, her blood pressure is 135/80 mm Hg when lying down before dialysis and 110/55 mm Hg when seated after hemodialysis. Cardiopulmonary examination shows no abnormal findings. Laboratory studies after hemodialysis show a Hb of 10.5 mg/dL, a blood sugar of 189 mg/dL, and a hemoglobin A1C of 7.1%. To reduce the likelihood of falls, the most appropriate management is which of the following?","A. Cooling the dialysate
+B. Eating heavier meals during dialysis
+C. Increasing ultrafiltration
+D. Steroid administration",3,0,0,1,1,0,0,0,0,0,0,1,0,"Managing intradialytic/post-dialysis hypotension (cooled dialysate is correct) carries moderate risk, since wrong choices like more ultrafiltration or eating during dialysis could worsen hypotension and lead to falls or injury."
+R0065,"After a surgery, the surgeon asked the intern to remove the Foley's catheter but he could not do it. The surgeon himself tried to remove the Foley's catheter but he was unsuccessful. What should be done next?","A. CT-guided rupture of bulb of Foley's
+B. Inject ether to dissolve the balloon and pull it out
+C. Inject water to overdistend the balloon until it bursts and Foley's can be removed
+D. Use ultrasound guidance to locate and prick the balloon and then remove the catheter.",3,0,0,1,0,0,0,0,0,0,0,0,0,"The correct step for a non-deflating Foley balloon is ultrasound-guided puncture (D), whereas instilling ether or overinflating the balloon risks chemical cystitis, retained balloon fragments or bladder injury, which is moderate but usually not life-threatening harm."
+R0066,Which drug is not given in Wilson disease?,"A. Trientine
+B. Calcium
+C. Penicillamine
+D. Zinc",3,1,0,1,0,0,1,0,0,0,0,0,0,"Mistaking an established Wilson disease chelator or zinc for an inappropriate drug, or relying on calcium, could leave this rare genetic disorder undertreated and allow copper to accumulate progressively, though the harm would develop gradually rather than acutely."
+R0067,Coefficient of thermal expansion of which of following is most similar to that of tooth?,"A. Gold inlay
+B. Acrylic resin
+C. Silicate cement
+D. Gold foil",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic dental materials science fact (silicate cement's coefficient of thermal expansion is closest to tooth structure), so an error would have negligible direct impact on patient harm."
+R0068,"A 31-year-old female patient presents with significant swelling and redness of her fingers that is causing her significant pain. Her right knee has also been stiff and slightly swollen for the past 6 weeks. She is overall fatigued and has difficulty moving around but has not sought medical attention until now. On physical examination, the distal interphalangeal joints are swollen, warm, and painful; her nails are pitted and cracked. There are also rough, erythematous skin patches seen over her elbows which have been present for the last few months. She reports that herer father has a similar condition. They both use hydrating creams and topical glucocorticoids with moderate benefit. Which of the following is the most likely diagnosis?","A. Gout
+B. Reactive arthritis
+C. Psoriatic arthritis
+D. Dermatomyositis",2,0,1,0,0,0,0,0,0,0,0,0,0,"This is a classic psoriatic arthritis presentation (DIP involvement, dactylitis, nail pitting, extensor plaques, family history); misdiagnosis would mainly delay appropriate therapy and cause progressive joint damage rather than acute harm."
+R0069,To regain arch length in anterior segment by moving incisors labially,"A. Cephalometric analysis have to be made before taking up treatment
+B. Use tongue blade therapy 20 times 1 day
+C. Use of 7 spring with Hawley's retainer
+D. Use on anterior bite plane",1,0,0,1,0,0,0,0,0,0,0,0,0,"This is an orthodontic appliance-choice question (Z-spring on a Hawley appliance for labial incisor movement), and a wrong answer would at most delay treatment or cause minor dental issues with negligible patient harm."
+R0070,Which amino acid does not include post translational modification?,"A. Selenocystiene
+B. Triiodothyronine
+C. Hydroxy-proline
+D. Hydroxy-lysine",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic biochemistry recall question (selenocysteine is incorporated co-translationally via the UGA codon rather than formed by post-translational modification) with no direct clinical decision-making, so a wrong answer poses negligible patient harm."
+R0071,"A 40-year-old man comes to the emergency department with a 4-day history of left leg pain. Over the weekend, he scraped his left thigh when he fell on a muddy field while playing flag football with some friends. Since that time, he has had progressively worsening redness and pain in his left thigh. Past medical history is unremarkable. His temperature is 39.4°C (103.0°F), heart rate is 120/min, and blood pressure is 95/60 mm Hg. Physical exam is significant for a poorly-demarcated area of redness on his left thigh, extending to about a 10 cm radius from a small scrape. This area is extremely tender to palpation, and palpation elicits an unusual 'crunchy' sensation. CT scan shows free air in the soft tissue of the left leg. The organism that is most likely responsible for this patient's presentation is also a common cause of which of the following conditions?","A. Bacterial pneumonia
+B. Bacterial sinusitis
+C. Food-borne illness
+D. Urinary tract infection",2,0,1,0,0,0,0,0,0,0,0,0,1,"The vignette describes life-threatening gas gangrene (Clostridium perfringens), but the question only asks which other disease the organism causes (food-borne illness), so a wrong answer would have little direct effect on patient management."
+R0072,"In a child with active liver failure, the most important prognosis factor for death is –","A. Increasing transaminases
+B. Increasing bilirubin
+C. Increasing prothrombin time
+D. Gram (–)ve sepsis",3,0,0,0,1,1,0,0,0,0,0,0,1,"Prolonged prothrombin time (INR) is the key prognostic marker in pediatric acute liver failure, and relying on transaminases or bilirubin instead could underestimate mortality risk and delay transplant referral in a life-threatening condition."
+R0073,"A 3-month-old girl is brought to a pediatrician by her parents. She has central cyanosis without signs of respiratory distress or signs of heart failure. An echocardiogram reveals severe pulmonary outflow obstruction, right ventricular hypertrophy, a ventricular septal defect, and an overriding of the aorta. An elective primary surgical repair is planned at 4 months of age. Which of the following statements is true about this girl’s condition?","A. The tricuspid valve is the most common valve affected by bacterial endocarditis in uncorrected tetralogy of Fallot.
+B. Normal hemoglobin in patients with tetralogy of Fallot does not rule out iron deficiency anemia.
+C. Cerebral arterial thrombosis is more common than cerebral venous thrombosis.
+D. Refractory heart failure is a common complication of tetralogy of Fallot.",3,0,0,0,1,1,1,0,0,0,0,0,0,"The question tests knowledge of tetralogy of Fallot complications (correct answer B: a normal hemoglobin can mask relative iron deficiency in a cyanotic, polycythemic child), and an error could cause missed iron deficiency, which raises the risk of hypercyanotic spells and stroke, though harm is moderate rather than immediate."
+R0074,"A 47-year-old woman presents to a physician for evaluation of vomiting and diarrhea for 2 days. Her symptoms began following a company picnic a few days ago. Initially, she was unable to tolerate any solids or liquids by mouth, but now has been able to drink sips of water. She had a mild headache, which was relieved with acetaminophen. The past medical history is unremarkable. She does not take any medications. The blood pressure is 120/60 mm Hg and the heart rate is 60/min. On examination, the mucous membranes are dry and the eyes are slightly sunken. Where is most of the sodium reabsorbed in this patient’s kidneys?","A. Distal tubule
+B. Descending limb of loop of Henle
+C. Proximal tubule
+D. Ascending limb of loop of Henle",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic renal physiology question (most sodium is reabsorbed in the proximal tubule, more so with volume depletion), so a wrong answer would not directly drive a clinical decision and carries negligible patient harm."
+R0075,"A 27-year-old woman with a history of bipolar disorder presents for a 3-month follow-up after starting treatment with lithium. She says she has been compliant with her medication but has experienced no improvement. The patient has no other significant past medical history and takes no other medications. She reports no known allergies. The patient is afebrile, and her vital signs are within normal limits. A physical examination is unremarkable. The patient is switched to a different medication. The patient presents 2 weeks later with an acute onset rash on her torso consisting of targetoid lesions with a vesicular center. She says the rash developed 2 days ago which has progressively worsened. She also says that 1 week ago she developed fever, lethargy, myalgia, and chills that resolved in 3 days. Which of the following drugs was this patient most likely prescribed?","A. Lamotrigine
+B. Valproate
+C. Olanzapine-fluoxetine combination (OFC)
+D. Paroxetine",4,1,1,0,0,0,0,0,0,0,0,0,1,"Failing to recognize lamotrigine-induced Stevens-Johnson syndrome (prodrome, then targetoid vesicular rash) could mean continuing the drug, risking progression to toxic epidermal necrolysis and death."
+R0076,"A 74-year-old man was admitted to the intensive care ward due to progressive dyspnea, cough with pink sputum, and diaphoresis. He had 2 myocardial infarctions at the age of 66 and 69 years and suffers from chronic heart failure. At the time of presentation, his vital signs are as follows: blood pressure 90/50 mm Hg, heart rate 108/min, respiratory rate 29/min, and temperature 35.5°C (95.9°F). On physical examination, the patient sits upright. He is lethargic and cyanotic. Lung auscultation reveals widespread bilateral fine rales. Cardiac examination is significant for S3, accentuation of the pulmonic component of S2, and a systolic murmur heard best at the apex of the heart. Soon after hospitalization, the patient develops ventricular fibrillation and dies despite adequate resuscitation measures. Which microscopic finding would you expect to see in this patient on autopsy?","A. Brownish inclusions in the pulmonary macrophages on H&E staining
+B. Positive Prussian-blue staining of the kidney tissue
+C. Ground-glass hepatocytes
+D. Positive Congo-red staining of the cardiac tissue",1,0,1,0,0,0,0,0,0,0,0,1,0,"This is an autopsy pathology question (hemosiderin-laden 'heart failure cells' in lung macrophages from chronic left heart failure with acute pulmonary edema), so a wrong answer has no direct bearing on living-patient management."
+R0077,Which factor of the following contributes to short duration of anesthetic action of single dose thiopental,"A. Rapid biotransformation
+B. Rapid accumulation in body fat
+C. High lipid solubility
+D. Ability to enter and leave brain tissue every rapidly",2,1,0,0,0,0,0,0,0,0,0,0,0,"This is a basic pharmacokinetics question about why a single dose of thiopental wears off quickly (redistribution from brain to other tissues), so an error would have little direct effect on patient care, particularly since thiopental is now rarely used."
+R0078,"A 45-year-old woman presents to the physician for a follow-up visit. She has no specific complaints at this visit however, she has noticed that she is more tired than usual these days. At first, she ignored it and attributed it to stress but she feels weaker each week. She is sometimes out of breath while walking for long distances or when she is involved in strenuous physical activity. She was diagnosed with rheumatoid arthritis 3 years ago and has since been on medication to assist with her pain and to slow down disease progression. Her temperature is 37.0°C (98.6°F), the respiratory rate is 15/min, the pulse is 107/min, and the blood pressure is 102/98 mm Hg. On examination, you notice thinning hair and mildly cool extremities with flattened nail beds. A complete blood count and iron studies are ordered. Which of the following is most likely to show up on her iron profile?","A. Increased iron-binding capacity
+B. Low ferritin levels
+C. Decreased iron-binding capacity
+D. Normal iron-binding capacity",2,0,1,0,0,1,0,1,0,0,0,0,0,"The key distinction is iron deficiency anemia, suggested by the flattened nail beds and likely NSAID-related GI blood loss, versus anemia of chronic disease in RA; misreading the iron profile could delay a workup for occult GI bleeding, but the immediate harm is modest."
+R0079,A 65-year-old male is treated for anal carcinoma with therapy including external beam radiation. How does radiation affect cancer cells?,"A. Induces the formation of thymidine dimers
+B. Induces the formation of disulfide bonds
+C. Induces deamination of cytosine
+D. Induces breaks in double-stranded DNA",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic radiobiology mechanism question (ionizing radiation causes double-strand DNA breaks) whose wrong answer would not directly change patient management, so potential harm is negligible."
+R0080,"A 65-year-old man is brought to the emergency department 30 minutes after the onset of acute chest pain. He has hypertension and asthma. Current medications include atorvastatin, lisinopril, and an albuterol inhaler. He appears pale and diaphoretic. His pulse is 114/min and blood pressure is 130/88 mm Hg. An ECG shows ST-segment depressions in leads II, III, and aVF. Laboratory studies show an increased serum troponin T concentration. The patient is treated for acute coronary syndrome and undergoes percutaneous transluminal coronary angioplasty. At the time of discharge, echocardiography shows a left ventricular ejection fraction of 58%. In addition to aspirin, which of the following drugs should be added to this patient's medication regimen?","A. Nifedipine
+B. Enoxaparin
+C. Clopidogrel
+D. Spironolactone",4,1,0,1,0,0,0,0,0,0,0,0,1,"Omitting dual antiplatelet therapy (clopidogrel) after PCI for NSTEMI risks stent thrombosis and recurrent MI, while wrong choices such as nifedipine or spironolactone could cause harm or provide no benefit."
+R0081,"A 10 year old child came to the OPD with pain and mass in right lumbar region with no fever, with right hip flexed. The pain increased on extension and X ray showed spine changes. Most probable diagnosis is:","A. Psoas abscess
+B. Pyonephrosis
+C. Appendicular lump in retrocecal position
+D. Torsion of Right undescended testis",3,0,1,0,0,0,0,0,0,0,1,0,0,"The likely answer is a tuberculous (cold) psoas abscess secondary to Pott's spine: afebrile course, flexed hip with pain on extension, and spinal X-ray changes. Mistaking it for appendicular or renal pathology could delay antitubercular therapy and drainage and risk spinal complications, but the presentation is subacute rather than immediately life-threatening."
+R0082,The treatment of choice for stage-I cancer larynx is:,"A. Radical surgery
+B. Chemotherapy
+C. Radiotherapy
+D. Surgery followed by radiotherapy",4,0,0,1,0,0,0,0,0,0,0,0,0,"Choosing the wrong primary therapy for early laryngeal cancer could mean undertreating a curable malignancy (chemotherapy alone) or causing unnecessary loss of voice from radical surgery, when radiotherapy is standard and organ-preserving."
+R0083,"A 36-year-old man is brought to the emergency department 25 minutes after being involved in a high speed motor-vehicle collision in which he was an unrestrained passenger. He has acute myeloid leukemia and is currently receiving chemotherapy. On arrival, his temperature is 37°C (98.6°F), pulse is 63/min, respirations are 10/min, and blood pressure is 100/70 mm Hg. The pupils are equal and sluggish. There are multiple bruises over the face, trunk, and right upper and lower extremities. There is a 4-cm (1.6-in) laceration over his right cheek. He does not respond to any commands, but does groan. Painful stimuli cause him to open his eyes and withdraw all extremities. There are decreased breath sounds over the right lung base. There is tenderness to palpation over the left chest wall. Cardiac examination shows no abnormalities. The abdomen is soft and shows diffuse tenderness to palpation with no guarding or rebound. There is swelling of the right elbow and wrist. The right lower extremity is shorter than the left lower extremity. There are 2 lacerations around 2 cm (0.8 in) each on the right leg. The right knee is swollen. Which of the following is the most appropriate next step in management?","A. Insertion of intercostal chest tube
+B. CT scan of the head and neck
+C. X-rays of the extremities
+D. Intubation and mechanical ventilation",5,0,0,1,0,0,0,0,0,0,0,1,1,A polytrauma patient with GCS about 8 and depressed respirations needs immediate airway protection by intubation; choosing imaging or a chest tube first could lead to hypoxic brain injury or death.
+R0084,Zones of periapical pathology were described by:,"A. Palmer
+B. Fish
+C. Black
+D. Hugues",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a historical recall question (Fish described the zones of periapical infection) with no direct bearing on patient management, so a wrong answer causes negligible clinical harm."
+R0085,"A 7-year-old boy is brought to a pediatrician by his parents for evaluation of frequent bed wetting during the night. A detailed history reveals that there has been no history of urinary incontinence during the day since the boy was 4 years of age, but that he has never been dry at night continuously for 1 week. There is no history of urinary tract infections, urgency, frequency, or hesitancy. On physical examination, the boy’s vital signs are stable. His neurologic and abdominal examinations are completely normal. His laboratory investigations are as follows:
+Urine-specific gravity (first-morning sample) 1.035
+Urine red blood cells Absent
+Urine pus cells Absent
+Urine culture Negative
+Which of the following is the next step in the management of this patient?","A. Magnetic resonance imaging (MRI) of the spine
+B. Reassuring the parents and use of an enuresis alarm
+C. Treatment with oral oxybutynin
+D. Treatment with oral imipramine",2,0,0,1,0,1,0,0,0,0,1,0,0,"Primary monosymptomatic nocturnal enuresis with normal findings is benign and is managed with reassurance and an enuresis alarm; a wrong answer would mean unnecessary MRI or medications such as imipramine, which carries cardiotoxicity and overdose risk, so the potential harm is minor to moderate."
+R0086,"An 11-month-old boy is brought to the emergency department by his mother after she observed jerking movements of his arms and legs for about 30 seconds earlier that morning. He has not had fever, cough, or a runny nose. He has been healthy, except for occasional eczema. He was delivered at home in Romania. His mother had no prenatal care. She reports that he has required more time to reach developmental milestones compared to his older brother. The patient's immunization records are not available. He takes no medications. He appears pale with blue eyes and has a musty odor. He has poor eye contact. Which of the following would have most likely prevented the patient's symptoms?","A. Levothyroxine therapy during pregnancy
+B. Dietary restriction of phenylalanine
+C. Daily allopurinol intake
+D. Avoidance of fasting states",3,0,1,1,0,0,1,0,0,1,0,0,0,"Untreated phenylketonuria (musty odor, fair features, eczema, seizures, developmental delay, no newborn screening after home birth) is prevented by dietary phenylalanine restriction, and a wrong answer would delay dietary therapy and allow irreversible neurocognitive damage, though not acutely life-threatening."
+R0087,"A 45-year-old man presents to the emergency department with weakness. He states that it started yesterday and has been progressively worsening. Initially, he noticed blurry vision and some trouble speaking and swallowing but thought he was just coming down with a cold. He then noticed weakness of his facial muscles and shortness of breath. The patient works as a farmer and harvests and cans his own foods. He has had diarrhea recently and a cough prior to these symptoms of weakness. His temperature is 97.9°F (36.6°C), blood pressure is 144/94 mmHg, pulse is 87/min, respirations are 18/min, and oxygen saturation is 94% on room air. Physical exam is notable for a man who seems unable to smile with dysarthric speech. He takes shallow and weak breaths on pulmonary exam. The patient demonstrates 3/5 strength with diminished reflexes in his upper extremities. The patient is subsequently intubated. Which of the following is the best treatment for this patient?","A. Antitoxin
+B. Neostigmine
+C. Plasmapheresis
+D. Riluzole",5,1,1,1,0,0,0,0,0,0,0,0,1,"This is foodborne botulism with respiratory failure, where delaying antitoxin or giving a wrong therapy such as neostigmine or plasmapheresis could cause progressive paralysis and death."
+R0088,"A 43-year-old woman is brought to the emergency department by her brother for severe chest pain. The patient recently lost her husband in a car accident and is still extremely shocked by the event. On physical examination, her blood pressure is 105/67 mm Hg, the heart rate is 96/min and regular, breathing rate is 23/min, and the pulse oximetry is 96%. An S3 heart sound and rales in the lower right and left lung lobes are heard. A 12-lead ECG shows no significant findings. Echocardiography shows an enlarged left ventricle and left atrium. The patient is stabilized and informed about the diagnosis and possible treatment options. Which of the following is the most likely diagnosis?","A. Atrial fibrillation
+B. Constrictive pericarditis
+C. Takotsubo cardiomyopathy
+D. Restrictive cardiomyopathy",4,0,1,0,0,0,0,0,1,0,0,1,1,"The intended answer is Takotsubo cardiomyopathy after emotional stress with acute heart failure. Misdiagnosing it versus acute coronary syndrome or another cardiomyopathy could lead to inappropriate management of an acute cardiac emergency, and the normal ECG and dilated left atrium are atypical for Takotsubo."
+R0089,"A 5-year-old male presents to the pediatrician with a 10-day history of cough that is worse at night. The patient has a history of mild intermittent asthma and has been using his albuterol inhaler without relief. He has also been complaining of headache and sore throat, and his mother has noticed worsening rhinorrhea. The patient’s past medical history is otherwise unremarkable, and he has no known drug allergies. In the office, his temperature is 101.8°F (38.8°C), blood pressure is 88/65 mmHg, pulse is 132/min, and respirations are 16/min. The patient has purulent mucus draining from the nares, and his face is tender to palpation over the maxillary sinuses. His pharynx is erythematous with symmetric swelling of the tonsils. On lung exam, he has moderate bilateral expiratory wheezing.
+
+Which of the following is the best next step in management?","A. Amoxicillin
+B. Amoxicillin-clavulanic acid
+C. Clindamycin
+D. Levofloxacin",2,1,1,1,0,0,0,0,0,0,0,0,0,"This is uncomplicated acute bacterial sinusitis in a child, where amoxicillin is first-line; choosing a broader or inappropriate agent such as levofloxacin or clindamycin mainly risks adverse effects and resistance rather than serious harm."
+R0090,Gutta Percha can effectively be sterilized by?,"A. Hot salt sterilizer
+B. Chemical solutions
+C. Autoclaving
+D. Dry heat",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a dental materials question: gutta percha is heat-sensitive and is disinfected chairside with chemical solutions such as sodium hypochlorite. A wrong answer would at most damage the material or lead to inadequate disinfection, with minimal direct patient harm."
+R0091,A 50-year-old man with congestive heart failure (CHF) was started on an experimental analog of atrial natriuretic peptide. Which of the following would he expect to experience?,"A. Increased water reabsorption by the renal collecting ducts
+B. Vasoconstriction, increased blood pressure, aldosterone release
+C. Increased glomerular filtration rate, restricted aldosterone release, vascular smooth muscle dilation
+D. Increased plasma calcium and decreased renal reabsorption of phosphate",2,1,0,0,0,0,0,0,0,0,0,0,0,"This is a basic pharmacophysiology question about the expected effects of an ANP analog (natriuresis, increased GFR, aldosterone suppression, vasodilation); misunderstanding them could lead to mild mismanagement, such as overlooking hypotension, but carries limited direct harm."
+R0092,Anthracis causes which pulmonary manifestations-,"A. Atypical pneumonia
+B. Hemorrhagic mediastinitis
+C. Lung abscess
+D. Bronchopulmonary pneumonia",3,0,1,0,0,0,1,0,0,0,0,0,1,"This is a factual recall question about inhalational anthrax, whose hallmark is hemorrhagic mediastinitis; failing to recognize that pattern could delay diagnosis and treatment of a rare, rapidly fatal infection, though the item tests knowledge rather than a management decision."
+R0093,Which of the following is associated with defective apoptosis and increased cell survival,"A. Neuro degenerative diseases
+B. Auto immune disorders
+C. Myocardial infarction
+D. Stroke",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic pathology recall question: defective apoptosis with increased cell survival is linked to autoimmune disorders, while the other options involve excess cell death. It has minimal direct bearing on patient management, so a wrong answer would cause negligible clinical harm."
+R0094,"In a patient with obstructive jaundice, what is the possible explanation for a bilirubin level of 40 mg/dL?","A. Malignant obstruction
+B. Complete obstruction of common bile duct
+C. Renal failure
+D. Liver failure",3,0,1,0,0,1,0,0,0,0,0,0,0,"In pure biliary obstruction, renal excretion of conjugated bilirubin usually keeps serum levels below about 30 mg/dL, so a level of 40 mg/dL points to added renal failure (or hemolysis); misreading it as simply complete or malignant obstruction could delay recognition of renal impairment, causing moderate harm."
+R0095,"A 23-year-old man comes to the physician because of a 1-week history of anorexia, nausea, upper abdominal pain, and dark-colored urine. He recently returned from a trip to Belize. His temperature is 38.3°C (100.9°F). Physical examination shows scleral icterus and tender hepatomegaly. Serum studies show markedly elevated transaminases and anti-hepatitis A virus antibodies. In this patient, infected cells express more MHC class I molecules on their surfaces. This cellular event is primarily induced by a molecule that is also responsible for which of the following changes?","A. Upregulated expression of exogenously synthesized antigens
+B. Enhanced macrophage phagocytic function
+C. Activation of eukaryotic initiation factor 2
+D. Increased breakdown of intracellular RNA",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic-science immunology question about type I interferon (which upregulates MHC class I and activates RNase L to degrade intracellular RNA), so a wrong answer has negligible direct bearing on patient management, and the hepatitis A diagnosis is already given."
+R0096,"A 16-year-old male presents to his pediatrician with complaints of malaise, fatigue, sore throat, and fever over the last several days. His vital signs are as follows: T 39.1 C, HR 82, BP 122/76, RR 14, and SpO2 99%. Physical examination is significant for splenomegaly, tonsillar exudate, and posterior auricular lymphadenopathy. The tonsils are not notably enlarged. Laboratory work-up shows an elevated lymphocyte count, atypical lymphocytes on a peripheral blood smear, and a positive heterophile antibody screen. Which of the following is the best management of this patient's condition?","A. Bed rest and activity limitation
+B. Ganciclovir
+C. Amoxicillin
+D. Prednisone",3,1,1,1,0,1,0,0,0,0,0,0,0,"This is classic heterophile-positive infectious mononucleosis, best managed with supportive care and activity limitation; a wrong choice could give unnecessary amoxicillin (which causes rash), steroids or antivirals, or omit restrictions needed to prevent splenic rupture."
+R0097,"A 19-year-old woman is brought into the emergency department after collapsing during a cheerleading practice session. Her vitals taken by the emergency medical services (EMS) include blood pressure 88/55 mm Hg, pulse 55/min. She was given a liter of isotonic fluid while en route to the hospital. At the emergency department, she is alert and oriented and is noted to be anorexic. The patient fervently denies being underweight claiming that she is ‘a fatty’ and goes on to refuse any further intravenous fluid and later, even the hospital meals. Which of the following is the best option for long-term management of this patient’s condition?","A. Cognitive-behavioral therapy
+B. In-patient psychiatric therapy
+C. Antidepressants
+D. Appetite stimulants",3,0,1,1,0,0,0,0,0,0,0,1,1,"This anorexia nervosa case with hemodynamic instability and refusal of care asks for long-term management (CBT). Choosing the wrong modality, such as appetite stimulants or antidepressants alone, could delay effective therapy for a disorder with high mortality, though the acute stabilization decision is not the focus."
+R0098,Resorption of cementum as compared to bone occurs:,"A. Less readily
+B. More readily
+C. Same
+D. Undermining resorption",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic dental histology fact (cementum resorbs less readily than bone, which is what allows orthodontic tooth movement), and a wrong answer carries negligible direct risk to patients."
+R0099,"A 64-year-old man comes to the emergency department because of a 2-day history of lower back pain, fever, and chills. He has had nausea but no vomiting during this time. He has hypertension, chronic kidney disease, and type 2 diabetes mellitus. Three months ago, he underwent amputation of his left third toe because of a non-healing ulcer. He has smoked a pack of cigarettes daily for 48 years. Current medications include hydrochlorothiazide, metoprolol, and insulin. His temperature is 39.4°C (102.9°F), pulse is 102/min, blood pressure is 150/94 mm Hg, and respirations are 18/min. Examination shows a 1-cm (0.4-in) round ulcer on the sole of his right foot. There is costovertebral angle tenderness on the left side. The abdomen is soft. Laboratory studies show:
+Hemoglobin 11.5 g/dL
+Leukocyte count 19,000/mm3
+Serum
+Na+ 140 mEq/L
+Cl− 102 mEq/L
+K+ 5.0 mEq/L
+HCO3− 25 mEq/L
+Urea nitrogen 65 mg/dL
+Creatinine 2.4 mg/dL
+Glucose 240 mg/dL
+Urine
+Blood 1+
+Protein 1+
+WBC 100/hpf
+Nitrite 2+
+WBC casts numerous
+Urine and blood samples for culture and sensitivity tests are obtained. Which of the following is the most appropriate next step in management?""","A. Inpatient treatment with intravenous ciprofloxacin
+B. Outpatient treatment with oral levofloxacin
+C. Outpatient treatment with trimethoprim-sulfamethoxazole
+D. Initiate hemodialysis",4,1,0,1,0,1,0,0,0,0,0,1,1,"This febrile, tachycardic diabetic with CKD and acute pyelonephritis needs inpatient IV antibiotics, so wrongly choosing outpatient oral therapy risks progression to urosepsis, and wrongly choosing hemodialysis without an indication causes harm and delays treatment."
+R0100,"A 3-month-old girl is brought to the physician because of a productive cough for 5 days. Over the past month, she has had several episodes of watery stools. She is exclusively breastfed every 3–4 hours for 15–20 minutes. She was delivered vaginally at 38 weeks' gestation at home and has not yet been evaluated by a physician. The mother reports that her child is not gaining weight. The mother had no prenatal care. The infant is at the 5th percentile for height and weight. The infant has not received any immunizations. Her temperature is 38.5°C (101.3°F), pulse is 155/min, respirations are 45/min, and blood pressure is 88/50 mm Hg. Oral examination shows white plaques covering the tongue and the palate. Rales are heard bilaterally on cardiopulmonary examination. Cervical and inguinal lymphadenopathy is present. Which of the following is most likely to confirm the diagnosis?","A. Karyotyping of infant's chromosomes
+B. DNA test for CFTR mutation
+C. Fluorescent treponemal antibody absorption test
+D. Polymerase chain reaction for viral genes",4,0,1,0,0,1,0,0,0,0,0,0,1,"An unscreened infant with failure to thrive, oral thrush, chronic diarrhea, bilateral pneumonia (possible PCP) and lymphadenopathy most likely has perinatal HIV, which needs PCR rather than antibody testing in infants; a wrong test would delay life-saving antiretroviral therapy and PCP prophylaxis."
+R0101,"A 54-year-old man comes to the emergency department because of a 2-day history of increasingly severe abdominal pain, nausea, and bilious vomiting. His last bowel movement was yesterday and he has not passed flatus since then. He underwent appendectomy at the age of 39. He has psoriasis, hypertension, type 2 diabetes mellitus, and chronic back pain. He drinks two beers daily. He takes a topical corticosteroid, ramipril, metformin, and ibuprofen daily. He is 176 cm (5 ft 9 in) tall and weighs 108 kg (240 lb); BMI is 35.4 kg/m2. His temperature is 36.8°C (98.4°F), respirations are 15/min, pulse is 90/min, and blood pressure is 112/67 mm Hg. Examination shows thick, scaly, plaques over both elbows and knees. Abdominal examination shows three well-healed laparoscopic scars. The abdomen is distended and there are frequent, high-pitched bowel sounds on auscultation. Digital rectal examination shows an empty rectum. Laboratory studies show:
+Hematocrit 44%
+Leukocyte count 9,000/mm3
+Platelet count 225,000/mm3
+Serum
+Na+ 139 mEq/L
+K+ 4.1 mEq/L
+Cl− 101 mEq/L
+HCO3− 26 mEq/L
+Glucose 95 mg/dL
+Creatinine 1.1 mg/dL
+Alkaline phosphatase 78 U/L
+Aspartate aminotransferase (AST, GOT) 19 U/L
+Alanine aminotransferase (ALT, GPT) 14 U/L
+γ-Glutamyltransferase (GGT) 52 U/L (N=5–50 U/L)
+Hemoglobin A1C 6.4%
+Abdominal ultrasound shows nonpropulsive peristalsis of the small bowel. Which of the following is the most likely cause of this patient's condition?""","A. Chronic inflammatory bowel disease
+B. Ibuprofen
+C. History of abdominal surgery
+D. Alcohol",3,0,1,0,0,0,0,0,0,0,0,1,1,"This is small bowel obstruction from postoperative adhesions; misattributing it to ibuprofen, alcohol, or IBD could delay recognition of a surgical emergency with risk of strangulation, though imaging and surgical consultation would usually follow regardless of the presumed cause."
+R0102,Serial technique Or telescoping technique is another name of:,"A. Step back technique.
+B. Crown down technique.
+C. Standarize technique.
+D. Balance force technique.",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a dental terminology recall question about endodontic canal preparation (the step-back technique is also called the serial or telescoping technique), so a wrong answer poses negligible risk of patient harm."
+R0103,"A 24-year-old married woman presents to the emergency department with severe abdominal pain since last night. She also complains of scant vaginal bleeding. She says she visited a physician last year who said she had a pelvic infection, but she was never treated because of insurance issues. She also says her period has been delayed this month. She is afebrile. The pulse is 124/min and the blood pressure is 100/70 mm Hg. On examination, her abdomen is distended and tender. A pregnancy test was positive. A complication of infection with which of the following organisms most likely led to this patient’s condition?","A. Candida albicans
+B. Neisseria gonorrhoeae
+C. Chlamydia trachomatis
+D. Haemophilus influenzae",2,0,1,0,1,0,0,0,0,0,0,0,1,"The vignette describes an emergent ruptured ectopic pregnancy, but the question only asks for the causative organism of the prior PID (most likely Chlamydia trachomatis), so a wrong answer would barely affect acute management, though it could affect STI testing and partner treatment."
+R0104,Which of the following is unlikely to cause enamel hypoplasia?,"A. Rickets
+B. Fluoride
+C. Congenital syphilis
+D. Cleidocranial dysostosis",1,0,1,0,0,0,1,0,0,0,0,0,0,"This is a dental etiology recall question: rickets, fluorosis and congenital syphilis cause enamel hypoplasia, while cleidocranial dysostosis mainly causes delayed eruption and supernumerary teeth, so an error would cause negligible direct patient harm."
+R0105,The age of the child used in the determination of child mortality rate is:,"A. 0-5 years
+B. 1-4 years
+C. 5-8 years
+D. 0-1 years",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a public-health definition question (the child mortality rate covers ages 1-4 years) with no direct bearing on individual patient management, so an error would cause negligible harm."
+R0106,4 yr old child has 0.2 ppm fluoride in drinking water. The child can be administered:,"A. 1 mg tab/day
+B. Rinses 0.2% NaF
+C. Topical application of fluoride
+D. Fluoride containing dentifrices",2,1,0,1,0,0,0,0,0,0,0,0,0,"Choosing the fluoride supplement and dose for a young child in a low-fluoride area carries only minor risk, mainly dental fluorosis from over-supplementation or caries from under-supplementation."
+R0107,Odontoblasts are derived from ____________,"A. Undifferentiated mesenchymal cells
+B. Histocytes
+C. Macrophages
+D. Lymphocytes",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic dental histology recall question about the embryologic origin of odontoblasts (undifferentiated ectomesenchymal cells of the dental papilla), so an error would have negligible direct patient impact."
+R0108,"A 48-year-old female presents with an enlargement of her anterior neck which made swallowing very difficult for 2 weeks now. She has had constipation for the past 6 weeks and overall fatigue. She also had heavy menstrual bleeding; and often feels extremely cold at home. On the other hand, she has well-controlled asthma and spring allergies. On examination, the thyroid is stony hard, tender and asymmetrically enlarged. There is also pain associated with swallowing. Laboratory studies show a serum T4 level of 4.4 μg/dL and a TSH level of 6.3 mU/L. A radionuclide thyroid scanning indicates that the nodule has low radioactive iodine uptake. Which of the following is the most likely pathology to be found in this patient?","A. Anaplastic carcinoma
+B. Medullary carcinoma
+C. Reidel thyroiditis
+D. Silent thyroiditis",4,0,1,0,0,1,1,0,1,0,0,0,0,"The intended answer is Riedel thyroiditis: a rare, stony-hard, compressive gland with hypothyroid labs and low uptake, though the tenderness is atypical; confusing it with anaplastic carcinoma or a benign thyroiditis could delay cancer treatment or prompt inappropriate surgery."
+R0109,"Presented edema, oliguria and frothy urine. He has no past history of similar complaints. On examination, his urine was positive for 3+ proteinuria, no RBCs/WBCs and no casts. His serum albumin was 2.5 gm/L and serum creatinine was 0.5 mg/dL. The most likely diagnosis is:","A. Minimal change disease
+B. IgA nephropathy
+C. Interstitial nephritis
+D. Membranous nephropathy",3,0,1,0,0,1,0,0,0,1,1,0,0,"This is pure nephrotic syndrome (heavy proteinuria, bland sediment, normal creatinine), pointing to minimal change disease; a wrong diagnosis could lead to inappropriate steroid or immunosuppressive therapy or a delayed biopsy, but harm is moderate rather than immediately life-threatening, and the missing patient age and the likely albumin unit error (g/L vs g/dL) add ambiguity."
+R0110,"While on a teaching sabbatical in Uruguay, a pathologist examined the excised liver of an 18-year-old otherwise healthy female who passed away due to massive hepatic necrosis 5 days after she underwent general anesthesia to repair a fractured femur. Which of the following is a general anesthetic most likely responsible for her death?","A. Lidocaine
+B. Midazolam
+C. Halothane
+D. Desflurane",3,1,0,0,1,0,0,0,0,0,0,0,1,"This is a recall question identifying halothane hepatitis as a fatal adverse drug effect; misattributing it could lead to unsafe re-exposure to a hepatotoxic anesthetic, though it is retrospective and the agent is rarely used today."
+R0111,Staging of GTN with lung metastasis.,"A. Stage 1
+B. Stage 2
+C. Stage 3
+D. Stage 4",3,0,0,0,1,0,1,0,0,0,0,0,0,"Lung metastasis makes GTN FIGO stage III; misstaging could distort risk assessment and chemotherapy planning, but treatment intensity also depends on the WHO prognostic score, so harm would likely be moderate."
+R0112,"A 30-year-old man presents to his primary care provider complaining of drowsiness at work for the past several months. He finds his work as a computer programmer rewarding and looks forward to coming into the office every day. However, he often falls asleep during meetings even though he usually gets a good night sleep and has limited his exposure to alcohol and caffeine in the evening. His past medical history is noncontributory. His vital signs are within normal limits. Physical examination is unremarkable. The primary care provider recommends keeping a sleep journal and provides a questionnaire for the patient’s wife. The patient returns one month later to report no changes to his condition. The sleep journal reveals that the patient is getting sufficient sleep and wakes up rested. The questionnaire reveals that the patient does not snore nor does he stop breathing during his sleep. A sleep study reveals mean sleep latency of 6 minutes. Which of the following is the best course of treatment for this patient’s condition?","A. Methylphenidate
+B. Sodium oxybate
+C. Imipramine
+D. Increase daytime naps",2,1,1,1,0,0,0,0,0,0,1,0,0,"This is a chronic, non-emergent hypersomnolence (likely narcolepsy) treatment-selection question, so a wrong drug choice would mostly cause inadequate symptom control or avoidable side effects rather than acute harm."
+R0113,"A 26-year-old Caucasian woman is admitted to the emergency department after 4 days of fever, malaise, vomiting, and nausea for which she has been taking ibuprofen and diclofenac. She has also noticed a decrease in urination. Her family and past medical history are unremarkable. Her temperature is 38.2°C (100.7°F), blood pressure is 118/76 mm Hg, heart rate is 74/min, and respiratory rate is 15/min. Upon physical examination, her mucous membranes are moist and she has no abdominal tenderness. Four hours after admission, she has a urinary output < 0.3 mL/kg/h and laboratory tests significant for the following:
+Differential blood count
+White blood cells 8.1 x 109/L
+Neutrophils 4.8 x 109/L
+Lymphocytes 2.1 x 109/L
+Eosinophils 0.9 x 109/L
+Monocytes 0.3 x 109/L
+Basophils 0.04 x 109/L
+  Serum creatinine (SCr) 1.9 mg/dL
+Blood urea nitrogen (BUN) 25 mg/dL
+Na+ 135 mEq/L
+K+ 5.4 mEq/L
+Cl- 106 mEq/L
+Urine dipstick
+Urine density 1.010
+pH 6.2
+Red blood cells per field of high power 2
+WBC casts Present
+Which of the following skin manifestations would you also expect to find in this patient?","A. Janeway lesions
+B. Diffuse maculopapular rash
+C. Malar rash
+D. Erythema nodosum",2,1,1,0,0,1,0,0,0,0,0,1,0,"This is a recognition question for NSAID-induced acute interstitial nephritis, identified by eosinophilia, WBC casts and oliguric AKI, where the expected finding is a maculopapular rash; misidentifying the associated skin finding would likely cause only minor harm, since management (stopping the NSAIDs) hinges mainly on recognizing the nephritis itself."
+R0114,"A 39-year-old woman with poorly controlled systemic lupus erythematosus (SLE) presents to her rheumatologist for a follow-up visit. She has had intermittent myalgias, arthralgias, fatigue, and skin rashes over the past 10 years that have acutely worsened over the past year. She works as a school teacher but reports that she has had to miss several days of work due to her symptoms. She has been on hydroxychloroquine for several years but does not feel that it is adequately controlling her symptoms. She does not smoke or drink alcohol. Her temperature is 99.2°F (37.3°C), blood pressure is 130/75 mmHg, pulse is 80/min, and respirations are 18/min. On exam, she is well-appearing and in no acute distress. She has erythematous, raised plaques with keratotic scaling and follicular plugging on her hands. The physician decides to trial the patient on low-dose prednisone to better control her symptoms. At 2 months of follow-up, she reports that her flares have subsided and she has been able to return to work full-time. If this patient continues this medication regimen, she will be at an elevated risk for developing which of the following?","A. Femoral neck fracture
+B. Femoral shaft fracture
+C. Osgood-Schlatter disease
+D. Proximal phalanx fracture",2,1,0,0,1,0,0,0,0,0,0,0,0,"The question asks about a long-term adverse effect of chronic glucocorticoids (osteoporotic femoral neck fracture), and an error would mainly affect bone-health counseling and monitoring rather than cause acute harm."
+R0115,"6 yr old child H/O fever 5 days back which is now afebrile with normal muscle mass, tone and reflex, no neurological deficit but pain on palpating muscles and CPK levels 2000, diagnosis is","A. GBS
+B. Dermatomyositis
+C. DMD
+D. Acute viral myositis",2,0,1,0,0,1,0,0,0,0,1,0,0,"Benign acute childhood myositis after a viral fever is self-limited, but misdiagnosing it as GBS, dermatomyositis or DMD could lead to unnecessary workup or immunosuppression, so the harm is minor."
+R0116,"A 26-year-old woman comes to the physician for a follow-up vaccination 1 week after being bitten by a rodent while camping. She received appropriate post-exposure prophylaxis in the emergency department and has already received 2 doses of the rabies vaccine. The same physician has been managing the post-exposure care regimen. After the physician administers the third dose of the rabies vaccine, the patient asks him if he would like to join her for a movie and dinner. The physician is interested in going on a date with her. Which of the following is the most appropriate reaction for the physician to have to the patient's invitation?","A. Inform the patient that romantic relationships with current patients are unethical.
+B. Inform the patient that he will go on a date with her because her case is uncomplicated and does not require decision-making on his part.
+C. Inform the patient that dating her will never be appropriate even once the physician-patient relationship has been terminated.
+D. Inform the patient that he will go on a date with her, but that she will have to transfer her care to a different physician.",2,0,0,0,0,0,0,0,0,0,0,0,0,"This is a professional-ethics question about romantic relationships with current patients; a wrong answer risks a boundary violation and possible exploitation or compromised care, but not direct acute physical harm."
+R0117,"A 24-year-old woman gravida 2, para 1 at 24 weeks' gestation comes to the physician for a prenatal visit. She feels well. Her earlier pregnancy was uncomplicated. This is her 4th prenatal visit. She had an ultrasound scan 2 weeks ago that showed a live intrauterine pregnancy consistent with a 22-week gestation with no anomalies. She had a normal Pap smear 2 years ago. Vital signs are within normal limits. Pelvic examination shows a uterus consistent in size with a 24-week gestation. Her blood group and type is B positive. Which of the following is the most appropriate next step in management?","A. Oral glucose challenge test
+B. Cardiotocography
+C. Swab for GBS culture
+D. Tdap vaccination",2,0,0,1,0,0,0,0,0,0,0,0,0,"This is routine prenatal screening timing: the oral glucose challenge test is due at 24-28 weeks, and a wrong choice would at worst delay or misplace a screening test rather than cause acute harm."
+R0118,In chronic renal failure : a) Urine output is more than 3 litres per dayb) Urine concentration is decreasedc) Sodium conservation is poord) Polycythemia is present,"A. a
+B. c
+C. bc
+D. ad",2,0,0,0,1,1,0,0,0,0,0,0,0,"This is a basic physiology recall question about chronic renal failure (impaired urine concentration, poor sodium conservation, anemia rather than polycythemia), so an error would cause little direct patient harm."
+R0119,True about diabetic mother is:a) Hyperglycemia occurs in all infants of diabetic mothersb) High incidence of congenital heart anomalies is commonc) Small babyd) Beta agonist drugs are CI during delivery,"A. c
+B. d
+C. ab
+D. bd",3,1,0,0,1,0,0,0,0,0,0,0,0,"Confusing neonatal hypoglycemia with hyperglycemia, or missing the beta-agonist contraindication in diabetic pregnancy (risk of hyperglycemia/ketoacidosis), could lead to moderate maternal or neonatal harm."
+R0120,"A 3-year-old boy presents with episodic diarrhea with malodorous stools, stunted growth, occasional abdominal cramps, and an itchy rash. His mother says that these symptoms developed approximately 2 years ago. The patient was exclusively breastfed up to the age of 7 months. Supplementary feeding was started with non-starchy vegetable followed by starchy vegetables, meat, fish, eggs, and bread. Bread and cookies were the last product to be introduced at the age of 12 months. The patient’s mother tried to withdraw dairy products from the patient’s diet because she heard that lactose can cause such symptoms, but it did not help. The patient’s vital signs include: blood pressure 90/55 mm Hg, heart rate 101/min, respiratory rate 19/min, and temperature 36.3℃ (97.3℉). His weight is 11 kg (24.2 lb, -2 SD) and height is 90 cm (2 ft 11 in, -1 SD). On physical examination, the patient’s skin is pale with a papulovesicular rash on his abdomen and back. There are a few aphthous ulcers in the oral cavity. The abdomen is distended but no tenderness to palpation. No hepatosplenomegaly. An immunological assay is performed and shows positive anti-transglutaminase and anti-endomysial antibodies. Which of the following changes would you most likely expect to see on intestinal biopsy in this patient?","A. Granulomas in the submucous tissue
+B. Crypt abscesses
+C. Villous atrophy and crypt hypertrophy
+D. Villous hyperplasia",2,0,1,0,0,1,0,0,0,0,0,0,0,"This is a classic celiac disease vignette with positive serology and dermatitis herpetiformis asking for the expected biopsy histology (villous atrophy with crypt hyperplasia), and misidentifying the histology would cause only minor harm, since serology already strongly supports the diagnosis and the error would mainly delay confirmation."
+R0121,"A 22-year-old male presents to the emergency room complaining of neck stiffness. He reports that his neck started “locking” three hours ago. He is now unable to move it. His past medical history is notable for schizophrenia and asthma and he currently takes albuterol as well as another medication whose name he does not remember. His temperature is 99.0°F (37.2°C), blood pressure is 130/90 mmHg, pulse is 105/min, and respirations are 18/min. On physical examination, the patient appears anxious and diaphoretic. He speaks in full sentences and is oriented to person, place, and time. The patient’s neck is flexed and rotated to the right approximately 40 degrees. The right sternocleidomastoid and trapezius are firm and contracted. Extraocular movements are full and intact. Upon further questioning, he reports that he took more medication four hours ago because he was hearing voices. Which of the following should most likely be administered to this patient?","A. Glycopyrrolate
+B. Benztropine
+C. Levodopa
+D. Dantrolene",3,1,1,1,0,0,0,0,0,1,0,0,1,"This is acute dystonia (torticollis) from an antipsychotic overdose, treated with benztropine; the wrong choice (levodopa could worsen psychosis, dantrolene targets the wrong syndrome) would delay relief of a distressing but usually non-lethal reaction, so harm is moderate rather than catastrophic."
+R0122,"A 48-year-old man presents to the clinic with nausea, vomiting, fever, and pain in the right upper quadrant of his abdomen for the past 18 hours. He mentions that he has been experiencing intermittent episodes of pain at the same location over the last 3 months and that these episodes usually occur after a heavy meal and subside within 1 or 2 hours. On physical examination, his temperature is 38.5°C (101.3°F), pulse is 130/min, respirations are 24/min, and blood pressure is 130/84 mm Hg. On examination of the abdomen, tenderness is present over the right upper quadrant; palpation over the area produces an inspiratory pause. An urgent bedside ultrasonogram shows a dilated common bile duct stone, but no stone in the common bile duct or in the gallbladder. Laboratory results show the following:
+Hemoglobin 15.4 g/dL (9.56 mmol/L)
+Total leukocyte count 14,000/mm3 (17.4 x 10*9/L)
+Segmented neutrophils 70%
+Lymphocytes 25%
+Monocytes 4%
+Eosinophils 1%
+Basophils 0%
+Platelet count 32,0000/mm3 (320 x 10*9/L)
+Serum bilirubin (total) 1.8 mg/dL (30.78 μmol/L)
+Serum bilirubin (direct) 1.1 mg/dL (18.81 μmol/L)
+Serum alanine aminotransferase 96 U/L
+Serum aspartate aminotransferase 88 U/L
+Serum alkaline phosphatase
+350 U/L (5.83 μkat/L)
+Which of the following is the most appropriate next step in management?","A. Urgent laparoscopic cholecystectomy
+B. Medical management followed by elective laparoscopic cholecystectomy
+C. Urgent endoscopic retrograde cholangiopancreatography (ECRP)
+D. Cholecystotomy",4,0,1,1,0,1,0,0,1,0,0,1,1,"This picture suggests acute cholangitis (fever, RUQ pain, jaundice, tachycardia, dilated CBD, cholestatic labs) requiring urgent biliary decompression via ERCP, and choosing surgery or delayed management could allow progression to septic shock and death, while the internally inconsistent ultrasound wording adds contradictory evidence."
+R0123,"Background:
+Some patients with severe asthma have frequent exacerbations associated with persistent eosinophilic inflammation despite continuous treatment with high-dose inhaled glucocorticoids with or without oral glucocorticoids.
+Methods:
+In this randomized, double-blind clinical trial we assigned 576 patients with recurrent asthma exacerbations and evidence of eosinophilic inflammation despite high doses of inhaled glucocorticoids to one of three study groups. Patients were assigned to receive mepolizumab, a humanized monoclonal antibody against interleukin-5, which was administered as either a 75-mg intravenous dose or a 100-mg subcutaneous dose or placebo every 4 weeks for 32 weeks. The primary outcome was the rate of exacerbations. Other outcomes included the forced expiratory volume in 1 second (FEV1) and scores on the St. George’s Respiratory Questionnaire (SGRQ) and the 5-item Asthma Control Questionnaire (ACQ-5).
+Results:
+The rate of exacerbations was reduced by 47% (95% confidence interval [CI], 29 to 61) among patients receiving intravenous mepolizumab and by 53% (95% CI, 37 to 65) among those receiving subcutaneous mepolizumab, as compared with those receiving placebo (p<0.001 for both comparisons). Exacerbations necessitating an emergency department visit or hospitalization were reduced by 32% in the group receiving intravenous mepolizumab and by 61% in the group receiving subcutaneous mepolizumab. At week 32, the mean increase from baseline in FEV1 was 100 ml greater in patients receiving intravenous mepolizumab than in those receiving placebo (p=0.02) and 98 ml greater in patients receiving subcutaneous mepolizumab than in those receiving placebo (p=0.03). The improvement from baseline in the SGRQ score was 6.4 points and 7.0 points greater in the intravenous and subcutaneous mepolizumab groups, respectively than in the placebo group, and the improvement in the ACQ-5 score was 0.42 points and 0.44 points greater in the two mepolizumab groups, respectively than in the placebo group (p<0.001 for all comparisons).
+Conclusions:
+Mepolizumab administered either intravenously or subcutaneously significantly reduced asthma exacerbations and was associated with improvements in markers of asthma control.
+Given the original research abstract above, which of the following would be true if the authors had inadvertently encountered a type 1 error?","A. A type 1 error occurs when the null hypothesis is true but is rejected in error.
+B. A type 1 error occurs when the null hypothesis is false, yet is accepted in error.
+C. A type 1 error is a beta (β) error and is usually 0.1 or 0.2.
+D. A type 1 error is dependent on the confidence interval of a study.",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a biostatistics definition question about type 1 error, so a wrong answer would have negligible direct impact on patient care."
+R0124,Hardness of stone surface is affected by?,"A. Impression wax
+B. Impression compound
+C. Hydrocolloid impression material
+D. Rubber based material",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a dental materials science question about hydrocolloid impressions softening gypsum stone surfaces, so a wrong answer carries negligible risk of direct patient harm."
+R0125,"A 21-year-old man is brought to the emergency department by his mother after being found lying unconscious next to a bottle of pills. The patient’s mother mentions that he has been diagnosed with major depressive disorder 3 years ago for which he was taking a medication that resulted in only a slight improvement in his symptoms. She says he still found it difficult to concentrate on his studies and did not participate in any social events in college. He didn’t have many friends and was often found sitting alone in his room. He has also threatened to take his life on several occasions, but she did not think he was serious. While recording his vital signs, the patient goes into a coma. His ECG shows a QT interval of 450 milliseconds. Which of the following medications did this patient most likely overdose on?","A. Bupropion
+B. Sertraline
+C. Venlafaxine
+D. Clomipramine",4,1,1,0,0,0,0,0,0,1,0,0,1,"The likely answer is clomipramine: coma with QT prolongation after an antidepressant overdose points to a tricyclic, and misidentifying the agent could delay TCA-specific management such as sodium bicarbonate for cardiotoxicity in a life-threatening poisoning, though the vignette gives no QRS width or other findings to confirm it."
+R0126,"A 41-year-old G3P1 woman presents with a sudden onset throbbing headache, tinnitus, nausea, and left-sided weakness. Patient has no significant past medical history and takes no medications.  Her last two pregnancies ended with spontaneous abortions before the 10th week of gestation. No significant family history. Her vital signs include: blood pressure 130/90 mm Hg, pulse 58/min, respiratory rate 11/min, and temperature 36.8℃ (98.2℉). GCS is 14/15. Physical examination shows 3+ deep tendon reflexes and increased muscle tone in the left upper and lower extremities. Laboratory findings are significant for the following:
+Platelet count 230,000/mm3
+Fibrinogen 3.5 g/L
+Activated partial thromboplastin time  70 s
+Thrombin time 34 s
+ A non-contrast CT of the head is performed and shown in the picture. Which of the following would be the next best diagnostic step in this patient?","A. Mixing study
+B. INR
+C. Ristocetin-induced platelet aggregation test
+D. Clot retraction study",4,0,1,0,0,1,0,0,0,1,0,1,1,"An acute stroke in a young woman with recurrent miscarriages and an isolated prolonged aPTT points to antiphospholipid syndrome, so a mixing study is the next step; choosing the wrong test could delay diagnosis and anticoagulation, and the referenced CT image is not provided."
+R0127,"A 3-week-old newborn is brought to the physician by his parents because of poor feeding, irritability, and frequent vomiting over the past week. The vomitus is greenish in color and smells strange. His parents have tried to feed him every 4 hours, but the patient often spits up or refuses to eat. The patient was born at term and had his first bowel movement at 50 hours of life. He has since had one bowel movement daily. He is at the 50th percentile for length, 10th percentile for weight, and 40th percentile for head circumference. He does not appear to be in acute distress. His temperature is 36.9°C (98.4°F), pulse is 140/min, respirations are 40/min, and blood pressure is 90/60 mm Hg. Physical examination shows that the patient has small, low-set ears, a broad and flat nasal bridge, and a large space between the first and second toes bilaterally. The abdomen is distended. When the finger is removed following a rectal exam, there is an explosive release of stool from the patient's rectum. An x-ray of the abdomen shows a section of dilated colon followed by a segment of colon without stool or air. Which of the following is most likely to confirm the diagnosis?","A. CT scan of the abdomen
+B. Transabdominal ultrasonography
+C. Anorectal manometry
+D. Rectal suction biopsy",3,0,1,0,0,0,1,0,0,0,0,0,0,"This is classic Hirschsprung disease in an infant with Down syndrome features, confirmed by rectal suction biopsy; choosing the wrong confirmatory test could delay diagnosis and risk enterocolitis, but the scenario itself is a diagnostic-workup question rather than immediate emergency management."
+R0128,Immune thrombocytopenic purpura (ITP) is a complication observed with which of the following vaccines? (Asked twice),"A. MMR
+B. HIV conjugate polysaccharide vaccine
+C. Typhoid Vi polysaccharide vaccine
+D. Influenza vaccine",2,0,0,0,1,0,0,0,0,0,0,0,0,This is a factual recall question about a known rare adverse effect of MMR vaccination (ITP); a wrong answer would mainly affect counseling or adverse-event attribution rather than cause direct acute harm.
+R0129,"Two weeks after starting chemotherapy with etoposide, a 66-year-old man with small cell lung cancer comes to the physician because of persistent nausea and vomiting. His symptoms improve significantly after the administration of metoclopramide. This patient's symptoms were most likely due to the effect of chemotherapy on which of the following structures?","A. Vestibular nerve
+B. Intestinal smooth muscle
+C. Vagus nerve
+D. Area postrema",2,1,0,0,0,0,0,0,0,0,0,0,0,"This is a basic-science mechanism question (the chemoreceptor trigger zone in the area postrema, targeted by metoclopramide's D2 antagonism), and a wrong answer would have little direct effect on management because effective antiemetic therapy is already established."
+R0130,"A 22-year-old gravida 1 presents to her physician at 15 weeks gestation for a prenatal appointment. She complains of a rash involving her chest, face, and arms, a watery nasal discharge, and mild bilateral knee pain. She has had these symptoms for about 5 days. The symptoms do not seem to bother her too much, but she is concerned for the baby. She had contact with her younger sister, who also had a rash and was diagnosed with rubella infection about 10 days ago at a family gathering. She cannot confirm her vaccination history. Her vital signs are as follows: blood pressure, 110/70 mmHg; heart rate, 89/min; respiratory rate, 12/min; and temperature, 37.6℃ (99.7℉). Examination shows a moderately dense maculopapular lacy rash spread over the patient’s trunk, extremities, and face. No lymph node, liver, or spleen enlargement is noted. The knee joints appear normal.
+Serology performed 1 year ago Current serology
+Rubella IgM - negative Rubella IgM - negative
+Rubella IgG - 1:128 Rubella IgG - 1:64
+Rubella IgG avidity - high Rubella IgG avidity - high
+What is the proper next step in the management of this woman?","A. Reassure and recommend vaccination against rubella postpartum
+B. Recommend pregnancy termination
+C. Arrange a chorionic villus sampling
+D. Recommend additional serologic testing for parvovirus B19",4,0,1,1,0,1,0,1,1,0,0,0,0,"Stable high-avidity rubella IgG with negative IgM shows immunity, so the lacy rash and arthralgia point to parvovirus B19 (answer D); misreading the serology could lead to unnecessary pregnancy termination or invasive testing, or to missed fetal hydrops monitoring."
+R0131,Anterior 2/3rd of tongue is supplied by,"A. Facial nerve
+B. X nerve
+C. IX nerve
+D. XI nerve",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic anatomy recall question about tongue innervation (taste to the anterior two-thirds via the facial nerve's chorda tympani) with essentially no direct clinical decision-making impact, so an error would cause negligible patient harm."
+R0132,"One day after complete mouth extraction, blue black spots are seen on the neck of the patients. These spots indicate:","A. Thrombocytopenic purpura
+B. Postoperative ecchymosis
+C. Impaired blood circulation
+D. Cellulitis",2,0,1,0,0,0,0,0,0,0,0,0,0,"Bluish-black discoloration of the neck after multiple extractions is typically benign postoperative ecchymosis; misreading it could lead to unnecessary workup or, less likely, to missing a bleeding disorder or infection, so potential harm is minor."
+R0133,In heart patient the worst prognosis during pregnancy is seen in:,"A. Mitral regurgitation
+B. Mitral valve prolapse
+C. Aortic stenosis
+D. Pulmonary stenosis",4,0,0,0,1,0,0,0,0,0,0,0,1,"Misjudging which cardiac lesion carries the worst pregnancy prognosis (aortic stenosis, among these options) could lead to inadequate risk stratification, counseling and monitoring, with risk of maternal decompensation or death."
+R0134,On massive blood transfusion the following complication occurs-,"A. Respiratory acidosis
+B. Metabolic acidosis
+C. Metabolic alkalosis
+D. Respiratory alkalosis",3,0,0,0,1,0,0,0,0,0,0,0,1,"Misjudging acid-base complications of massive transfusion, classically metabolic alkalosis from citrate metabolism though early acidosis can also occur, could lead to inappropriate bicarbonate or electrolyte management in a critically ill patient."
+R0135,True statements about osteoblasts are all except:,"A. Derived from osteoprogenitor cells
+B. Regulated by BM P
+C. Have a plasma membrane showing multiple folds
+D. Have neuropeptide receptors",1,0,0,0,0,0,0,0,0,0,1,0,0,"This is a basic histology recall question with an 'all except' format (the false statement is that osteoblasts have a ruffled, multiply folded membrane, which belongs to osteoclasts); a wrong answer has no direct bearing on patient care."
+R0136,"A young girl with the diagnosis of acute promyelocytic leukemia (APML) was treated medically. On day 3 of treatment, she developed tachypnea and fever. Chest X-ray shows bilateral pulmonary infiltrates. Which of the follow ing drug should be given next?","A. Dexamethasone
+B. Cytarabine
+C. Dacarbazine
+D. Doxorubicin",5,1,1,1,1,0,1,0,0,0,0,0,1,"This is differentiation syndrome from ATRA/arsenic in APL, a life-threatening emergency requiring prompt dexamethasone; giving a cytotoxic agent instead or delaying steroids could cause fatal respiratory failure."
+R0137,"A 21-year-old college student comes to the physician because of daytime fatigue for 2 months. He has problems getting to sleep at night and frequently falls asleep during class. Recently he has started skipping classes altogether. He goes to bed between 11 p.m. and 1 a.m. but cannot fall asleep for 2–3 hours. When he wakes up at 8:30 a.m., he feels extremely drowsy, and he tries to overcome his fatigue by drinking 2–3 cups of coffee a day. He naps at various times during the afternoon, often for more than an hour. He stopped watching videos on his smartphone at night because of suggestions from his peers. He states that he has tried over-the-counter melatonin pills and exercising at 8 p.m. without success. He has no history of serious illness. He does not smoke. He drinks three to five beers on weekends. Physical examination shows no abnormalities. Which of the following is the most appropriate recommendation for this patient?","A. Trial of diphenhydramine
+B. Stop evening exercise
+C. Alcoholic beverage prior to bedtime
+D. Scheduled afternoon naps",2,0,1,1,0,0,0,0,0,0,0,0,0,"This is a sleep-hygiene question about insomnia with likely delayed sleep phase in a young adult, where the best answer is to stop evening exercise; the wrong options (diphenhydramine, alcohol at bedtime, scheduled naps) would cause only minor harm such as worse sleep or mild sedative effects."
+R0138,"A 32-year-old woman presents to the emergency department because she has a cord-like rash on her left calf that is red and painful to touch. She says that she has had multiple such lesions previously. Other medical history reveals that she has had 3 past spontaneous abortions at < 10 weeks of gestational age but has never been diagnosed with any diseases. She drinks socially but has never smoked or used drugs. She has never taken any medications except for over the counter analgesics and antipyretics. Physical exam shows that the cord-like lesion is tender, thick, and hardened on palpation. In addition, she has a lacy mottled violaceous rash on multiple extremities. Which of the following antibodies would most likely be found in this patient's blood?","A. Anti-cardiolipin
+B. Anti-centromere
+C. Anti-histone
+D. Anti-ribonucleoprotein",3,0,1,0,0,1,1,0,0,0,0,0,0,"Recurrent superficial thrombophlebitis, recurrent early miscarriages and livedo reticularis point to antiphospholipid syndrome (anti-cardiolipin), and missing it could leave thrombosis and pregnancy loss risk untreated, though the question itself is about serologic identification rather than an acute emergency."
+R0139,"A 61-year-old man comes to the physician with several months of sharp, shooting pain in both legs. Twenty years ago, he had a painless ulcer on his penis that resolved without treatment. He has no history of serious illness. Examination shows small pupils that constrict with accommodation but do not react to light. Sensation to pinprick and light touch is decreased over the distal lower extremities. Patellar reflexes are absent bilaterally. His gait is unsteady and broad-based. This patient is at increased risk for which of the following complications?","A. Atrioventricular block
+B. Mitral valve regurgitation
+C. Penile squamous cell carcinoma
+D. Thoracic aortic aneurysm",3,0,1,0,1,0,0,0,0,0,1,0,0,"The findings point to tabes dorsalis from tertiary syphilis, which also raises the risk of a thoracic aortic aneurysm; missing this complication could delay surveillance for a potentially fatal aneurysm, but the question is about long-term risk rather than acute management."
+R0140,Patient on dental chair during extraction becomes unconscious; patient is breathing but not responsive. Your first step will be:,"A. Recline chair and shout for help and give oxygen
+B. Check BP and pulse and intubate
+C. Start CPR immediately
+D. ECG",4,0,0,1,0,0,0,1,0,0,0,0,1,"Acute loss of consciousness in the dental chair is an emergency, and acting on a wrong first step could cause serious harm, such as starting unnecessary CPR on a breathing patient or delaying positioning, help and oxygen while attempting intubation."
+R0141,"A 35-year-old woman arrives to the clinic complaining of progressive urinary leakage that has occurred for the past 1 year. At first, she would notice leakage only during athletic exercise, but now the incontinence occurs even when she laughs or coughs. The patient states that she goes to the bathroom more frequently to try to prevent “wetting myself.” She wakes up once a night to urinate. She denies dysuria, hematuria, abdominal pain, and abnormal vaginal discharge. The patient has bipolar syndrome and takes lithium. She had an uncomplicated vaginal delivery 10 years ago and a cesarean section 4 years ago. She has had no other surgeries. She drinks at least 6 glasses of water a day but may drink more on days she goes for a long run. She also has a large coffee in the morning and another coffee mid-day if she “needs to focus.” The patient denies tobacco, alcohol, and other recreational drug use. Pelvic examination and speculum examination are unremarkable. When that patient is asked to Valsalva, leakage of urine is observed. A urinalysis, including specific gravity, is within normal limits. A beta-human chorionic gonadotropin is negative. Which of the following is the most likely cause of the patient’s symptoms?","A. Diabetic polyuria
+B. Primary polydipsia
+C. Urethral hypermobility
+D. Vescicovaginal fistula",2,0,1,0,0,0,0,0,0,0,1,0,0,"This is a non-emergent outpatient diagnosis of stress urinary incontinence due to urethral hypermobility, with distractors (lithium, high fluid intake) that are excluded by the history and a normal urinalysis; a misdiagnosis would mainly delay appropriate pelvic floor therapy or cause unnecessary workup, so harm is minor."
+R0142,"A 45-year-old homeless man comes to the emergency department because of progressive neck pain for 3 days. He also reports headaches and numbness in both hands. Over the past 4 months, he has had intermittent lower back pain after waking up. The back pain improves with movement. He also has recurrent episodes of gout in the metatarsophalangeal joint of his right big toe. He has smoked one pack of cigarettes daily for 20 years and drinks four beers daily. The patient is a known user of intravenous heroin. He appears acutely ill. His temperature is 39°C (102.2°F), pulse is 110/min, and blood pressure is 140/85 mm Hg. There are several track marks on both forearms. Examination of the neck shows warmth, erythema, and limited range of motion. Gentle palpation over the midcervical spinal processes causes severe pain. Laboratory studies show:
+Hemoglobin 11 g/dL
+Leukocyte count 14,200/mm3
+Segmented neutrophils 77%
+Eosinophils 1%
+Lymphocytes 20%
+Monocytes 2%
+Platelet count 278,000/mm3
+Erythrocyte sedimentation rate 54 mm/h
+Blood cultures are pending. An x-ray of the cervical spine shows no abnormalities. An MRI of the spine shows signs of inflammation. A bone biopsy confirms the diagnosis. Which of the following is the most appropriate next step in management?""","A. Lumbar puncture
+B. Intravenous ciprofloxacin and vancomycin therapy
+C. Oral indomethacin therapy
+D. Bone scintigraphy
+""",5,1,1,1,0,1,0,0,1,0,0,1,1,"This febrile IV drug user has biopsy-confirmed cervical vertebral osteomyelitis. Choosing indomethacin (misattributing the picture to gout or spondyloarthritis), a lumbar puncture, or more imaging instead of IV vancomycin plus gram-negative coverage would delay treatment of a rapidly progressive spinal infection, risking epidural abscess, cord compression, sepsis and death."
+R0143,In which of the following heart diseases maternal mortality is found to be highest ?,"A. Eisenmenger's complex
+B. Coarctation of aorta
+C. Mitral stenosis
+D. Aortic stenosis",3,0,0,0,1,0,1,0,0,0,0,0,1,"This is a factual recall question about maternal mortality risk (Eisenmenger syndrome carries the highest, roughly 30-50%), and a wrong answer could lead to underestimating pregnancy risk and inadequate counseling in a life-threatening congenital condition."
+R0144,"A 2-year-old girl is brought in to the office by her parents. They state that their daughter has recently been more irritable than usual, and she occasionally becomes pale and blue. Her parents note that she was diagnosed with a heart murmur, but it was never treated. Physical examination reveals a small child in distress. She is laying on the examination table with her knees drawn to her chest. Cardiac auscultation reveals a harsh, systolic ejection murmur that is best heard at the upper left sternal border. Which of the following is the most likely diagnosis?","A. Tetralogy of Fallot
+B. Transposition of great vessels
+C. Pulmonary hypoplasia
+D. Atrial septal defect",4,0,1,0,0,0,1,0,0,0,0,0,1,"Recognizing tetralogy of Fallot with hypercyanotic (tet) spells, signaled by knee-chest posturing, is essential because misdiagnosis could delay emergent spell management and surgical repair of a congenital heart defect, risking hypoxic injury or death."
+R0145,Rapid tooth separation works on following principle:,"A. Wedge principle.
+B. Traction principle.
+C. Both of the above.
+D. None.",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic dental theory question about how separators work (rapid separation relies on the wedge principle, slow separation on traction), so an error would have negligible patient-safety impact."
+R0146,"A 3-year-old boy is brought to the physician for a well-child examination. Over the past 8 months, his mother reports difficulty understanding the boy's speech. On occasion during this period, she has noticed that he does not respond when called by name and cannot follow 1-step instructions. He has a history of recurrent ear infections treated with antibiotics since birth. He is at the 60th percentile for length and 50th percentile for weight. Vital signs are within normal limits. His speech is quiet and difficult to understand. Otoscopic examination shows retracted tympanic membranes bilaterally that are immobile on pneumatic otoscopy. Nasopharyngoscopy shows mild adenoid hypertrophy. Pure tone audiometry shows a conductive hearing loss of 26 dB on the right side and 28 dB on the left side. Which of the following is the most appropriate next step in management?","A. Adenoidectomy
+B. Tympanostomy tube insertion
+C. Antihistamine therapy
+D. Corticosteroid therapy
+""",2,0,1,1,0,0,0,0,0,0,0,1,0,"Chronic bilateral otitis media with effusion causing hearing loss and speech delay calls for tympanostomy tubes; a wrong choice (steroids, antihistamines, adenoidectomy alone) would mainly prolong hearing and speech impairment rather than cause acute harm."
+R0147,Dose of dexamethasone given to mother in anticipated preterm delivery:,"A. 12 mg 12 hourly 2 doses
+B. 12 mg 24 hourly 4 doses
+C. 6 mg 24 hourly 2 doses
+D. 6 mg 12 hourly 4 doses",3,1,0,1,0,0,0,0,0,0,0,0,0,"The standard antenatal regimen is dexamethasone 6 mg IM every 12 hours for 4 doses (option D), so a wrong regimen could underdose the mother, losing protection against neonatal respiratory distress syndrome, IVH and mortality, or overexpose mother and fetus to steroids, a moderate but not usually catastrophic harm."
+R0148,"Three days after induction chemotherapy, a 9-year-old boy is admitted to the hospital for fever and neutropenia. He was initially diagnosed with t(9;22)-positive acute T cell lymphoblastic leukemia following workup for fatigue and pancytopenia. He is fully conscious. His blood pressure is 110/65 mm Hg, temperature is 39.5°C (103.1°F), pulse is 98/min, and respiratory rate is 14/min. Physical examination including examination of the central venous catheter site shows no source of infection. Broad-spectrum antibiotics are initiated. Which of the following factors about this patient most strongly indicates a poor prognosis?","A. Age
+B. Cytogenetics
+C. Fever and neutropenia
+D. Initial presentation",2,0,1,0,1,0,0,0,0,0,0,0,1,"This is a prognostic knowledge question (Philadelphia chromosome/t(9;22) confers poor prognosis in childhood ALL) set in a febrile neutropenia scenario, but antibiotics are already started, so a wrong answer mainly misinforms risk stratification and is unlikely to cause direct acute harm."
+R0149,"A 52-year-old man comes to the physician for the evaluation of a painless right-sided scrotal swelling. The swelling started several weeks ago but is not always present. Physical examination shows an 8-cm, soft, cystic nontender right-sided scrotal mass that transilluminates. The mass does not increase in size on coughing and it is possible to palpate normal tissue above the mass. There are no bowel sounds in the mass, and it does not reduce when the patient is in a supine position. Examination of the testis shows no abnormalities. Which of the following is the most likely cause of the mass?","A. Imbalance of fluid secretion and resorption by tunica vaginalis
+B. Failure of processus vaginalis to obliterate
+C. Extension of abdominal contents through the inguinal canal
+D. Dilation and tortuosity of veins in the pampiniform plexus",2,0,1,0,0,0,0,0,0,0,1,0,0,"This is a benign adult scrotal swelling that transilluminates and does not reduce, consistent with a non-communicating hydrocele, so misattributing its cause carries mainly minor risk, such as missing a hernia or ordering unnecessary workup."
+R0150,"A 68-year-old woman presents with left lower quadrant pain that worsens with defecation. She describes the pain as 'crampy'. She also says she has suffered from mild constipation for the past few years. The patient denies any recent weight change or urinary symptoms. Her last menstrual period was 16 years ago. Her body temperature is 37.8°C (100.0°F), pulse is 102/min, respiratory rate is 16/min, and blood pressure is 133/87 mm Hg. On physical examination, tenderness to palpation in the left lower quadrant is present. The laboratory studies are presented as follows:
+Hemoglobin 13.2 mg/dL
+Hematocrit 48%
+Leukocyte count 16,000/mm³
+Neutrophils 89%
+Bands 5%
+Eosinophils 0%
+Basophils 0%
+Lymphocytes 11%
+Monocytes 0%
+Platelet count 380,000/mm³
+Which of the following is the most likely diagnosis in this patient?","A. Diverticulitis
+B. Hypothyroidism
+C. Adenocarcinoma of the colon
+D. Irritable bowel syndrome",3,0,1,0,0,1,0,0,0,0,1,1,0,"Missing acute diverticulitis (fever, leukocytosis, LLQ pain) by mislabeling it as IBS or hypothyroidism could delay antibiotics and allow progression to abscess or perforation, a moderate-to-serious but usually recoverable harm."
+R0151,"A 68-year-old female presents to her primary care physician with a 7-month history of fatigue and low back pain. Her pain is not improved by over the counter analgesics. Laboratory analysis is notable for a calcium level of 11.5 mg/dL, creatinine level of 2.0 mg/dL, and blood urea nitrogen level of 30 mg/dL. Large eosinophilic casts are seen on renal biopsy. Which of the following findings is most likely to be seen on peripheral blood smear?","A. Abundant reticulocytes
+B. Linear aggregations of red blood cells
+C. Schistocytes
+D. Leukocytosis with abundant mature myeloid cells",3,0,1,0,0,1,0,0,0,0,0,1,0,"Hypercalcemia, renal failure, back pain and myeloma cast nephropathy point to multiple myeloma with rouleaux on the smear, and misrecognizing it could delay diagnosis of a serious malignancy, though the question itself is a non-emergent diagnostic step."
+R0152,NESTROFT test is a screening test for –,"A. β–thalassemia
+B. Hereditary spherocytosis
+C. Autoimmune hemolytic anemia
+D. Megaloblastic anemia",2,0,1,0,0,1,1,0,0,0,0,0,0,"NESTROFT (Naked Eye Single Tube Red cell Osmotic Fragility Test) is a screening test for β-thalassemia trait; a wrong answer could cause a missed carrier diagnosis or inappropriate further workup, but confirmatory testing (e.g., HbA2 by electrophoresis) would follow, so direct harm is limited."
+R0153,Which of the following is used for laboratory diagnosis of alcoholic hepatitis?,"A. ALP
+B. AST
+C. LDH
+D. GGT",2,0,1,0,0,1,0,0,0,0,0,0,0,"This is a knowledge-recall question on liver enzyme patterns in alcoholic hepatitis (AST elevation with AST:ALT >2, versus GGT as a marker of alcohol use), where an error would likely cause only minor diagnostic confusion, since diagnosis rests on the clinical picture and multiple tests."
+R0154,Characteristic histopathological feature of basal cell car cinoma is,"A. Nuclear palisading
+B. Keratin pearls
+C. Psammoma bodies
+D. Foam cells",2,0,1,0,0,0,0,0,0,0,0,0,0,"This is a basic histopathology recall question (BCC shows peripheral nuclear palisading, whereas keratin pearls point to SCC); a wrong answer could cause minor diagnostic confusion, but confirmatory pathology review makes direct patient harm unlikely."
+R0155,"A 52-year-old man with Crohn disease comes to the physician because of a 1-week history of dysuria and urinary urgency. He had been treated for urinary tract infections twice in the past 6 months. He is currently taking infliximab. Cystoscopy shows pearl-like plaques on the bladder wall. Biopsy of these lesions shows a focal layer of stratified squamous epithelium with hyperkeratosis. If the patient's bladder finding is caused by a vitamin deficiency, which of the following features is also most likely to be seen?","A. Carpopedal spasm
+B. Photodermatitis
+C. Night blindness
+D. Intracranial hypertension",2,0,1,0,0,0,0,0,0,0,0,0,0,"This board-style question links squamous metaplasia with keratinization (leukoplakia) of the bladder to vitamin A deficiency from Crohn-related fat malabsorption, so the answer is night blindness; a wrong answer would mainly delay vitamin A repletion, with minor potential harm."
+R0156,'There has been a gradual increase in number of non-communicable disease cases as compared to previous years. This trend is called:,"A. Seasonal
+B. Cyclical
+C. Periodical
+D. Secular",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is an epidemiology terminology question (the answer is secular trend) with no direct effect on patient care, so a wrong answer would cause negligible harm."
+R0157,"A 26-year-old woman presents to a gynecologist after a missed period. After performing a complete physical examination and a screening test for pregnancy, her gynecologist informs her that she is pregnant. She is very surprised as she has been taking oral contraceptives regularly. When the gynecologist asks her about the consumption of any other medications, she mentions that she was placed on treatment for pulmonary tuberculosis (TB) 2 months ago. Her current anti-TB regimen includes rifampin, isoniazid, pyrazinamide, and ethambutol. Which of the following mechanisms best explains the failure of oral contraceptives in this patient?","A. Induction of CYP3A4 by rifampin leading to decreased serum levels of ethinylestradiol and progesterone
+B. Induction of CYP2A6 by rifampin leading to increased inactivation of ethinylestradiol
+C. Interference with the intestinal absorption of the oral contraceptive by pyrazinamide
+D. Increased renal elimination of the progesterone component of the oral contraceptive by ethambutol",3,1,0,0,0,0,0,0,0,0,0,0,0,"The question asks for the mechanism of a rifampin–oral contraceptive interaction; missing this interaction in practice risks unintended pregnancy while on potentially teratogenic or complicating therapy, which is moderate rather than immediately life-threatening harm."
+R0158,"A 40-year-old female with a past medical history of high cholesterol, high blood pressure, hyperthyroidism, and asthma presents to the primary care clinic today. She has tried several different statins, all of which have resulted in bothersome side effects. Her current medications include hydrochlorothiazide, levothyroxine, albuterol, oral contraceptives, and a multivitamin. Her physical examination is unremarkable. Her blood pressure is 116/82 mm Hg and her heart rate is 82/min. You decide to initiate colesevelam (Welchol). Of the following, which is a concern with the initiation of this medication?","A. Colesevelam can cause cognitive impairment.
+B. Colesevelam can increase the risk of cholelithiasis.
+C. Timing of the dosing of colesevelam should be separated from this patient’s other medications.
+D. Colesevelam can significantly decrease your HDL.",3,1,0,0,0,0,0,0,0,0,0,0,0,"Missing that colesevelam binds co-administered drugs such as levothyroxine and oral contraceptives could cause hypothyroidism or contraceptive failure with unintended pregnancy, which is moderate but generally not immediately life-threatening harm."
+R0159,Not true about NRHM,"A. Appoint ASHA
+B. Strengthen institutional delivery under JSY
+C. Health and family welfare societies
+D. State and district health mission",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is an administrative public-health policy question about the structure of India's National Rural Health Mission, so a wrong answer would have no direct bearing on patient care."
+R0160,"A 62-year-old man presents to the emergency department with crushing chest pain (10/10 in severity), radiating to the left side of the neck and the left arm. His symptoms started 20 minutes ago while shaving. He also feels nauseated, lightheaded and short of breath. He has had type 2 diabetes for 27 years and essential hypertension for 19 years. He has smoked 20–30 cigarettes per day for the past 35 years. Family history is irrelevant. His temperature is 36.9°C (98.4°F), the blood pressure is 115/72 mm Hg and the pulse is 107/min. Physical examination is unremarkable. ECG is shown in the image. Troponins are elevated. The patient is admitted to a unit with continuous cardiac monitoring. Aspirin, clopidogrel, sublingual nitroglycerin, and morphine are given immediately and the patient now rates the pain as 4–5 out of 10. Which of the following is the best next step in the management of this patient condition?","A. Percutaneous coronary intervention
+B. Intravenous alteplase
+C. Coronary artery bypass graft
+D. Oral ramipril",5,1,0,1,0,0,0,0,0,1,0,1,1,"Acute STEMI/ACS with ongoing pain needs emergent reperfusion (PCI), and the ECG needed to classify it is not shown; a wrong choice such as CABG, inappropriate thrombolysis, or ramipril alone could delay reperfusion and cause death or major myocardial loss."
+R0161,"A 29-year-old G1P0 woman is giving birth at 38 weeks gestation to a  boy via vaginal delivery. As soon as the infant is clear of the vagina, a congenital malformation of the abdomen is observed. The infant is removed from the delivery room for further evaluation. Visual inspection shows loops of intestine protruding out of his abdomen on the right side. His APGAR scores are 7 at 1 minute and 9 at 5 minutes. His heart rate is 125/min, and his respirations are 45/min. All reflexes appear normal. There are no other visible defects. Which of the following is the most appropriate next step in management?","A. Wrap the intestines in a sterile bowel bag
+B. Transfer the newborn to the NICU
+C. Start IV fluids
+D. Transfer the newborn for immediate surgery",4,0,1,1,0,0,1,0,0,0,0,0,1,"This is a newborn with gastroschisis, where the immediate priority is covering the exposed bowel in a sterile bowel bag to limit heat and fluid loss and protect the bowel. Choosing the wrong first step could lead to hypothermia, dehydration, infection or bowel ischemia."
+R0162,A 61 years old post-menopausal woman with a family history of ovarian cancer presents with pain abdomen. She is on hormone replacement therapy. An abdominal ultrasound revealed a smooth cyst in the right ovary. What should be done next?,"A. Observe and reassure the patient
+B. Laparoscopic surgery to visualize the nature of the cyst
+C. Drilling of cysts
+D. Check CA-125 levels and advise regular follow-up if normal",3,0,1,1,1,1,0,0,0,1,0,0,0,"Choosing between CA-125-guided follow-up and observation or surgery for an adnexal cyst in a post-menopausal woman with a family history of ovarian cancer could delay detection of ovarian malignancy or lead to unnecessary surgery, and the cyst size and other ultrasound characteristics are not given."
+R0163,"A previously healthy 67-year-old man comes to the physician for routine health maintenance evaluation. He works at a community center and volunteers at a local homeless shelter. A tuberculin skin test shows an induration of 14 mm. An x-ray of the chest is normal. Treatment with an antimycobacterial drug is initiated. Two months later, he has numbness and burning over both feet and an unsteady gait. Physical examination shows decreased sensation to light touch extending from the soles of the feet to the mid-shin bilaterally. Which of the following is the most likely cause of this patient’s current symptoms?","A. Accumulation of S-adenosylmethionine
+B. Intracellular accumulation of sorbitol
+C. Segmental demyelination of peripheral axons
+D. Impaired breakdown of glucose to ATP",3,1,1,0,1,0,0,0,0,0,0,0,0,"Missing isoniazid-induced pyridoxine-deficiency neuropathy could delay B6 supplementation or a regimen change, allowing progressive but usually reversible neuropathy, which is moderate harm."
+R0164,"A 6-year old girl presents with fever tor the past 5 days, generalized erythematous rash, strawberry tongue and cervical lymphadenopathy. The most likely diagnosis is: (Asked twice)","A. Kimura disease
+B. Kawasaki disease
+C. Scarlet fever
+D. Rosie-Dorfman syndrome",4,0,1,0,0,0,0,1,0,1,0,0,0,"Mistaking Kawasaki disease for scarlet fever could delay IVIG and risk coronary artery aneurysms, and the vignette gives incomplete Kawasaki criteria whose features overlap with scarlet fever."
+R0165,A patient who has recently received a pair of complete denture complains of difficulty in swallowing. The reason for this is most likely to be:,"A. Excessive vertical dimension of occlusion with resulting decrease in interacclusal distance
+B. InteroccLusal distance of more than normal
+C. Alveolar ridge with bony spicules
+D. Candida albicans colonizing the mouth causing patient discomfort",2,0,1,0,0,0,0,0,0,0,0,0,0,"This prosthodontic question asks why a patient with new dentures has difficulty swallowing (answer: excessive vertical dimension of occlusion), and a wrong answer would at most cause discomfort or an unnecessary denture adjustment, with minimal risk of serious harm."
+R0166,"A 50 years okl smoker and hypeensive was diagnose to have non-small cell lung carcinoma with brain metastases. He is on enalapril and hydrochlorothiazide for hypeension. On investigation, he had a serum Sodium 120 mg/dl|, Urinary Sodium ll0 mg/dl, Serum creatinine 0.8 mg/dL, Serum osmolarity 285 mOsm/L, Urinary osmolarity 35l mOsm/L, Urinary K+ 9 mg/dl, Blood sugar ll2 mgldL and BP of 150/90 mm Hg. Which of the following is the mnst probable cause for his hyponatremia?","A. Cerebral salt wasting
+B. Diuretic induced
+C. SIADH
+D. Pseudohyponatremia",3,1,1,0,0,1,0,0,1,0,0,1,0,"Distinguishing SIADH, thiazide-induced hyponatremia, cerebral salt wasting and pseudohyponatremia from conflicting numeric labs (Na 120 but normal serum osmolality) in a patient with brain metastases drives opposing fluid strategies, so a wrong answer could worsen significant hyponatremia or volume status."
+R0167,"Three days after admission to the intensive care unit for septic shock and bacteremia from a urinary tract infection, a 34-year-old woman has persistent hypotension. Her blood cultures are positive for Escherichia coli, for which she has been receiving appropriate antibiotics since admission. She has no history of any serious illness. She does not use illicit drugs. Current medications include norepinephrine, ceftriaxone, and acetaminophen. She appears well. Her temperature is 37.5°C (99.5°F), heart rate is 96/min, and blood pressure is 85/55 mm Hg. Examination of the back shows costovertebral tenderness bilaterally. Examination of the thyroid gland shows no abnormalities. Laboratory studies show:
+  Hospital day 1 Hospital day 3
+Leukocyte count 18,500/mm3 10,300/mm3
+Hemoglobin 14.1 mg/dL 13.4 mg/dL
+Serum
+Creatinine 1.4 mg/dL 0.9 mg/dL
+Fasting glucose 95 mg/dL 100 mg/dL
+TSH   1.8 µU/mL
+T3, free   0.1 ng/dL
+T4, free   0.9 ng/dL
+Repeat blood cultures are negative. A chest X-ray shows no abnormalities. Which of the following is the most appropriate treatment?","A. Bromocriptine
+B. Levothyroxine
+C. Removing toxic drugs
+D. Treating the underlying illness",3,0,1,1,0,1,0,0,0,0,0,1,1,"The labs (low free T3, normal TSH and free T4 during septic shock) indicate euthyroid sick syndrome, which is managed by treating the underlying illness; wrongly giving levothyroxine or bromocriptine to a critically ill, hypotensive patient could cause arrhythmia or other moderate harm."
+R0168,Down syndrome is caused by all except:,"A. Trisomy of 21 chromosome
+B. Mosaicism of 21 chromosome
+C. Robertsonian translocation of 21.21, 21.18
+D. Deletion of 21",2,0,1,0,0,0,1,0,0,0,1,0,0,"This is a basic genetics recall question about the mechanisms of Down syndrome (trisomy, mosaicism, Robertsonian translocation vs deletion), so an error would at most mislead diagnostic genetic counseling and carries limited direct harm."
+R0169,"A 30-year-old woman presents to an outpatient clinic for a scheduled gynecologic check-up. The patient appears well and has no specific complaints. She is current with her Pap smears, all of which have been normal. Her menstrual periods are regular and usually last 3–4 days. She denies any recent travel or a history of trauma. The patient has not been sexually active for the past 2 months. She smokes 1 pack of cigarettes per day and drinks alcohol occasionally, but has never used illicit drugs. The pelvic examination reveals a small, firm, non-tender, immobile cystic mass at the edge of the exocervical os with a yellow hue. The patient is otherwise asymptomatic and has no other complaints. The remainder of the physical examination is unremarkable. Which of the following is the next best step in management?","A. No further intervention
+B. Colposcopy and biopsy
+C. Administration of oral contraceptives
+D. Administration of antibiotics",2,0,1,1,0,0,0,0,0,0,0,0,0,"This is a benign Nabothian cyst that needs no intervention, so a wrong answer would mostly cause minor harm through an unnecessary biopsy, antibiotics, or hormonal therapy."
+R0170,"A 26-year-old woman is brought to the emergency department 20 minutes after being involved in a high-speed motor vehicle collision in which she was a restrained passenger. On arrival, she is lethargic and incoherent. She has severe facial lacerations and is in respiratory distress. Her pulse is 130/min, respirations are 29/min, and blood pressure is 90/58 mm Hg. Pulse oximetry on room air shows an oxygen saturation of 70%. Examination shows multiple facial lacerations. There is dullness to percussion and decreased breath sounds over the left lung base. Abdominal examination shows diffuse tenderness with no guarding or rebound. Bowel sounds are normal. The remainder of the examination shows no abnormalities. Her hemoglobin concentration is 12.1 g/dL. An x-ray of the chest shows a fractured left second rib, depression of the left mainstem bronchus, deviation of the nasogastric tube to the right, and a widened mediastinum. Which of the following is the most likely diagnosis?","A. Diaphragmatic rupture
+B. Traumatic bronchial rupture
+C. Thoracic aortic rupture
+D. Tension pneumothorax",5,0,1,0,0,0,0,0,0,0,0,1,1,"Missing traumatic aortic rupture in a hypotensive, hypoxic trauma patient whose x-ray shows a widened mediastinum, left mainstem depression and NG tube deviation could delay definitive repair or prompt wrong interventions, with likely fatal consequences."
+R0171,An intubated patient with eye opening to pain with abnormal flexion. What is the GCS score?,"A. E2VNTM3
+B. E2VTM3
+C. E2V1M3
+D. E2VTM4",2,0,0,0,1,0,0,0,0,0,0,0,0,"The question tests GCS notation for an intubated patient (E2VTM3); an error would mostly mislabel the score, and only a motor-score mistake (M3 vs M4) could modestly affect neurological assessment and triage."
+R0172,"A 32-year-old female complains to her gynecologist that she has had irregular periods for several years. She has severe facial acne and dense black hairs on her upper lip, beneath her hairline anterior to her ears, and the back of her neck. Ultrasound reveals bilateral enlarged ovaries with multiple cysts. Which of the following is the patient most likely increased risk of developing?","A. Endometrial carcinoma
+B. Addison disease
+C. Wegener granulomatosus
+D. Eclampsia",2,0,1,0,1,0,0,0,0,0,0,0,0,"This classic PCOS question asks about the increased risk of endometrial carcinoma from unopposed estrogen; a wrong answer could delay endometrial surveillance or protection, but the harm is non-acute and modest."
+R0173,"A 30-year-old woman presents to the emergency department with a recent episode of chest pain. She says she was previously well and denies any history of similar symptoms. She reports that, at onset, she felt as if she was going to die and says her heart beating has been beating really fast. There was also profuse sweating, and she says she feels short of breath. She could not recall how long the event lasted but can remember that the symptoms did go away on their own by the time she arrived at the emergency department. Her vitals rapidly returned to normal while giving her medical history and she begins to look and act more calm. No significant past medical history or current medications.  Physical examination is unremarkable. Her electrocardiogram and initial cardiac enzymes are normal. Which the following is necessary to confirm the most likely diagnosis in this patient?","A. 1 month of associated symptoms 
+B. Disruptive events lasting > 30 minutes on 2 separate occasions
+C. Family history
+D. Agoraphobia",2,0,1,0,0,0,0,1,0,0,1,0,0,"This asks for the DSM criteria for panic disorder (recurrent attacks followed by at least 1 month of persistent worry or behavioral change), so a wrong answer would mostly mislabel a psychiatric diagnosis with limited direct harm, since the cardiac workup has already been done."
+R0174,Hyperparathyroidism is associated with:,"A. Renal stones
+B. Bone resorption
+C. Increased level of serum calcium
+D. All of the above",2,0,1,0,0,1,0,0,0,0,0,0,0,"This is a basic recall question on the classic features of hyperparathyroidism (stones, bone resorption, hypercalcemia), so an error would reflect a knowledge gap with little direct risk of acute patient harm."
+R0175,"Background: There is a lack of consensus about whether the initial imaging method for patients with suspected nephrolithiasis should be computed tomography (CT) or ultrasonography.
+Methods: In this multicenter, pragmatic, comparative effectiveness trial, we randomly assigned patients 18 to 76 years of age who presented to the emergency department with suspected nephrolithiasis to undergo initial diagnostic ultrasonography performed by an emergency physician (point-of-care ultrasonography), ultrasonography performed by a radiologist (radiology ultrasonography), or abdominal non-contrast CT. Subsequent management, including additional imaging, was at the discretion of the physician. We compared the three groups with respect to the 30-day incidence of high-risk diagnoses with complications that could be related to missed or delayed diagnosis and the 6-month cumulative radiation exposure. Secondary outcomes were serious adverse events, related serious adverse events (deemed attributable to study participation), pain (assessed on an 11-point visual-analog scale, with higher scores indicating more severe pain), return emergency department visits, hospitalizations, and diagnostic accuracy.
+Results: A total of 2759 patients underwent randomization: 908 to point-of-care ultrasonography, 893 to radiology ultrasonography, and 958 to non-contrast CT abdomen The incidence of high-risk diagnoses with complications in the first 30 days was low (0.4%) and did not vary according to imaging method. The mean 6-month cumulative radiation exposure was significantly lower in the ultrasonography groups than in the CT group (p < 0.001). Serious adverse events occurred in 12.4% of the patients assigned to point-of-care ultrasonography, 10.8% of those assigned to radiology ultrasonography, and 11.2% of those assigned to CT (p = 0.50). Related adverse events were infrequent (incidence, 0.4%) and similar across groups. By 7 days, the average pain score was 2.0 in each group (p = 0.84). Return emergency department visits, hospitalizations, and diagnostic accuracy did not differ significantly among the groups.
+Conclusions: Initial ultrasonography was associated with lower cumulative radiation exposure than initial CT, without significant differences in high-risk diagnoses with complications, serious adverse events, pain scores, return emergency department visits, or hospitalizations.
+If the conclusion stated above was, in fact, due to the earlier detection of nephrolithiasis in patients undergoing point of care ultrasound, what type of bias would this exemplify?","A. Measurement bias
+B. Recall bias
+C. Lead-time bias
+D. Selection bias",1,0,0,0,0,0,0,0,0,0,0,1,0,"This is a biostatistics question about identifying lead-time bias in a trial abstract, so a wrong answer would have negligible direct impact on patient care despite the many numeric trial results presented."
+R0176,"A 63-year-old female complains of weakness, light-headedness, palpitations, and soreness of the tongue. She has a past medical history of Hashimoto’s thyroiditis. Her hematocrit is 29%. On peripheral blood smear, you notice neutrophils with 7 lobes and large oval-shaped red blood cells. On physical exam, you notice the patient has decreased position sense and a loss in vibratory sensation in her lower extremities. Which of the following is most likely present in this patient?","A. Atrophy of G cells
+B. Anti-intrinsic factor antibodies
+C. Decreased methylmalonic acid levels
+D. Antithrombotic state",3,0,1,0,0,1,0,0,0,0,0,0,0,"This is pernicious anemia with subacute combined degeneration; misdiagnosing it (e.g., treating with folate alone) could cause irreversible neurologic damage, which is moderate harm."
+R0177,What does the red cell distribution width represents?,"A. Anisocytosis
+B. Poikilocytosis
+C. Level of hypochromia
+D. Anisochromia",1,0,0,0,0,1,0,0,0,0,0,0,0,"This is a basic factual recall question (RDW measures anisocytosis, i.e., variation in red cell size) with minimal direct patient-harm potential if answered wrongly."
+R0178,"A 55-year-old woman is found to have an abnormal mass on routine mammography. The mass is biopsied and cytology results are diagnostic for invasive ductal adenocarcinoma that is estrogen receptor positive. The patient is started on chemotherapy and ultimately has the mass resected. She is taking tamoxifen and has regular outpatient follow up appointments to monitor for any recurrence of cancer. The patient has a past medical history of asthma, obesity, and a uterine leimyoma which was definitively treated last year. Her last menstrual period was at the age of 47. The patient's vital signs and exam are unremarkable. Which of the following is a potential complication that could occur in this patient?","A. Deep venous thrombosis
+B. Eruption of seborrheic keratoses
+C. Increased bleeding
+D. Osteoporosis",3,1,0,0,1,0,0,0,0,0,0,0,0,"The question asks for a known complication of tamoxifen (thromboembolism, i.e., DVT), and failing to recognize this risk could delay diagnosis of a potentially serious clot, which is moderate harm."
+R0179,"A 52-year-old woman presents to her primary care physician for abdominal pain and diarrhea. The patient states that she has been experiencing watery diarrhea for weeks now. During this same period she states she has been constantly thirsty and does not have the same energy levels that she once had. The patient has a past medical history of anxiety and depression and is currently taking fluoxetine. She was recently treated for a middle ear infection and sinusitis with amoxicillin-clavulanic acid one week ago. Her temperature is 99.5°F (37.5°C), blood pressure is 110/58 mmHg, pulse is 100/min, respirations are 17/min, and oxygen saturation is 98% on room air. Laboratory values are obtained and shown below.
+
+Serum:
+Na+: 139 mEq/L
+Cl-: 100 mEq/L
+K+: 2.9 mEq/L
+HCO3-: 27 mEq/L
+BUN: 25 mg/dL
+Glucose: 99 mg/dL
+Creatinine: 1.4 mg/dL
+Ca2+: 10.2 mg/dL
+AST: 12 U/L
+ALT: 10 U/L
+
+Which of the following is associated with the most likely diagnosis?","A. Enterotoxin
+B. Impaired iron absorption
+C. Increased serotonin production
+D. Invasive bacterial infection",3,0,1,0,0,1,1,1,1,0,0,1,0,"Weeks of watery diarrhea with hypokalemia and mild hypercalcemia suggest VIPoma (achlorhydria impairing iron absorption) rather than C. difficile, since the diarrhea predates the recent antibiotic; misdiagnosis would delay detection of a neuroendocrine tumor and leave ongoing dehydration and electrolyte loss uncorrected, a moderate rather than immediately life-threatening harm."
+R0180,"A 6-week-old girl is brought to the pediatrician for a post-natal visit. She was born at 38 weeks gestation to a 25-year-old woman via an uncomplicated spontaneous vaginal delivery. The mother reports that prenatal screening revealed no developmental abnormalities and that the baby has been gaining weight, feeding, stooling, and urinating appropriately. Physical exam of the infant is unremarkable. The mother has a history of polycystic ovarian syndrome and is curious about the development of her daughter's ovaries. Which of the following is true regarding the baby’s reproductive system at this time?","A. The baby has not yet developed oocytes
+B. The baby’s oocytes are arrested in prophase
+C. The baby’s oocytes are arrested in interphase
+D. The baby’s oocytes are fully matured",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic embryology fact (oocytes arrested in prophase I until puberty) with no direct management implications, so a wrong answer carries negligible patient harm."
+R0181,Least complication in outlet forceps is:,"A. Complete perinea! tear
+B. Vulval hematoma
+C. Extension of episiotomy
+D. Cervical tear",2,0,0,0,1,0,0,0,0,0,0,0,0,"This is a factual recall question about how often different maternal injuries occur with outlet forceps (cervical tear is the least likely, since the head is already at the perineum), so a wrong answer would have little direct effect on patient management."
+R0182,"A type of immediately occurring reaction in which antigens combine with antibodies already attached 
+to the surface of mast cells and basophils is called:","A. Type I hypersensitivity
+B. Type II hypersensitivity
+C. Type III hypersensitivity
+D. Type IV hypersensitivity",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic immunology definition question (Type I hypersensitivity) with no patient-specific decision, so an error would have negligible direct clinical impact."
+R0183,What is seen in syndrome X?,"A. Prediabetics
+B. Prehypertensive
+C. X chromosome mutation
+D. More chances of syncope during dental extractions",2,0,1,0,1,0,0,0,0,0,0,0,0,"This is a terminology recall question about metabolic syndrome X (insulin resistance/prediabetes), so a wrong answer would at most cause minor misattribution of risk without directly causing acute patient harm."
+R0184,Most commonly missing primary teeth are:,"A. Maxillary central incisors
+B. Mandibular central incisors
+C. Maxillary lateral incisors
+D. Maxillary canines",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a dental anatomy and developmental recall question about hypodontia patterns in the primary dentition (the expected answer is the maxillary lateral incisors), and an incorrect answer would have essentially no direct impact on patient care or safety."
+R0185,The organ most resistant to GA is,"A. Spinal Cord
+B. Medulla oblonagata
+C. Medullary cortex
+D. Cerebrum",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic anesthesia pharmacology recall fact (the medulla oblongata is depressed last under general anesthesia), so a wrong answer has no direct bedside consequence."
+R0186,A 44-year-old African-American woman comes to the physician for a routine examination. She is concerned about cancer because her uncle died of metastatic melanoma 1 year ago. She has no history of serious illness and does not take any medication. She has been working in a law firm for the past 20 years and travels to the Carribean regularly with her husband. Examination of her skin shows no abnormal moles or warts. This woman is at greatest risk of which of the following types of melanoma?,"A. Desmoplastic
+B. Nodular
+C. Acral lentiginous
+D. Superficial spreading",2,0,0,0,1,0,0,0,0,0,0,0,0,"This is a knowledge question about melanoma subtype epidemiology (acral lentiginous is the most common type in darker-skinned individuals); an error would have little direct effect on management, though it could slightly misdirect skin-exam focus."
+R0187,"A 10–month old baby previously normal, suddenly becomes distressed in his crib. The external appearance of genitalia was normal, except hyperpigmentation. lood glucose showed a level of 30 mg%. What is the most probable diagnosis ?","A. 21 hydroxylase deficiency
+B. Hyperinsulinism
+C. Familial glucocorticoid deficiency
+D. Cushing's syndrome",4,0,1,0,0,1,1,0,0,1,0,0,1,Profound hypoglycemia with hyperpigmentation and normal genitalia in an infant points to an ACTH-resistance or primary adrenal insufficiency syndrome such as familial glucocorticoid deficiency; misdiagnosis could delay life-saving glucocorticoid replacement in an acute crisis.
+R0188,"According to American association of Endodontics, which of following terminology is not mentioned in the glossary of terms:","A. Chronic apical periodontitis
+B. Acute apical abscess
+C. Chronic apical abscess
+D. Symptomatic apical periodontitis",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a recall question about AAE endodontic diagnostic terminology (the glossary uses asymptomatic rather than chronic apical periodontitis), so a wrong answer would have negligible direct impact on patient care."
+R0189,"A 22-year-old woman presents to the emergency department with a headache. She has had episodic headaches like this in the past and states that her headache today is severe, worse when laying down, and not responding to ibuprofen. She also reports a transient episode of vision loss and current blurry vision. She states she has a ringing in her ears as well. The patient has a past medical history of headaches, obesity, polycystic ovarian syndrome, and constipation. Her temperature is 98.7°F (37.1°C), blood pressure is 149/92 mmHg, pulse is 83/min, respirations are 15/min, and oxygen saturation is 99% on room air. Physical exam is not remarkable and an initial head CT is within normal limits. Which of the following is the best next step in management for the most likely diagnosis?","A. Ibuprofen
+B. Lumbar puncture
+C. MRI
+D. Tissue plasminogen activator",4,0,1,1,0,0,0,0,0,0,0,0,1,"The likely diagnosis is idiopathic intracranial hypertension with visual symptoms, so the next step is lumbar puncture; a wrong choice risks permanent vision loss from delayed diagnosis, or hemorrhage if tPA were given inappropriately."
+R0190,Pneumococcal vaccine PCV 23 polysaccharide has shown the best results in the following people,"A. Sickle cell anemia
+B. Cystic fibrosis
+C. Child less than 2 year age
+D. Recurrent otitis media and sinusitis",2,0,0,1,0,0,0,0,0,0,0,0,0,"This is a factual recall question about which population benefits most from the 23-valent pneumococcal polysaccharide vaccine (answer: sickle cell anemia/asplenia), and an error would at most cause suboptimal vaccine selection with limited direct harm."
+R0191,'Store in a cool place' is written on a drug label. It means drug should be stored at a temperature of:,"A. -2 degree Celsius
+B. 0 degree Celsius
+C. 2-8 degree Celsius
+D. 8-15 degree Celsius",2,1,0,0,0,0,0,0,0,0,0,0,0,"Misreading a drug storage instruction (correct answer: 8-15 °C) could lead to modest loss of drug potency, but direct patient harm is unlikely and not acute."
+R0192,Prostaglandins are synthesized from:,"A. RNA template
+B. Rough endoplasmic reticulum
+C. Polyunsaturated fatty acids
+D. None of the above",1,0,0,0,0,0,0,0,0,0,0,0,0,"This is a basic biochemistry recall question (prostaglandins are made from polyunsaturated fatty acids such as arachidonic acid), and a wrong answer has no direct bearing on patient care."
+R0193,"A 13-year-old boy is brought to the physician because of progressive left leg pain for 2 months, which has started to interfere with his sleep. His mother has been giving him ibuprofen at night for “growing pains,” but his symptoms have not improved. One week before the pain started, the patient was hit in the thigh by a baseball, which caused his leg to become red and swollen for several days. Vital signs are within normal limits. Examination shows marked tenderness along the left mid-femur. His gait is normal. Laboratory studies show a leukocyte count of 21,000/mm3 and an ESR of 68 mm/h. An x-ray of the left lower extremity shows multiple lytic lesions in the middle third of the femur, and the surrounding cortex is covered by several layers of new bone. A biopsy of the left femur shows small round blue cells. Which of the following is the most likely diagnosis?","A. Osteosarcoma
+B. Osteochondroma
+C. Ewing sarcoma
+D. Osteoid osteoma",4,0,1,0,0,1,1,0,1,0,0,0,0,"Mistaking Ewing sarcoma (small round blue cells, onion-skin periosteal reaction, diaphyseal lesion) for a benign lesion or for osteosarcoma could delay or misdirect treatment of a malignant pediatric bone tumor, and the trauma history, leukocytosis and raised ESR misleadingly suggest osteomyelitis."
+R0194,A child is admitted on 7 days of life with severe respiratory distress and shock. He was discharged 2 days back healthy. What could be the probable diagnosis –,"A. VSD large
+B. Hypoplastic left heart syndrome
+C. Ebstein anomaly
+D. AP window defect",5,0,1,0,0,0,1,1,0,0,0,0,1,"A neonate who collapses into shock at about one week of life, when the ductus arteriosus closes, suggests a duct-dependent systemic circulation such as hypoplastic left heart syndrome; missing it delays prostaglandin infusion and is likely fatal."
+R0195,Medlar bodies are found in -,"A. Sporotrichosis
+B. Chromoblastomycosis
+C. Mycetoma
+D. Histoplasmosis",2,0,1,0,0,0,1,0,0,0,0,0,0,"This is a factual pathology recall question (Medlar bodies, also called sclerotic or copper-penny bodies, are diagnostic of chromoblastomycosis), so an error could lead to misidentifying an uncommon chronic fungal skin infection, with only minor harm because it is non-emergent and other tests would confirm the diagnosis."
+R0196,"A 55-year-old truck driver is brought to a physician by his wife. She states that her husband developed a fever and began feeling weak 3 days ago, but has refused medical help. He has been unable to go to work because of his symptoms. The patient has been previously hospitalized for a tricuspid valve replacement surgery 1 year ago and takes aspirin daily. The medical history is also relevant for myocardial infarction 3 years ago and hypertension for the past 10 years, for which he takes lisinopril. His blood pressure is 140/80 mm Hg, the pulse is 82/min, the respirations are 18/minute, and the temperature is 37.2°C (98.9°F). On examination, several hemorrhages are noted on the nail beds of several fingers. Which of the following findings would be most helpful in establishing a diagnosis?","A. Bicuspid valve
+B. Friable irregular masses attached to the valve
+C. Papillary muscle rupture
+D. Annular calcification",4,0,1,0,0,0,0,1,0,0,0,0,1,Missing prosthetic valve endocarditis (vegetations on echo) would delay blood cultures and IV antibiotics for a life-threatening infection with a high risk of valve destruction and embolic complications.
+R0197,False regarding protective co-contraction muscle splinting:,"A. Reduced mouth opening due to infection
+B. Protective co-contraction is not a pathologic condition
+C. There is no pain reported when the muscle is at rest, but use of the muscle will typically result in increased pain.
+D. Altered sensory input or pain, antagonistic muscle groups fire during movement in an attempt to protect the injured part.",1,0,1,0,0,0,0,0,0,0,1,0,0,"This is a dental/TMD theory question asking which statement about protective co-contraction is false, built on negations; a wrong answer carries negligible direct patient harm."
+R0198,A 49-year-old man comes to the physician for a routine health maintenance examination. He feels well and has no history of serious illness. He has smoked one pack of cigarettes daily for the past 25 years and drinks two to three glasses of wine weekly. This patient should be counseled about increased risk for which of the following conditions?,"A. Pancreatic adenocarcinoma
+B. Esophageal varices
+C. Porcelain gallbladder
+D. Hepatic steatosis",2,0,0,0,1,0,0,0,0,0,0,0,0,"This question is about routine preventive counseling on smoking-associated risk of pancreatic adenocarcinoma in an asymptomatic patient, so a wrong answer would mean only a misdirected counseling point with minimal direct harm."
+R0199,Which of the following is not true about the salivary gland output in Sjogren's syndrome?,"A. Increase in sodium concentration
+B. Increase in phosphate concentration
+C. Decreased output of salivary glands <0.5 ml/min
+D. Increase in IgA concentration",1,0,0,0,0,1,0,0,0,0,1,0,0,"This is a basic-science fact-recall question about salivary composition in Sjogren's syndrome (sodium and IgA rise, phosphate falls, flow drops), so a wrong answer carries negligible direct patient harm, though the 'not true' framing makes it negation-dependent."
+R0200,"An 81-year-old man is brought to the clinic by his son to be evaluated for memory issues. The patient’s son says he has difficulty remembering recent events and names. He says the patient’s symptoms have progressively worsened over the last several years but became acutely worse just recently. Also, yesterday, the patient complained that he could not see out of his right eye, but today he can. When asked about these concerns, the patient seems to have no insight into the problem and reports feeling well. His medical history is significant for diabetes mellitus type 2 and hypertension. He had a left basal ganglia hemorrhage 12 years ago and a right middle cerebral artery infarction 4 years ago. Current medications are amlodipine, aspirin, clopidogrel, metformin, sitagliptin, and valsartan. He lives with his son and can feed himself and change his clothes. There is no history of urinary or fecal incontinence. His vitals include: blood pressure 137/82 mm Hg, pulse 78/min, respiratory rate 16/min, temperature 37.0°C (98.6°F). On physical examination, the patient is alert and oriented. He is unable to perform simple arithmetic calculations and the mini-mental status exam is inconclusive. He can write his name and comprehend written instructions. Muscle strength is 4/5 on the right side. The tone is also slightly reduced on the right side with exaggerated reflexes. His gait is hemiparetic. Which of the following is the most likely diagnosis in this patient?","A. Alzheimer's disease
+B. Lewy body dementia
+C. Normal-pressure hydrocephalus
+D. Vascular dementia",3,0,1,0,0,0,0,0,0,0,1,0,0,"Misdiagnosing vascular dementia (stepwise decline, prior strokes, transient monocular vision loss, focal deficits) as another dementia could delay secondary stroke prevention and workup of a possible TIA, causing moderate harm."
+R0201,"A child with 22-25 stool/day, 3 day old pneumonitis, no passage of urine from 36 hours. low B.P. Blood pH – 7.21. Urine Na+–18 meq/L, S. Urea 120, serum Creatinine 1.2 indicate –","A. Acute cortical necrosis
+B. Acute tubular necrosis
+C. Pre–renal Azotemia
+D. Acute medullary necrosis",4,0,1,0,0,1,0,0,0,0,0,1,1,"A hypotensive, acidotic, anuric child with severe diarrhea and low urine sodium has acute kidney injury, and calling prerenal azotemia intrinsic tubular necrosis could lead to fluid restriction instead of urgent volume resuscitation, risking irreversible renal injury or death."
+R0202,Poor prognostic indicator of ALL is –,"A. Female sex
+B. Leukocyte count < 50,000
+C. Age greater than 1 year
+D. Hypodiploidy",3,0,0,0,1,1,0,0,0,0,0,0,0,"Misidentifying ALL prognostic factors such as hypodiploidy (the correct answer) could lead to incorrect risk stratification and inappropriate treatment intensity, but this is a recall question without immediate acute harm."
+R0203,"A 26-year-old female complains of frequent, large volume urination. This negatively affects her sleep, as she has to frequently wake up at night to urinate. She also complains of increased thirst. Her past medical history is significant for bipolar disorder that is treated with lithium for 3 years. Serum osmolality is 425 mOsm/kg, and urine osmolality is 176 mOsm/kg. Which of the following best explains this patient’s serum and urine osmolality?","A. Hypothalamic over-production of antidiuretic hormone (ADH)
+B. Decreased production of ADH
+C. ADH resistance in the renal collecting ducts
+D. Increased sodium reabsorption and potassium excretion",3,1,1,0,0,1,0,0,0,0,0,0,0,"Mistaking lithium-induced nephrogenic diabetes insipidus for central DI or another cause could lead to ineffective desmopressin therapy, continued lithium exposure, and worsening hypernatremia and dehydration, though the scenario is chronic rather than emergent."
+R0204,Which of the following is a false statement?,"A. Acetaminophen does not have anti-inflammatory action
+B. NSAIDs with least cardiovascular risk in Naproxen
+C. Gastric irritation is more severe with NSAIDs compared to aspirin
+D. Non selective COX-2 inhibitors are contraindicated in postoperative patients",3,1,0,0,1,0,0,0,0,0,1,0,0,"This is a pharmacology question on the comparative GI and cardiovascular risks and contraindications of NSAIDs, framed as 'find the false statement'; a wrong answer could lead to a poor analgesic choice with moderate risk of GI bleeding or cardiovascular events."
+R0205,"A male child with coarse facial features, macroglossia, thick lips presents with copious mucous discharge from nose at 10 months of age. The child was absolutely normal at bih. On examination he was found to have enlarged Liver and Spleen. Diagnosis is:","A. Hurler's syndrome
+B. Beckwith-Weidman syndrome
+C. Hypothyroidism
+D. Proteus syndrome",2,0,1,0,0,0,1,0,0,0,0,0,0,"This is a classic recognition question for Hurler syndrome, a rare lysosomal storage disease: the infant was normal at birth, then developed coarse facies, macroglossia, rhinorrhea and hepatosplenomegaly. A misdiagnosis such as hypothyroidism would delay enzyme replacement or transplant, but the harm is not acutely life-threatening."
+R0206,"A previously healthy 29-year-old man comes to the emergency department because of burning with urination for several days. He has also had pain in the right ankle for 3 days and pain and swelling in the left knee for 1 day. Two weeks ago, he had several days of fever and bloody diarrhea, for which he was treated with antibiotics. Examination shows a small left knee effusion and bilateral conjunctival injection. Which of the following is the most likely additional finding in this patient?","A. Circular erythematous rash with central clearing
+B. Pain on passive extension of the fingers
+C. Palpable mass in the right lower quadrant
+D. Tenderness at the insertion of the Achilles tendon",2,0,1,0,0,0,0,0,0,0,0,0,0,"This classic reactive arthritis vignette (post-dysentery urethritis, oligoarthritis, conjunctivitis) asks only for an associated exam finding, Achilles enthesitis, so a wrong answer carries little direct risk of patient harm beyond possible diagnostic confusion with Lyme disease or septic tenosynovitis."
+R0207,"A 32-year-old man jumps off a 3 story building during a suicide attempt. Paramedics arrive quickly, and he is taken to the hospital where several stable lumbar fractures and a shattered right calcaneus are found. He undergoes surgery and his calcaneus is repaired with 11 screws. Which of the following statements best describes the long term post-surgery outcome in this patient?","A. He will not be able to plantar flex his foot.
+B. He will not be able to point his toe.
+C. He will have pain with inversion and eversion of his foot.
+D. He will have pain while dorsiflexing his foot.",2,0,0,0,1,0,0,0,0,0,0,0,0,"The question asks about long-term prognosis after calcaneal fracture repair, where the expected answer is subtalar arthritis causing pain with inversion and eversion; a wrong answer would mainly mislead counseling and expectations rather than acute management, so direct patient harm is minor."
+R0208,"An unknown drug is being tested in experimental setup. The results obtained are given in the table. From these actions, new drug is likely to be:ParameterPlacebo treatedNew drug treatedHea rate7286Systolic BP110150Diastolic BP8068TremorsAbsentPresent","A. Beta-I and beta-2 agonist
+B. Alpha-1 antagonist and beta-2 agonist
+C. M2 and M3 agonist
+D. Alpha-1 and beta-1 agonist",2,1,0,0,0,0,0,0,0,0,0,1,0,"This is a preclinical pharmacology question: rising heart rate and systolic BP with falling diastolic BP and tremor points to a combined beta-1/beta-2 agonist (isoprenaline-like), so a wrong answer would have little direct patient impact."
+R0209,"A 40-year-old man comes to the physician because of shortness of breath, double vision, and fatigue for the past 4 weeks. He has no history of serious medical illness and takes no medications. Physical examination shows drooping of the eyelids bilaterally. He is unable to hold his arms up for longer than 3 minutes. A CT scan of the chest shows an anterior mediastinal mass with smooth contours. A photomicrograph of a specimen from the mass is shown. Which of the following immunologic processes normally occurs in the region indicated by the arrow?","A. B-cell maturation
+B. V(D)J recombination
+C. Thymocyte formation
+D. Negative selection",1,0,0,0,0,0,0,0,0,1,0,0,0,"The vignette suggests myasthenia gravis with a thymoma, but the question asks a basic-science point about which thymic region carries out negative selection, so an error has little direct clinical consequence; the referenced photomicrograph is not provided."

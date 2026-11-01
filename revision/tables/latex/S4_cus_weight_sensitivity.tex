@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+\centering
+\caption{CUS severity-weight sensitivity (Pearson r with harmful@0.8).}
+\label{tab:rev_S4_cus_weight_sensitivity}
+\begin{tabular}{lllllll}
+\toprule
+scheme & subset & pearson\_r & spearman\_r & n\_groups & min & max \\
+\midrule
+original weights & original (overall + bucket rows) & 0.880 & 0.803 & 739 &  &  \\
+original weights & bucket rows only & 0.879 & 0.806 & 686 &  &  \\
+uniform (CUS = ECE) & original (overall + bucket rows) & 0.777 & 0.733 & 739 &  &  \\
+uniform (CUS = ECE) & bucket rows only & 0.775 & 0.729 & 686 &  &  \\
+binary (3 if >= 2.5 else 1) & original (overall + bucket rows) & 0.896 & 0.807 & 739 &  &  \\
+binary (3 if >= 2.5 else 1) & bucket rows only & 0.895 & 0.811 & 686 &  &  \\
+rank-based & original (overall + bucket rows) & 0.892 & 0.819 & 739 &  &  \\
+rank-based & bucket rows only & 0.891 & 0.826 & 686 &  &  \\
+random +/-25\% (mean over 20) & bucket rows only & 0.876 &  & 686 & 0.862 & 0.886 \\
+random +/-25\% (mean over 20) & original (overall + bucket rows) & 0.878 &  & 739 & 0.864 & 0.888 \\
+permuted weights (mean over 20) & bucket rows only & 0.805 &  & 686 & 0.739 & 0.870 \\
+permuted weights (mean over 20) & original (overall + bucket rows) & 0.807 &  & 739 & 0.742 & 0.872 \\
+\bottomrule
+\end{tabular}
+\end{table}

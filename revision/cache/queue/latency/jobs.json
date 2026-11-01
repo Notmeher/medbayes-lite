@@ -1,0 +1,10 @@
+[
+ {
+  "id": "latency_benchmark",
+  "kind": "latency",
+  "cost": 1,
+  "args": {
+   "reps": 30
+  }
+ }
+]

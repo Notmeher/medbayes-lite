@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+\centering
+\caption{Harmful overconfident error reduction (entropy gate; 3-seed means).}
+\label{tab:rev_table8_entropy_gate}
+\begin{tabular}{lllllllll}
+\toprule
+dataset & model & method & ece & harmful@0.8 & selacc@0.7 & cov@0.7 & n\_acc@0.7 & aurc \\
+\midrule
+medmcqa & biobert\_medmcqa & base & 0.317 & 0.028 & 0.528 & 0.258 & 951.000 & 0.516 \\
+medmcqa & biobert\_medmcqa & mc\_dropout & 0.163 & 0.002 & 0.677 & 0.040 & 148.333 & 0.523 \\
+medmcqa & biobert\_medmcqa & medbayes\_lite & 0.022 & 0.000 & 0.833 & 0.001 & 2.000 & 0.528 \\
+medmcqa & biobert\_medmcqa & temp\_scaling & 0.085 & 0.000 & 0.938 & 0.004 & 16.000 & 0.519 \\
+medmcqa & pubmedbert\_medmcqa & base & 0.255 & 0.027 & 0.668 & 0.314 & 1158.000 & 0.375 \\
+medmcqa & pubmedbert\_medmcqa & mc\_dropout & 0.089 & 0.002 & 0.853 & 0.052 & 193.333 & 0.398 \\
+medmcqa & pubmedbert\_medmcqa & medbayes\_lite & 0.023 & 0.000 & 0.890 & 0.019 & 70.333 & 0.403 \\
+medmcqa & pubmedbert\_medmcqa & temp\_scaling & 0.081 & 0.002 & 0.889 & 0.068 & 252.000 & 0.377 \\
+medqa & biobert\_medmcqa & base & 0.410 & 0.091 & 0.290 & 0.198 & 193.000 & 0.724 \\
+medqa & biobert\_medmcqa & mc\_dropout & 0.264 & 0.009 & 0.243 & 0.025 & 24.000 & 0.723 \\
+medqa & biobert\_medmcqa & medbayes\_lite & 0.094 & 0.000 &  & 0.000 & 0.000 & 0.720 \\
+medqa & biobert\_medmcqa & temp\_scaling & 0.162 & 0.000 &  & 0.000 & 0.000 & 0.724 \\
+medqa & pubmedbert\_medmcqa & base & 0.325 & 0.100 & 0.482 & 0.292 & 284.000 & 0.535 \\
+medqa & pubmedbert\_medmcqa & mc\_dropout & 0.184 & 0.009 & 0.604 & 0.038 & 37.000 & 0.559 \\
+medqa & pubmedbert\_medmcqa & medbayes\_lite & 0.053 & 0.000 & 1.000 & 0.002 & 1.667 & 0.559 \\
+medqa & pubmedbert\_medmcqa & temp\_scaling & 0.094 & 0.000 & 0.778 & 0.009 & 9.000 & 0.526 \\
+\bottomrule
+\end{tabular}
+\end{table}

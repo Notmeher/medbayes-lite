@@ -101,7 +101,8 @@ def analyze_clinician_ratings(rater_glob: str | None = None, clinician_high: int
         return {}
     key = pd.read_csv(os.path.join(d, "severity_rating_key_DO_NOT_SHARE.csv"))
     raters = {os.path.basename(f)[6:-4]: pd.read_csv(f).set_index("rating_id") for f in files}
-    sev = pd.DataFrame({r: df["severity_if_wrong"] for r, df in raters.items()})
+    sev = pd.DataFrame({r: pd.to_numeric(df["severity_if_wrong"], errors="coerce")
+                        for r, df in raters.items()})
     out = {}
     inter = []
     for r1, r2 in combinations(sev.columns, 2):

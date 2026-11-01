@@ -1,0 +1,89 @@
+scheme,subset,pearson_r,spearman_r,n_groups
+original weights,original (overall + bucket rows),0.8804449967918928,0.8026032792575908,739
+original weights,bucket rows only,0.8789947243725957,0.8058164798945155,686
+uniform (CUS = ECE),original (overall + bucket rows),0.7765862000084035,0.7329339565604657,739
+uniform (CUS = ECE),bucket rows only,0.7752757224818249,0.729257466346194,686
+binary (3 if >= 2.5 else 1),original (overall + bucket rows),0.8956652888976953,0.8070893932160363,739
+binary (3 if >= 2.5 else 1),bucket rows only,0.8948884732328146,0.8106937554967643,686
+rank-based,original (overall + bucket rows),0.8924500304047919,0.8188723958201318,739
+rank-based,bucket rows only,0.8912977524820254,0.8259259091171874,686
+random +/-25% #0,original (overall + bucket rows),0.8636647756543753,0.7961301810321358,739
+random +/-25% #0,bucket rows only,0.8618229474157426,0.7982423503073349,686
+random +/-25% #1,original (overall + bucket rows),0.8812592128248795,0.8039102848950446,739
+random +/-25% #1,bucket rows only,0.879677489388041,0.8075508809088872,686
+random +/-25% #2,original (overall + bucket rows),0.8871664220403613,0.8045758063384241,739
+random +/-25% #2,bucket rows only,0.8860882009893166,0.80803409306153,686
+random +/-25% #3,original (overall + bucket rows),0.8788036469195448,0.8054682881864755,739
+random +/-25% #3,bucket rows only,0.8771392265262523,0.8090911432252359,686
+random +/-25% #4,original (overall + bucket rows),0.8836169533699639,0.8099878769440194,739
+random +/-25% #4,bucket rows only,0.8823231296437413,0.8138655414014379,686
+random +/-25% #5,original (overall + bucket rows),0.8767276621073515,0.7943211642519126,739
+random +/-25% #5,bucket rows only,0.8750993933496253,0.7971377235536257,686
+random +/-25% #6,original (overall + bucket rows),0.8820182397088666,0.8034475757633261,739
+random +/-25% #6,bucket rows only,0.8807153786338461,0.8066721039609785,686
+random +/-25% #7,original (overall + bucket rows),0.8829416576896231,0.8011400473344682,739
+random +/-25% #7,bucket rows only,0.8816190647722597,0.8046873500055542,686
+random +/-25% #8,original (overall + bucket rows),0.8744430298360661,0.7929775801916031,739
+random +/-25% #8,bucket rows only,0.8728479078154686,0.7951977066838765,686
+random +/-25% #9,original (overall + bucket rows),0.8685257245560045,0.8057017567001491,739
+random +/-25% #9,bucket rows only,0.866515122718919,0.8089889607827662,686
+random +/-25% #10,original (overall + bucket rows),0.8784961111458804,0.7973606095038187,739
+random +/-25% #10,bucket rows only,0.8769155295052735,0.8003589128622761,686
+random +/-25% #11,original (overall + bucket rows),0.8781264948392022,0.7972665507021894,739
+random +/-25% #11,bucket rows only,0.8763546482568473,0.8004722944686697,686
+random +/-25% #12,original (overall + bucket rows),0.8800570295585032,0.7991539023126583,739
+random +/-25% #12,bucket rows only,0.8786225388401199,0.802350398230059,686
+random +/-25% #13,original (overall + bucket rows),0.8785376411710464,0.8048816082874245,739
+random +/-25% #13,bucket rows only,0.8766109120444439,0.8085906160531929,686
+random +/-25% #14,original (overall + bucket rows),0.8700755302926049,0.7946506392494714,739
+random +/-25% #14,bucket rows only,0.8681993536726652,0.7968917192240965,686
+random +/-25% #15,original (overall + bucket rows),0.8876102992398109,0.8096289966948401,739
+random +/-25% #15,bucket rows only,0.8861472393512443,0.8141697654980329,686
+random +/-25% #16,original (overall + bucket rows),0.8752079614971099,0.7957018176143456,739
+random +/-25% #16,bucket rows only,0.8737432313998359,0.7982116121765648,686
+random +/-25% #17,original (overall + bucket rows),0.8725399924785884,0.7913518355612211,739
+random +/-25% #17,bucket rows only,0.8708725966065151,0.7939720336477546,686
+random +/-25% #18,original (overall + bucket rows),0.8712885802357258,0.7964734164840069,739
+random +/-25% #18,bucket rows only,0.869354385958716,0.7991880442453569,686
+random +/-25% #19,original (overall + bucket rows),0.8800579211900103,0.8025431702995126,739
+random +/-25% #19,bucket rows only,0.8785829779540549,0.8057901499452902,686
+permuted weights #0,original (overall + bucket rows),0.8216814172306947,0.7453071045108904,739
+permuted weights #0,bucket rows only,0.8188000512971024,0.7441725058760015,686
+permuted weights #1,original (overall + bucket rows),0.8139717834913979,0.742060716437811,739
+permuted weights #1,bucket rows only,0.8123403756869582,0.7394384396167689,686
+permuted weights #2,original (overall + bucket rows),0.813735708339576,0.7436996673039775,739
+permuted weights #2,bucket rows only,0.8104233795720235,0.7419921071281975,686
+permuted weights #3,original (overall + bucket rows),0.8187738138250413,0.7478847614275793,739
+permuted weights #3,bucket rows only,0.8156499957468214,0.7466457568720913,686
+permuted weights #4,original (overall + bucket rows),0.7723413303644583,0.7225757389484566,739
+permuted weights #4,bucket rows only,0.7698186958515489,0.7180966456589638,686
+permuted weights #5,original (overall + bucket rows),0.8719404965059061,0.796436632208555,739
+permuted weights #5,bucket rows only,0.8697382944860269,0.7993337128030633,686
+permuted weights #6,original (overall + bucket rows),0.7901499864829448,0.7322520619182842,739
+permuted weights #6,bucket rows only,0.7866408280564249,0.7291298276481383,686
+permuted weights #7,original (overall + bucket rows),0.7521433326507413,0.7171162272368544,739
+permuted weights #7,bucket rows only,0.7487490378939626,0.7123653940941633,686
+permuted weights #8,original (overall + bucket rows),0.805472731140402,0.7394442982710102,739
+permuted weights #8,bucket rows only,0.8032435675627116,0.7363657782268267,686
+permuted weights #9,original (overall + bucket rows),0.8342679498741166,0.7647547933879364,739
+permuted weights #9,bucket rows only,0.8324520250558859,0.7637275000705797,686
+permuted weights #10,original (overall + bucket rows),0.810866131556124,0.7453329809759721,739
+permuted weights #10,bucket rows only,0.8091278614884616,0.7425469224459289,686
+permuted weights #11,original (overall + bucket rows),0.7538027631574664,0.7104281080573045,739
+permuted weights #11,bucket rows only,0.7510560508753482,0.7057265932613728,686
+permuted weights #12,original (overall + bucket rows),0.8615862123802215,0.7891356898502423,739
+permuted weights #12,bucket rows only,0.8588971934932824,0.7915476330816189,686
+permuted weights #13,original (overall + bucket rows),0.7804634740948417,0.7344121207142174,739
+permuted weights #13,bucket rows only,0.7790258782622208,0.7304252770353753,686
+permuted weights #14,original (overall + bucket rows),0.812689781955062,0.7492323889350964,739
+permuted weights #14,bucket rows only,0.8091192490210892,0.7473780481556247,686
+permuted weights #15,original (overall + bucket rows),0.7421801208964248,0.7097737976630081,739
+permuted weights #15,bucket rows only,0.7386670231045528,0.7049002776451789,686
+permuted weights #16,original (overall + bucket rows),0.8146235155685894,0.7460304254065712,739
+permuted weights #16,bucket rows only,0.8126855965954632,0.7435158089787437,686
+permuted weights #17,original (overall + bucket rows),0.7890601546849331,0.7274069410321387,739
+permuted weights #17,bucket rows only,0.7857927988234987,0.7240554348468233,686
+permuted weights #18,original (overall + bucket rows),0.8543862874688364,0.7827610050005658,739
+permuted weights #18,bucket rows only,0.8521654844468376,0.7837288891320626,686
+permuted weights #19,original (overall + bucket rows),0.8339778538351045,0.7588092320271745,739
+permuted weights #19,bucket rows only,0.8317880062229741,0.7578221253347691,686

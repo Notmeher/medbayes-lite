@@ -1,0 +1,75 @@
+\begin{table}[htbp]
+\centering
+\caption{Factorial ablation: MC dropout x temperature x gate.}
+\label{tab:rev_factorial_ablation}
+\begin{tabular}{llllllllll}
+\toprule
+dataset & model & mc\_dropout & temperature & gate & ece & harmful@0.8 & selacc@0.7 & cov@0.7 & aurc \\
+\midrule
+medmcqa & biobert\_medmcqa & no & no & maxprob & 0.317 & 0.067 & 0.457 & 0.508 & 0.517 \\
+medmcqa & biobert\_medmcqa & no & no & entropy & 0.317 & 0.028 & 0.528 & 0.258 & 0.516 \\
+medmcqa & pubmedbert\_medmcqa & no & no & maxprob & 0.255 & 0.056 & 0.571 & 0.541 & 0.376 \\
+medmcqa & pubmedbert\_medmcqa & no & no & entropy & 0.255 & 0.027 & 0.668 & 0.314 & 0.375 \\
+medqa & biobert\_medmcqa & no & no & maxprob & 0.410 & 0.217 & 0.288 & 0.486 & 0.724 \\
+medqa & biobert\_medmcqa & no & no & entropy & 0.410 & 0.091 & 0.290 & 0.198 & 0.724 \\
+medqa & pubmedbert\_medmcqa & no & no & maxprob & 0.325 & 0.213 & 0.437 & 0.541 & 0.540 \\
+medqa & pubmedbert\_medmcqa & no & no & entropy & 0.325 & 0.100 & 0.482 & 0.292 & 0.535 \\
+pubmedqa & bert\_base & no & no & maxprob & 0.073 & 0.000 &  & 0.000 & 0.361 \\
+pubmedqa & bert\_base & no & no & entropy & 0.073 & 0.000 &  & 0.000 & 0.384 \\
+pubmedqa & biobert & no & no & maxprob & 0.073 & 0.000 &  & 0.000 & 0.370 \\
+pubmedqa & biobert & no & no & entropy & 0.073 & 0.000 &  & 0.000 & 0.393 \\
+pubmedqa & clinicalbert & no & no & maxprob & 0.074 & 0.000 &  & 0.000 & 0.399 \\
+pubmedqa & clinicalbert & no & no & entropy & 0.074 & 0.000 &  & 0.000 & 0.399 \\
+pubmedqa & pubmedbert & no & no & maxprob & 0.079 & 0.000 &  & 0.000 & 0.367 \\
+pubmedqa & pubmedbert & no & no & entropy & 0.079 & 0.000 &  & 0.000 & 0.395 \\
+medmcqa & biobert\_medmcqa & no & yes & maxprob & 0.085 & 0.003 & 0.618 & 0.083 & 0.515 \\
+medmcqa & biobert\_medmcqa & no & yes & entropy & 0.085 & 0.000 & 0.938 & 0.004 & 0.519 \\
+medmcqa & pubmedbert\_medmcqa & no & yes & maxprob & 0.081 & 0.012 & 0.721 & 0.217 & 0.375 \\
+medmcqa & pubmedbert\_medmcqa & no & yes & entropy & 0.081 & 0.002 & 0.889 & 0.068 & 0.377 \\
+medqa & biobert\_medmcqa & no & yes & maxprob & 0.162 & 0.004 & 0.182 & 0.034 & 0.725 \\
+medqa & biobert\_medmcqa & no & yes & entropy & 0.162 & 0.000 &  & 0.000 & 0.724 \\
+medqa & pubmedbert\_medmcqa & no & yes & maxprob & 0.094 & 0.015 & 0.583 & 0.106 & 0.534 \\
+medqa & pubmedbert\_medmcqa & no & yes & entropy & 0.094 & 0.000 & 0.778 & 0.009 & 0.526 \\
+pubmedqa & bert\_base & no & yes & maxprob & 0.083 & 0.000 &  & 0.000 & 0.362 \\
+pubmedqa & bert\_base & no & yes & entropy & 0.083 & 0.000 &  & 0.000 & 0.387 \\
+pubmedqa & biobert & no & yes & maxprob & 0.079 & 0.000 &  & 0.000 & 0.370 \\
+pubmedqa & biobert & no & yes & entropy & 0.079 & 0.000 &  & 0.000 & 0.395 \\
+pubmedqa & clinicalbert & no & yes & maxprob & 0.081 & 0.000 &  & 0.000 & 0.399 \\
+pubmedqa & clinicalbert & no & yes & entropy & 0.081 & 0.000 &  & 0.000 & 0.399 \\
+pubmedqa & pubmedbert & no & yes & maxprob & 0.086 & 0.000 &  & 0.000 & 0.367 \\
+pubmedqa & pubmedbert & no & yes & entropy & 0.086 & 0.000 &  & 0.000 & 0.397 \\
+medmcqa & biobert\_medmcqa & yes & no & maxprob & 0.163 & 0.013 & 0.533 & 0.193 & 0.522 \\
+medmcqa & biobert\_medmcqa & yes & no & entropy & 0.163 & 0.002 & 0.677 & 0.040 & 0.523 \\
+medmcqa & pubmedbert\_medmcqa & yes & no & maxprob & 0.089 & 0.010 & 0.717 & 0.200 & 0.394 \\
+medmcqa & pubmedbert\_medmcqa & yes & no & entropy & 0.089 & 0.002 & 0.853 & 0.052 & 0.398 \\
+medqa & biobert\_medmcqa & yes & no & maxprob & 0.264 & 0.049 & 0.271 & 0.172 & 0.725 \\
+medqa & biobert\_medmcqa & yes & no & entropy & 0.264 & 0.009 & 0.243 & 0.025 & 0.723 \\
+medqa & pubmedbert\_medmcqa & yes & no & maxprob & 0.184 & 0.042 & 0.473 & 0.196 & 0.560 \\
+medqa & pubmedbert\_medmcqa & yes & no & entropy & 0.184 & 0.009 & 0.604 & 0.038 & 0.559 \\
+pubmedqa & bert\_base & yes & no & maxprob & 0.070 & 0.000 &  & 0.000 & 0.373 \\
+pubmedqa & bert\_base & yes & no & entropy & 0.070 & 0.000 &  & 0.000 & 0.392 \\
+pubmedqa & biobert & yes & no & maxprob & 0.068 & 0.000 &  & 0.000 & 0.392 \\
+pubmedqa & biobert & yes & no & entropy & 0.068 & 0.000 &  & 0.000 & 0.411 \\
+pubmedqa & clinicalbert & yes & no & maxprob & 0.064 & 0.000 &  & 0.000 & 0.378 \\
+pubmedqa & clinicalbert & yes & no & entropy & 0.064 & 0.000 &  & 0.000 & 0.387 \\
+pubmedqa & pubmedbert & yes & no & maxprob & 0.069 & 0.000 &  & 0.000 & 0.375 \\
+pubmedqa & pubmedbert & yes & no & entropy & 0.069 & 0.000 &  & 0.000 & 0.398 \\
+medmcqa & biobert\_medmcqa & yes & yes & maxprob & 0.022 & 0.000 & 0.691 & 0.020 & 0.521 \\
+medmcqa & biobert\_medmcqa & yes & yes & entropy & 0.022 & 0.000 & 0.833 & 0.001 & 0.528 \\
+medmcqa & pubmedbert\_medmcqa & yes & yes & maxprob & 0.023 & 0.003 & 0.815 & 0.092 & 0.394 \\
+medmcqa & pubmedbert\_medmcqa & yes & yes & entropy & 0.023 & 0.000 & 0.890 & 0.019 & 0.403 \\
+medqa & biobert\_medmcqa & yes & yes & maxprob & 0.094 & 0.000 & 0.000 & 0.002 & 0.724 \\
+medqa & biobert\_medmcqa & yes & yes & entropy & 0.094 & 0.000 &  & 0.000 & 0.720 \\
+medqa & pubmedbert\_medmcqa & yes & yes & maxprob & 0.053 & 0.002 & 0.510 & 0.025 & 0.558 \\
+medqa & pubmedbert\_medmcqa & yes & yes & entropy & 0.053 & 0.000 & 1.000 & 0.002 & 0.559 \\
+pubmedqa & bert\_base & yes & yes & maxprob & 0.078 & 0.000 &  & 0.000 & 0.373 \\
+pubmedqa & bert\_base & yes & yes & entropy & 0.078 & 0.000 &  & 0.000 & 0.393 \\
+pubmedqa & biobert & yes & yes & maxprob & 0.078 & 0.000 &  & 0.000 & 0.393 \\
+pubmedqa & biobert & yes & yes & entropy & 0.078 & 0.000 &  & 0.000 & 0.412 \\
+pubmedqa & clinicalbert & yes & yes & maxprob & 0.078 & 0.000 &  & 0.000 & 0.377 \\
+pubmedqa & clinicalbert & yes & yes & entropy & 0.078 & 0.000 &  & 0.000 & 0.387 \\
+pubmedqa & pubmedbert & yes & yes & maxprob & 0.072 & 0.000 &  & 0.000 & 0.376 \\
+pubmedqa & pubmedbert & yes & yes & entropy & 0.072 & 0.000 &  & 0.000 & 0.398 \\
+\bottomrule
+\end{tabular}
+\end{table}

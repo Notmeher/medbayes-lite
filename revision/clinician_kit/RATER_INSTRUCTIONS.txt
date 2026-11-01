@@ -1,0 +1,14 @@
+Clinician severity rating - instructions
+==========================================
+
+You will rate 210 exam-style clinical questions. Model predictions and any automatic
+labels are deliberately hidden.
+
+For each row:
+  1. severity_if_wrong  - integer 1-5. 1 = negligible, 2 = minor, 3 = moderate, 4 = serious, 5 = critical (potential patient harm if a clinician acted on a WRONG answer to this item)
+  2. For each category column (cat_*), enter 1 if the question clearly belongs to that
+     category, otherwise leave blank or 0. Several categories may apply.
+  3. comments - optional.
+
+Rate independently; do not discuss items with other raters until all ratings are in.
+Save the file as rater_<initials>.csv in the same folder.

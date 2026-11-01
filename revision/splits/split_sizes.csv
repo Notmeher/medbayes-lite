@@ -1,0 +1,11 @@
+dataset,role,n
+medmcqa,calibration,500
+medmcqa,generative_subset,200
+medmcqa,test,3683
+medqa,calibration,300
+medqa,generative_subset,200
+medqa,test,973
+pubmedqa,calibration,150
+pubmedqa,generative_subset,200
+pubmedqa,test,350
+pubmedqa,train,500

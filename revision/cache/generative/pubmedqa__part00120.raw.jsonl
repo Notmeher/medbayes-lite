@@ -1,0 +1,40 @@
+{"uid": "pubmedqa-11838307", "samples": ["No", "No", "No", "No", "No", "No", "No", "No", "No", "No"], "verbalized": "No\n\nConfidence: 95%"}
+{"uid": "pubmedqa-10759659", "samples": ["Maybe", "Yes", "Maybe", "Yes", "Yes", "Maybe", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-19653482", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 90%"}
+{"uid": "pubmedqa-9602458", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 60%"}
+{"uid": "pubmedqa-11867487", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe  \nConfidence: 50%"}
+{"uid": "pubmedqa-17076091", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 70%"}
+{"uid": "pubmedqa-17704864", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\nConfidence: 70%"}
+{"uid": "pubmedqa-19520213", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\nConfidence: 60%"}
+{"uid": "pubmedqa-9191526", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-26418796", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-15939071", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 80%"}
+{"uid": "pubmedqa-25592625", "samples": ["Yes", "Maybe", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes, cardiovascular evaluation is necessary prior to and during beta-blocker therapy for infantile hemangiomas.\n\nConfidence:"}
+{"uid": "pubmedqa-28177278", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\nConfidence: 70%"}
+{"uid": "pubmedqa-11566686", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 50%"}
+{"uid": "pubmedqa-18667100", "samples": ["No", "No", "No", "No", "No", "No", "No", "No", "No", "No"], "verbalized": "No\n\nConfidence: 95%"}
+{"uid": "pubmedqa-14551704", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 90%"}
+{"uid": "pubmedqa-23234860", "samples": ["No", "No", "No", "No", "No", "No", "No", "No", "No", "No"], "verbalized": "No\n\nConfidence: 85%"}
+{"uid": "pubmedqa-22867778", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-19931500", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes, Confidence: 70%. \n\nThe study suggests that certain characteristics of the lymph node microenvironment, such as"}
+{"uid": "pubmedqa-18307476", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-18832500", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-25986020", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "maybe", "Maybe", "Maybe"], "verbalized": "Yes, Confidence: 80%.\n\nThe study indicates that a zero central line-associated bloodstream infection (CLABSI)"}
+{"uid": "pubmedqa-20187289", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 70%"}
+{"uid": "pubmedqa-26556589", "samples": ["No", "No", "No", "No", "No", "No", "No", "No", "No", "No"], "verbalized": "No\n\nConfidence: 80%"}
+{"uid": "pubmedqa-24336869", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes, Confidence: 80%.\n\nRoutinely collected ambulance data about assaults can indeed contribute to the reduction in community"}
+{"uid": "pubmedqa-21172844", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-17306983", "samples": ["Maybe", "Yes", "Maybe", "Maybe", "Maybe", "Yes", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes, Confidence: 85%. \n\nThe provided context suggests that size-reducing ascending aortoplasty with"}
+{"uid": "pubmedqa-26879871", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 80%"}
+{"uid": "pubmedqa-27078715", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\nConfidence: 70%"}
+{"uid": "pubmedqa-22683044", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes, confidence: 75%.\n\nThe study suggests that open access articles in intensive care medicine journals tend to have a"}
+{"uid": "pubmedqa-18568290", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-21850494", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 70%"}
+{"uid": "pubmedqa-15670262", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 85%"}
+{"uid": "pubmedqa-11413427", "samples": ["No", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "No", "Maybe", "Maybe", "Maybe"], "verbalized": "No\n\nConfidence: 70%"}
+{"uid": "pubmedqa-24014276", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Yes, an optimistic outlook appears to predict better survival at advanced ages.\n\nConfidence: 70%"}
+{"uid": "pubmedqa-24139705", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 60%"}
+{"uid": "pubmedqa-26778755", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 70%"}
+{"uid": "pubmedqa-21801416", "samples": ["Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"], "verbalized": "Yes\n\nConfidence: 90%"}
+{"uid": "pubmedqa-22825590", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 60%"}
+{"uid": "pubmedqa-20064872", "samples": ["Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe", "Maybe"], "verbalized": "Maybe\n\nConfidence: 70%"}

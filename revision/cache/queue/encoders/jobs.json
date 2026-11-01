@@ -1,0 +1,366 @@
+[
+ {
+  "id": "sensitivity__medmcqa__pubmedbert_medmcqa",
+  "kind": "sensitivity",
+  "cost": 8,
+  "args": {
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__medmcqa__pubmedbert_medmcqa__seed0",
+  "kind": "encoder_logits",
+  "cost": 4,
+  "args": {
+   "dataset": "medmcqa",
+   "model": "pubmedbert_medmcqa",
+   "seed": 0,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__medmcqa__pubmedbert_medmcqa__seed1",
+  "kind": "encoder_logits",
+  "cost": 4,
+  "args": {
+   "dataset": "medmcqa",
+   "model": "pubmedbert_medmcqa",
+   "seed": 1,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__medmcqa__pubmedbert_medmcqa__seed2",
+  "kind": "encoder_logits",
+  "cost": 4,
+  "args": {
+   "dataset": "medmcqa",
+   "model": "pubmedbert_medmcqa",
+   "seed": 2,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__medmcqa__biobert_medmcqa__seed0",
+  "kind": "encoder_logits",
+  "cost": 4,
+  "args": {
+   "dataset": "medmcqa",
+   "model": "biobert_medmcqa",
+   "seed": 0,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__medmcqa__biobert_medmcqa__seed1",
+  "kind": "encoder_logits",
+  "cost": 4,
+  "args": {
+   "dataset": "medmcqa",
+   "model": "biobert_medmcqa",
+   "seed": 1,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__medmcqa__biobert_medmcqa__seed2",
+  "kind": "encoder_logits",
+  "cost": 4,
+  "args": {
+   "dataset": "medmcqa",
+   "model": "biobert_medmcqa",
+   "seed": 2,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "perturb__medmcqa__pubmedbert_medmcqa",
+  "kind": "perturb",
+  "cost": 3,
+  "args": {
+   "dataset": "medmcqa",
+   "n": 300,
+   "seeds": [
+    0,
+    1,
+    2
+   ],
+   "mc_samples": 15,
+   "mc_p": 0.2
+  }
+ },
+ {
+  "id": "perturb__medqa__pubmedbert_medmcqa",
+  "kind": "perturb",
+  "cost": 3,
+  "args": {
+   "dataset": "medqa",
+   "n": 300,
+   "seeds": [
+    0,
+    1,
+    2
+   ],
+   "mc_samples": 15,
+   "mc_p": 0.2
+  }
+ },
+ {
+  "id": "logits__pubmedqa__bert_base__seed0",
+  "kind": "encoder_logits",
+  "cost": 2,
+  "args": {
+   "dataset": "pubmedqa",
+   "model": "bert_base",
+   "seed": 0,
+   "max_train": null,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__pubmedqa__bert_base__seed1",
+  "kind": "encoder_logits",
+  "cost": 2,
+  "args": {
+   "dataset": "pubmedqa",
+   "model": "bert_base",
+   "seed": 1,
+   "max_train": null,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__pubmedqa__bert_base__seed2",
+  "kind": "encoder_logits",
+  "cost": 2,
+  "args": {
+   "dataset": "pubmedqa",
+   "model": "bert_base",
+   "seed": 2,
+   "max_train": null,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__pubmedqa__biobert__seed0",
+  "kind": "encoder_logits",
+  "cost": 2,
+  "args": {
+   "dataset": "pubmedqa",
+   "model": "biobert",
+   "seed": 0,
+   "max_train": null,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__pubmedqa__biobert__seed1",
+  "kind": "encoder_logits",
+  "cost": 2,
+  "args": {
+   "dataset": "pubmedqa",
+   "model": "biobert",
+   "seed": 1,
+   "max_train": null,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__pubmedqa__biobert__seed2",
+  "kind": "encoder_logits",
+  "cost": 2,
+  "args": {
+   "dataset": "pubmedqa",
+   "model": "biobert",
+   "seed": 2,
+   "max_train": null,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__pubmedqa__clinicalbert__seed0",
+  "kind": "encoder_logits",
+  "cost": 2,
+  "args": {
+   "dataset": "pubmedqa",
+   "model": "clinicalbert",
+   "seed": 0,
+   "max_train": null,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__pubmedqa__clinicalbert__seed1",
+  "kind": "encoder_logits",
+  "cost": 2,
+  "args": {
+   "dataset": "pubmedqa",
+   "model": "clinicalbert",
+   "seed": 1,
+   "max_train": null,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__pubmedqa__clinicalbert__seed2",
+  "kind": "encoder_logits",
+  "cost": 2,
+  "args": {
+   "dataset": "pubmedqa",
+   "model": "clinicalbert",
+   "seed": 2,
+   "max_train": null,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__pubmedqa__pubmedbert__seed0",
+  "kind": "encoder_logits",
+  "cost": 2,
+  "args": {
+   "dataset": "pubmedqa",
+   "model": "pubmedbert",
+   "seed": 0,
+   "max_train": null,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__pubmedqa__pubmedbert__seed1",
+  "kind": "encoder_logits",
+  "cost": 2,
+  "args": {
+   "dataset": "pubmedqa",
+   "model": "pubmedbert",
+   "seed": 1,
+   "max_train": null,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__pubmedqa__pubmedbert__seed2",
+  "kind": "encoder_logits",
+  "cost": 2,
+  "args": {
+   "dataset": "pubmedqa",
+   "model": "pubmedbert",
+   "seed": 2,
+   "max_train": null,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__medqa__pubmedbert_medmcqa__seed0",
+  "kind": "encoder_logits",
+  "cost": 1.5,
+  "args": {
+   "dataset": "medqa",
+   "model": "pubmedbert_medmcqa",
+   "seed": 0,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__medqa__pubmedbert_medmcqa__seed1",
+  "kind": "encoder_logits",
+  "cost": 1.5,
+  "args": {
+   "dataset": "medqa",
+   "model": "pubmedbert_medmcqa",
+   "seed": 1,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__medqa__pubmedbert_medmcqa__seed2",
+  "kind": "encoder_logits",
+  "cost": 1.5,
+  "args": {
+   "dataset": "medqa",
+   "model": "pubmedbert_medmcqa",
+   "seed": 2,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__medqa__biobert_medmcqa__seed0",
+  "kind": "encoder_logits",
+  "cost": 1.5,
+  "args": {
+   "dataset": "medqa",
+   "model": "biobert_medmcqa",
+   "seed": 0,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__medqa__biobert_medmcqa__seed1",
+  "kind": "encoder_logits",
+  "cost": 1.5,
+  "args": {
+   "dataset": "medqa",
+   "model": "biobert_medmcqa",
+   "seed": 1,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ },
+ {
+  "id": "logits__medqa__biobert_medmcqa__seed2",
+  "kind": "encoder_logits",
+  "cost": 1.5,
+  "args": {
+   "dataset": "medqa",
+   "model": "biobert_medmcqa",
+   "seed": 2,
+   "mc_samples": 15,
+   "mc_p": 0.2,
+   "max_eval": null
+  }
+ }
+]
